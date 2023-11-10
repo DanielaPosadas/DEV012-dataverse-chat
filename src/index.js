@@ -17,3 +17,8 @@ TODO:
 2.- Pasar "root element" a router.
 3.- Invocar el router para renderizar la vista correcta.
 */
+
+import inicio_home from './views/Inicio-home.js'
+
+const view1 = document.querySelector('body')
+view1.appendChild(inicio_home());
