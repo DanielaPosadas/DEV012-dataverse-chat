@@ -1,4 +1,4 @@
-export const home = () => {
+export const div_filtros = () => {
     //<div id="filtros">
     
     const div = document.createElement('div');
