@@ -19,6 +19,8 @@ TODO:
 */
 
 import inicio_home from './views/Inicio-home.js'
-
-const view1 = document.querySelector('body')
-view1.appendChild(inicio_home());
+import {dataset} from '../lib/dataAPI.js'
+inicio_home(dataset);
+//const view1 = document.querySelector('body')
+//view1.appendChild(inicio_home());
+//view1.appendChild(div);

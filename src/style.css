@@ -26,6 +26,101 @@
     width: 780px;
     height: 150px;
   }
+  #filtros {
+    display: flex;
+    background-color: #303030;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+  }
+  label {
+    font-family: "Balthazar", serif;
+    font-size: 20px;
+    color: #ffffff;
+    margin-left: 25px;
+  }
+  
+  [data-testid="select-filter"] {
+    font-size: 17px;
+    font-family: "Balthazar", serif;
+    height: 30px;
+    width: 170px;
+    margin-left: 5px;
+    background-color: #d9d9d9;
+  }
+  
+  [data-testid="select-sort"] {
+    font-size: 17px;
+    height: 30px;
+    width: 170px;
+    margin-left: 10px;
+    background-color: #d9d9d9;
+  }
+  
+  button {
+    font-family: "Balthazar", serif;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 6px 35px 6px 35px;
+    border-radius: 3px solid #d9d9d9;
+    margin-left: 30px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+  .lista {
+    display: flex;
+    font-family: "Cinzel", serif;
+    color: #FFFFFF;
+    width: 240px;
+    height: 470px;
+    background-color: #6F6E6E;
+    text-align: center;
+    justify-content: center;
+    background-image: url(https://github.com/DanielaPosadas/DEV012-dataverse/blob/main/tarjetas%20MK-1.jpg?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  img {
+    margin-top: 10px;
+    padding-top: 15px;
+    height: 280px;
+    width: 200px;
+    justify-content: center;
+  }
+  dt {
+    margin: 0;
+    margin-top: 5px;
+    font-size: 10px;
+  }
+  dd {
+    margin: 0;
+  }
+  [itemprop="name"] {
+    display: flex;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  [itemprop="letality"] {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 8px;
+    margin-top: 3px;
+  }
+  [itemprop="kingdom"] {
+    font-family: "Poppins", sans-serif;
+    font-size: 10px;
+    margin-top: 2px;
+  }
+
 
   footer {
     background-color: #7b6043;
