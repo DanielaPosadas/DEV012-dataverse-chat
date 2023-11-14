@@ -1,45 +1,41 @@
 // ASIGNAR <OPTION>`S A LA DATA
-export const filtroLet0 = (data, letalidad, reino, orden) => {
-    let data_filtrada = data;
+export const filtros_acumulables = (data_personajes, option_FiltrarLetalidad, option_FiltrarReino, option_OrdenarPor) => {
+    let data_filtrada = data_personajes;
   
     //FILTRAR LETALIDAD Y REINO
-    if (letalidad !== "nada") {
-      data_filtrada = filtro_letalidad(data_filtrada, letalidad);
+    if (option_FiltrarLetalidad !== "nada") {
+      data_filtrada = filtro_letalidad(data_filtrada, option_FiltrarLetalidad);
     }
-    if (reino !== "nada") {
-      data_filtrada = filtro_reino(data_filtrada, reino);
+    if (option_FiltrarReino !== "nada") {
+      data_filtrada = filtro_reino(data_filtrada, option_FiltrarReino);
     }
     
-  //ORDENAR ASC, GENERO H-M O M-H
-    if (orden === "asc") {
+  //ORDENAR ASC, GENERO H-M / M-H
+    if (option_OrdenarPor === "asc") {
       data_filtrada = ordenaAZ(data_filtrada);
-    } else if (orden === "Mujer") {
+    } else if (option_OrdenarPor === "Mujer") {
       data_filtrada = ordenaGen(data_filtrada);
-    } else if (orden === "Hombre") {
+    } else if (option_OrdenarPor === "Hombre") {
       data_filtrada = ordenaGen2(data_filtrada);
     }
     return data_filtrada;
   };
   
   //FILTRAR DATA PARA OBTENER SOLO FACTS.LETHALITYLEVEL
-  export const filtro_letalidad = (data, letalidad) => {
-    const filtro1 = data.filter(
-      (items) => items.facts.lethalityLevel === letalidad
-    );
+  export const filtro_letalidad = (data_personajes, filterByletalidad) => {
+    const filtro1 = data_personajes.filter((items) => items.facts.lethalityLevel === filterByletalidad);
     return filtro1;
   };
   
   //FILTRAR DATA PARA OBTENER SOLO FACTS.KINGDOM
-  export const filtro_reino = (data, reino) => {
-    const filtro1 = data.filter((items) => items.facts.kingdom === reino);
+  export const filtro_reino = (data_personajes, filterByreino) => {
+    const filtro1 = data_personajes.filter((items) => items.facts.kingdom === filterByreino);
     return filtro1;
   };
   
   // FUNCIONES ORDENAMIENTO GÉNERO
-  export const ordenaGen = (data) => {
-    const sinFiltrar = data.filter(
-      (items) => items.gender === "Mujer" || "Hombre"
-    );
+  export const ordenaGen = (data_personajes) => {
+    const sinFiltrar = data_personajes.filter((items) => items.gender === "Mujer" || "Hombre");
     const ordenGenM = sinFiltrar.sort((a, b) => {
       if (a.gender === "Mujer") {
         return -1;
@@ -50,8 +46,8 @@ export const filtroLet0 = (data, letalidad, reino, orden) => {
     return ordenGenM;
   };
   
-  export const ordenaGen2 = (data) => {
-    const sinFiltrar = data.filter(
+  export const ordenaGen2 = (data_personajes) => {
+    const sinFiltrar = data_personajes.filter(
       (items) => items.gender === "Hombre" || "Mujer"
     );
     const ordenGenH = sinFiltrar.sort((a, b) => {
@@ -65,8 +61,8 @@ export const filtroLet0 = (data, letalidad, reino, orden) => {
   };
   
   //FUNCION ORDENAMIENTO DE A - Z
-  export const ordenaAZ = (data) => {
-    const sinFiltrar = data.filter((items) => items.name);
+  export const ordenaAZ = (data_personajes) => {
+    const sinFiltrar = data_personajes.filter((items) => items.name);
     const ordenNameAz = sinFiltrar.sort((a, b) => {
       if (a.name < b.name) {
         return -1;
@@ -78,10 +74,24 @@ export const filtroLet0 = (data, letalidad, reino, orden) => {
   };
   
   //COMPUTE-STATS PARA CALCULO DEL TOTAL DE PERSONAJES
-  export const computeStats = (data) => {
-    const newPersonajes = data.map((personajes) => personajes.gender);
-    const conteoPersonajes = newPersonajes.reduce((total) => {
+  export const computeStats = (data_personajes) => {
+    const conteoPersonajes = data_personajes.reduce((total) => {
       return total + 1;
     }, 0);
     return Number(conteoPersonajes);
   };
+
+  export const personajes_genero = (data_personajes) => {
+    const newPersonajes = data_personajes.map((personajes) => personajes.gender);
+    let total_mujeres = 0;
+    let total_hombres = 0;
+    for(let i = 0; i < newPersonajes.length; i++){
+      const valoractual = newPersonajes[i];
+      if(valoractual === "Mujer"){
+        total_mujeres++;
+      } else if(valoractual === "Hombre"){
+        total_hombres++;
+      }
+    }
+    return {total_mujeres, total_hombres};
+  }
