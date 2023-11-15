@@ -1,12 +1,10 @@
+/*import inicio_home from './views/Inicio-home.js'
+
 let ROUTES = {
     "/": inicio_home,
 };
 let rootElement = '';
 
-/*const routes = {
-    "/": Home,
-    "/about": About
-  }*/
 
   export const setRootElement = (newRouteElementValue) => {
     rootElement = newRouteElementValue;
@@ -14,9 +12,13 @@ let rootElement = '';
   
   export const setRoutes = (newRoutesValue) => {
     // optional Throw errors if routes isn't an object
-    // optional Throw errors if routes doesn't define an /error route
-    // assign ROUTES
+    if(typeof newRoutesValue === "object"){
+ if(newRoutesValue['/error']){
     ROUTES = newRoutesValue
+ }
+    }
+       // optional Throw errors if routes doesn't define an /error route
+    // assign ROUTES
   }
 
   const renderView = (pathname, props = {}) => {
@@ -24,12 +26,15 @@ let rootElement = '';
     const root = rootElement;
     root.innerHTML = '';
     // find the correct view in ROUTES for the pathname
+    console.log(ROUTES[pathname]);
     if(ROUTES[pathname]){
-        const template = ROUTES[pathname]();
+        const template = ROUTES[pathname](props);
         root.appendChild(template);
+       
     } else {
-        root.appendChild(ROUTES['/error']());
+        root.appendChild(ROUTES['/error'](props));
     }
+    console.log(template);
     // in case not found render the error view
     // render the correct view passing the value of props
     // add the view element to the DOM root element
@@ -37,11 +42,15 @@ let rootElement = '';
   
   export const navigateTo = (pathname, props={}) => {
     // update window history with pushState
+    const URLvisited= window.location.hostname + pathname;
+    history.pushState({}, "", URLvisited);
     // render the view with the pathname and props
+    renderView(pathname, props);
   }
   
-  export const onURLChange = (location) => {
+  export const URLChange = (location) => {
     // parse the location for the pathname and search params
     // convert the search params to an object
     // render the view with the pathname and object
-  }
+    renderView(location);
+  }*/

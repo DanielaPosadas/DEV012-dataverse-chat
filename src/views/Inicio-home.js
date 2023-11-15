@@ -5,7 +5,7 @@ import { div_filtros } from '../components/home.js'
 import { filtros_acumulables } from '../lib/dataFunctions.js'
 import { p_estadisticas, p_estadisticas_genero } from '../components/estadisticas.js'
 
-const inicio_home = () => {
+ const inicio_home = () => {
 
     const data_personajes = dataset;
 
@@ -116,7 +116,7 @@ const inicio_home = () => {
         const option_FiltrarLetalidad = filtrarLetalidad.value
         const option_FiltrarReino = filtrarReino.value
         const option_OrdenarPor = ordenarPersonajes.value
-        div_root.innerHTML = "";
+       div_root.innerHTML = "";
 
         //ASIGNAR LOS <OPTION> A LOS filterBy/orderBy
         const dataFiltrada = filtros_acumulables(data_personajes, option_FiltrarLetalidad, option_FiltrarReino, option_OrdenarPor);
@@ -134,7 +134,7 @@ const inicio_home = () => {
         div_root.innerHTML = "";
         div_root.appendChild(renderItems(data_personajes));
     }
-
+return home;
 };
 
 export default inicio_home;

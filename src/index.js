@@ -19,8 +19,25 @@ TODO:
 */
 
 import inicio_home from './views/Inicio-home.js'
-import {dataset} from '../lib/dataAPI.js'
+import dataset from '../data/dataset.js'
+
+
+//import { setRootElement, setRoutes } from './router.js';
+//import { URLChange } from './router.js';
 inicio_home(dataset);
-//const view1 = document.querySelector('body')
-//view1.appendChild(inicio_home());
-//view1.appendChild(div);
+
+/*const routes = {
+    "/": inicio_home,
+    "/error" : 'some',
+
+}
+const viewContainer = document.getElementById('root');
+setRoutes(routes);
+setRootElement(viewContainer);
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    console.log("DOM fully loaded and parsed");
+    console.log(event.target.location.pathname);
+    URLChange(event.target.location.pathname);
+  });*/
+
