@@ -1,8 +1,8 @@
 import { header } from "../components/header.js";
 import dataset from "../data/dataset.js";
 
-export const description = () => {
-
+export const description = (props) => {
+console.log('props', props);
 //AGREGARLE CLASS A BODY PARA CAMBIAR EL COLOR EL CSS
 const body = document.body;
 body.setAttribute('class', "ruta-description");

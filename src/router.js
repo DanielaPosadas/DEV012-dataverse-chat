@@ -3,9 +3,7 @@ import { NotFound } from './views/NotFound.js';
 import { description } from './views/Description.js';
 
 let ROUTES = {
-    "/": inicio_home,
-    "/NotFound": NotFound,
-    "/description": description,
+   
 };
 let rootElement = '';
 
@@ -17,7 +15,7 @@ let rootElement = '';
   export const setRoutes = (newRoutesValue) => {
     // optional Throw errors if routes isn't an object
     if(typeof newRoutesValue === "object"){
- if(newRoutesValue['/error']){
+ if(newRoutesValue['/NotFound']){
     ROUTES = newRoutesValue
  }
     }
@@ -36,7 +34,7 @@ let rootElement = '';
         root.appendChild(template);
        
     } else {
-        root.appendChild(ROUTES['/error'](props));
+        root.appendChild(ROUTES['/NotFound'](props));
     }
     //console.log(template);
     // in case not found render the error view

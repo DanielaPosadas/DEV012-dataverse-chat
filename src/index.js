@@ -25,7 +25,7 @@ import { description } from './views/Description.js';
 
 const routes = {
     "/": inicio_home,
-    "/error" : NotFound,
+    "/NotFound" : NotFound,
     "/description": description,
 
 }
