@@ -4,6 +4,7 @@ import { footer } from '../components/footer.js'
 import { div_filtros } from '../components/DivFiltros.js'
 import { filtros_acumulables } from '../lib/dataFunctions.js'
 import { p_estadisticas, p_estadisticas_genero } from '../components/estadisticas.js'
+import { navigateTo } from '../router.js'
 
  const inicio_home = () => {
 
@@ -17,6 +18,11 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
     div_home.appendChild(div_filtros());
     div_home.appendChild(p_estadisticas());
     div_home.appendChild(p_estadisticas_genero());
+
+
+    const contenedorTarjetasdiv = document.createElement('div');
+    div_home.appendChild(contenedorTarjetasdiv);
+   // div_home.setAttribute('id', 'viewHome');
     
     //RENDERIZAR LAS TARJETAS
     const renderItems = (data_personajes) => {
@@ -64,10 +70,16 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
             dlDescriptiva.appendChild(dDescriptiva4);
             dDescriptiva4.setAttribute("itemprop", "kingdom");
             dDescriptiva4.textContent = item.facts.kingdom;
+            ilista.addEventListener("click", function(){
+                navigateTo("/description", item);
+                console.log(item.name);
+            })
+            
+            
         });
         return ulista;
     }
-    div_home.appendChild(renderItems(data_personajes));
+    contenedorTarjetasdiv.appendChild(renderItems(data_personajes));
 
     //SELECCIONAR <SELECT>
     const filtrarLetalidad = div_home.querySelector('[id="filtrar-por-letality"]');
@@ -82,11 +94,12 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
         const option_FiltrarLetalidad = filtrarLetalidad.value
         const option_FiltrarReino = filtrarReino.value
         const option_OrdenarPor = ordenarPersonajes.value
-        div_home.innerHTML = "";
+    
+        contenedorTarjetasdiv.innerHTML="";
 
         //ASIGNAR LOS <OPTION> A LOS filterBy/orderBy
         const dataFiltrada = filtros_acumulables(data_personajes, option_FiltrarLetalidad, option_FiltrarReino, option_OrdenarPor);
-        div_home.appendChild(renderItems(dataFiltrada)); 
+        contenedorTarjetasdiv.appendChild(renderItems(dataFiltrada)); 
         /*div_home.appendChild(header());
         div_home.appendChild(div_filtros());
         div_home.appendChild(p_estadisticas());
@@ -101,8 +114,8 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
         filtrarLetalidad.value = "nada";
         filtrarReino.value = "nada";
         ordenarPersonajes.value = "nada";
-        div_home.innerHTML = "";
-        div_home.appendChild(renderItems(data_personajes));
+        contenedorTarjetasdiv.innerHTML = "";
+        contenedorTarjetasdiv.appendChild(renderItems(data_personajes));
     }
 
     //METER FOOTER AL ROOT
