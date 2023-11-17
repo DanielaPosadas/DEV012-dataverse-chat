@@ -1,7 +1,11 @@
-/*import inicio_home from './views/Inicio-home.js'
+import inicio_home from './views/InicioHome.js'
+import { NotFound } from './views/NotFound.js';
+import { description } from './views/Description.js';
 
 let ROUTES = {
     "/": inicio_home,
+    "/NotFound": NotFound,
+    "/description": description,
 };
 let rootElement = '';
 
@@ -26,7 +30,7 @@ let rootElement = '';
     const root = rootElement;
     root.innerHTML = '';
     // find the correct view in ROUTES for the pathname
-    console.log(ROUTES[pathname]);
+    //console.log(ROUTES[pathname]);
     if(ROUTES[pathname]){
         const template = ROUTES[pathname](props);
         root.appendChild(template);
@@ -34,7 +38,7 @@ let rootElement = '';
     } else {
         root.appendChild(ROUTES['/error'](props));
     }
-    console.log(template);
+    //console.log(template);
     // in case not found render the error view
     // render the correct view passing the value of props
     // add the view element to the DOM root element
@@ -42,15 +46,15 @@ let rootElement = '';
   
   export const navigateTo = (pathname, props={}) => {
     // update window history with pushState
-    const URLvisited= window.location.hostname + pathname;
+    const URLvisited= window.location.origin + pathname;
     history.pushState({}, "", URLvisited);
     // render the view with the pathname and props
     renderView(pathname, props);
   }
   
-  export const URLChange = (location) => {
+  export const onURLChange = (location) => {
     // parse the location for the pathname and search params
     // convert the search params to an object
     // render the view with the pathname and object
     renderView(location);
-  }*/
+  }

@@ -18,26 +18,23 @@ TODO:
 3.- Invocar el router para renderizar la vista correcta.
 */
 
-import inicio_home from './views/Inicio-home.js'
-import dataset from '../data/dataset.js'
+import inicio_home from './views/InicioHome.js'
+import { setRootElement, setRoutes, onURLChange } from './router.js';
+import { NotFound } from './views/NotFound.js';
+import { description } from './views/Description.js';
 
-
-//import { setRootElement, setRoutes } from './router.js';
-//import { URLChange } from './router.js';
-inicio_home(dataset);
-
-/*const routes = {
+const routes = {
     "/": inicio_home,
-    "/error" : 'some',
+    "/error" : NotFound,
+    "/description": description,
 
 }
 const viewContainer = document.getElementById('root');
+
 setRoutes(routes);
 setRootElement(viewContainer);
 
 document.addEventListener("DOMContentLoaded", (event) => {
-    console.log("DOM fully loaded and parsed");
-    console.log(event.target.location.pathname);
-    URLChange(event.target.location.pathname);
-  });*/
+    onURLChange(event.target.location.pathname);
+  });
 

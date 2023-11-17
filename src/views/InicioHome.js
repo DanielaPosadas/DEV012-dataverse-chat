@@ -1,7 +1,7 @@
 import dataset from '../data/dataset.js'
 import { header } from '../components/header.js'
 import { footer } from '../components/footer.js'
-import { div_filtros } from '../components/home.js'
+import { div_filtros } from '../components/DivFiltros.js'
 import { filtros_acumulables } from '../lib/dataFunctions.js'
 import { p_estadisticas, p_estadisticas_genero } from '../components/estadisticas.js'
 
@@ -9,49 +9,16 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
 
     const data_personajes = dataset;
 
-    //HEADER Y FOOTER
-    const home = document.querySelector('body');
-    home.appendChild(header());
-    home.appendChild(div_filtros());
-    home.appendChild(p_estadisticas());
-    home.appendChild(p_estadisticas_genero());
+    //METER HEADER, FILTROS Y ESTADÍSTICAS A UN DIV
+    const div_home = document.createElement('div');
+    div_home.setAttribute('id', 'viewHome');
 
-    const header_primero = document.querySelector('header');
-    const div_root = document.getElementById('root');
-    header_primero.parentNode.appendChild(div_root);
-
-    home.appendChild(footer());
-
-
-    //Creacion de filtros
-    const div = document.getElementById('filtros')
-    div.innerHTML = `
-    <label for="filtrar-por-letality">Filtrar letalidad</label>
-    <select data-testid="select-filter" name="letality" id="filtrar-por-letality">
-      <option value="nada"></option>
-      <option value="Alto">Alto</option>
-      <option value="Moderado">Moderado</option>
-      <option value="Moderado-bajo">Moderado-bajo</option>
-      <option value="Bajo">Bajo</option>
-    </select>
-    <label for="filtrar-por-kingdom">Filtrar reino</label>
-      <select data-testid="select-filter" name="Kingdom" id="filtrar-por-kingdom">
-      <option value="nada"></option>
-      <option value="Cielo">Cielo</option>
-      <option value="Earthrealm">Earthrealm</option>
-      <option value="Outworld">Outworld</option>
-      <option value="Netherrealm">Netherrealm</option>
-    </select>
-    <label for="ordenar-por">Ordenar por</label>
-    <select data-testid="select-sort" name="alfabet" id="ordenar-por">
-      <option value="nada"></option>
-      <option value="asc">A - Z</option>
-      <option value="Mujer">Mujer-Hombre</option>
-      <option value="Hombre">Hombre-Mujer</option>
-    </select>
-    <button data-testid="button-clear">Limpiar</button>`;
-
-
+    div_home.appendChild(header());
+    div_home.appendChild(div_filtros());
+    div_home.appendChild(p_estadisticas());
+    div_home.appendChild(p_estadisticas_genero());
+    
+    //RENDERIZAR LAS TARJETAS
     const renderItems = (data_personajes) => {
 
         const ulista = document.createElement('ul');
@@ -100,13 +67,12 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
         });
         return ulista;
     }
-
-    div_root.appendChild(renderItems(data_personajes));
+    div_home.appendChild(renderItems(data_personajes));
 
     //SELECCIONAR <SELECT>
-    const filtrarLetalidad = document.querySelector('[id="filtrar-por-letality"]');
-    const filtrarReino = document.querySelector('[id="filtrar-por-kingdom"]');
-    const ordenarPersonajes = document.querySelector('[id="ordenar-por"]');
+    const filtrarLetalidad = div_home.querySelector('[id="filtrar-por-letality"]');
+    const filtrarReino = div_home.querySelector('[id="filtrar-por-kingdom"]');
+    const ordenarPersonajes = div_home.querySelector('[id="ordenar-por"]');
 
     filtrarLetalidad.addEventListener("change", filtros);
     filtrarReino.addEventListener("change", filtros);
@@ -116,25 +82,33 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
         const option_FiltrarLetalidad = filtrarLetalidad.value
         const option_FiltrarReino = filtrarReino.value
         const option_OrdenarPor = ordenarPersonajes.value
-       div_root.innerHTML = "";
+        div_home.innerHTML = "";
 
         //ASIGNAR LOS <OPTION> A LOS filterBy/orderBy
         const dataFiltrada = filtros_acumulables(data_personajes, option_FiltrarLetalidad, option_FiltrarReino, option_OrdenarPor);
-        div_root.appendChild(renderItems(dataFiltrada));
+        div_home.appendChild(renderItems(dataFiltrada)); 
+        /*div_home.appendChild(header());
+        div_home.appendChild(div_filtros());
+        div_home.appendChild(p_estadisticas());
+        div_home.appendChild(p_estadisticas_genero());*/
     }
 
     //DAR FUNCION DE LIMPIAR SELECCIONES CON BOTON
-    const boton = document.querySelector('[data-testid="button-clear"]');
+    const boton = div_home.querySelector('[data-testid="button-clear"]');
     boton.addEventListener("click", limpiar);
 
     function limpiar() {
         filtrarLetalidad.value = "nada";
         filtrarReino.value = "nada";
         ordenarPersonajes.value = "nada";
-        div_root.innerHTML = "";
-        div_root.appendChild(renderItems(data_personajes));
+        div_home.innerHTML = "";
+        div_home.appendChild(renderItems(data_personajes));
     }
-return home;
+
+    //METER FOOTER AL ROOT
+    div_home.appendChild(footer());
+
+return div_home;
 };
 
 export default inicio_home;
