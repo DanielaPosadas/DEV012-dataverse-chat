@@ -1,231 +1,371 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    background-color: #0a1416;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  header {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    background-color: #7b6043;
-    height: 170px;
-    width: 100%;
-    padding-bottom: 10px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  #header {
-    margin-top: 5px;
-    width: 780px;
-    height: 150px;
-  }
-  #filtros {
-    display: flex;
-    background-color: #303030;
-    height: 60px;
-    align-items: center;
-    justify-content: center;
-  }
-  label {
-    font-family: "Balthazar", serif;
-    font-size: 20px;
-    color: #ffffff;
-    margin-left: 25px;
-  }
-  
-  [data-testid="select-filter"] {
-    font-size: 17px;
-    font-family: "Balthazar", serif;
-    height: 30px;
-    width: 170px;
-    margin-left: 5px;
-    background-color: #d9d9d9;
-  }
-  
-  [data-testid="select-sort"] {
-    font-size: 17px;
-    height: 30px;
-    width: 170px;
-    margin-left: 10px;
-    background-color: #d9d9d9;
-  }
-  
-  button {
-    font-family: "Balthazar", serif;
-    font-size: 23px;
-    font-weight: bold;
-    padding: 6px 35px 6px 35px;
-    border-radius: 3px solid #d9d9d9;
-    margin-left: 30px;
-  }
+body {
+  margin: 0;
+  background-color: #0a1416;
+  justify-content: center;
+  align-items: center;
+}
 
-  p {
-    color: #ffffff;
-    text-align: center;
-    font-family: "Cinzel", serif;
-    font-size: 17px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    row-gap: 20px;
-    column-gap: 20px;
-  }
-  .lista {
-    display: flex;
-    font-family: "Cinzel", serif;
-    color: #FFFFFF;
-    width: 240px;
-    height: 470px;
-    background-color: #6F6E6E;
-    text-align: center;
-    justify-content: center;
-    background-image: url(https://github.com/DanielaPosadas/DEV012-dataverse/blob/main/tarjetas%20MK-1.jpg?raw=true);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  img {
-    margin-top: 10px;
-    padding-top: 15px;
-    height: 280px;
-    width: 200px;
-    justify-content: center;
-  }
-  dt {
-    margin: 0;
-    margin-top: 5px;
-    font-size: 10px;
-  }
-  dd {
-    margin: 0;
-  }
-  [itemprop="name"] {
-    display: flex;
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 5px;
-  }
-  [itemprop="letality"] {
-    font-family: "Poppins", sans-serif;
-    font-weight: bold;
-    font-size: 8px;
-    margin-top: 3px;
-  }
-  [itemprop="kingdom"] {
-    font-family: "Poppins", sans-serif;
-    font-size: 10px;
-    margin-top: 2px;
-  }
+header {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #7b6043;
+  height: 170px;
+  width: 100%;
+  padding-bottom: 10px;
+}
 
-  footer {
-    background-color: #7b6043;
-    color: #ffffff;
-    font-family: "Cinzel", serif;
-    font-size: 12px;
-    padding: 10px;
-    margin-top: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    height: 100%;
-    bottom: 0;
-    width: 100%;
-  }
+#header {
+  margin-top: 5px;
+  width: 780px;
+  height: 150px;
+}
 
-  /* VISTA NOT FOUND */
+#filtros {
+  display: flex;
+  background-color: #303030;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
+}
 
-  .ruta-error {
-    background-color: #FFF4F4;
-  }
+label {
+  font-family: "Balthazar", serif;
+  font-size: 20px;
+  color: #ffffff;
+  margin-left: 25px;
+}
 
-  #viewError {
-    display: flex;
-    align-items: center;
-    margin-top: 150px;
-  }
+[data-testid="select-filter"] {
+  font-size: 17px;
+  font-family: "Balthazar", serif;
+  height: 30px;
+  width: 170px;
+  margin-left: 5px;
+  background-color: #d9d9d9;
+}
 
-  #logoError {
-    position: relative;
-    width: 300px;
-    height: 300px;
-    margin-left: 400px;
-    margin-top: 40px;
-  }
+[data-testid="select-sort"] {
+  font-size: 17px;
+  height: 30px;
+  width: 170px;
+  margin-left: 10px;
+  background-color: #d9d9d9;
+}
 
-  #UPS {
-    display: flex;
-    color:#000000;
-    font-size: 110px;
-    font-weight: bold;
-  }
+button {
+  font-family: "Balthazar", serif;
+  font-size: 23px;
+  font-weight: bold;
+  padding: 6px 35px 6px 35px;
+  border-radius: 3px solid #d9d9d9;
+  margin-left: 30px;
+}
 
-  #ERROR {
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    margin-left: 705px;
-    margin-top: 160px;
-    color:#000000;
-    font-size: 30px;
-    font-weight: 900;
-  }
+p {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Cinzel", serif;
+  font-size: 17px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-  #DescripError {
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    margin-left: 705px;
-    margin-top: 230px;
-    color:#000000;
-    font-size: 15px;
-    font-weight: bold;
-  }
-  
-  #BtnVolver {
-    position: absolute;
-    font-family: 'Inter', sans-serif;
-    font-weight: 900;
-    margin-left: 706px;
-    margin-top: 310px;
-    color:#000000;
-    background-color: #FFA400;
-    border-radius: 9px;
-    padding: 8px 40px 8px 40px;
-    font-size: 15px;
-    
-  }
-  .ruta-description {
-    background-color:#091416;
-  }
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  column-gap: 20px;
+}
 
-  #div_description {
-    position: relative;
-  }
+.lista {
+  display: flex;
+  font-family: "Cinzel", serif;
+  color: #FFFFFF;
+  width: 240px;
+  height: 470px;
+  background-color: #6F6E6E;
+  text-align: center;
+  justify-content: center;
+  background-image: url(https://github.com/DanielaPosadas/DEV012-dataverse/blob/main/tarjetas%20MK-1.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-  #imgDescriptionFondo {
-    position: absolute;
-    margin-left: 320px;
-    margin-top: 35px;
-    width: 800px;
-    height: 450px;
-  }
+img {
+  margin-top: 10px;
+  padding-top: 15px;
+  height: 280px;
+  width: 200px;
+  justify-content: center;
+}
 
-  #imgDescriptionPersonaje {
+dt {
+  margin: 0;
+  margin-top: 5px;
+  font-size: 10px;
+}
+
+dd {
+  margin: 0;
+}
+
+[itemprop="name"] {
+  display: flex;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+[itemprop="letality"] {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 8px;
+  margin-top: 3px;
+}
+
+[itemprop="kingdom"] {
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  margin-top: 2px;
+}
+
+footer {
+  background-color: #7b6043;
+  color: #ffffff;
+  font-family: "Cinzel", serif;
+  font-size: 12px;
+  padding: 10px;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+}
+
+/* VISTA NOT FOUND */
+
+.ruta-error {
+  background-color: #FFF4F4;
+}
+
+#viewError {
+  display: flex;
+  align-items: center;
+  margin-top: 150px;
+}
+
+#logoError {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin-left: 400px;
+  margin-top: 40px;
+}
+
+#UPS {
+  display: flex;
+  color: #000000;
+  font-size: 110px;
+  font-weight: bold;
+}
+
+#ERROR {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  margin-left: 705px;
+  margin-top: 160px;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+#DescripError {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  margin-left: 705px;
+  margin-top: 230px;
+  color: #000000;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+#BtnVolver {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  margin-left: 706px;
+  margin-top: 310px;
+  color: #000000;
+  background-color: #FFA400;
+  border-radius: 9px;
+  padding: 8px 40px 8px 40px;
+  font-size: 15px;
+
+}
+
+.ruta-description {
+  background-color: #091416;
+}
+
+#div_description {
+  position: relative;
+}
+
+#imgDescriptionFondo {
+  position: absolute;
+  margin-left: 320px;
+  margin-top: 35px;
+  width: 800px;
+  height: 450px;
+}
+
+#imgDescriptionPersonaje {
   position: absolute;
   margin-left: 370px;
   margin-top: 90px;
   width: 250px;
   height: 340px;
-  }
+}
+
+#divNombre {
+  position: absolute;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 672px;
+  margin-top: 105px;
+  background-color: #F8DADA;
+  width: 390px;
+  height: 50px;
+  border-radius: 0 100px 0 0;
+}
+
+#nombre {
+  position: absolute;
+  display: flex;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+#divDetalle {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  margin-left: 672px;
+  margin-top: 5px;
+  background-color: #F8DADA;
+  width: 390px;
+  height: 200px;
+
+}
+
+#description {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 15px;
+  color: #000000;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}
+
+#skills {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 70px;
+
+}
+
+#armas {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 110px;
+}
+
+#apariciones {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 135px;
+}
+
+#divLetalidad {
+  position: relative;
+  display: flex;
+  justify-content: start;
+  margin-left: 672px;
+  margin-top: 5px;
+  background-color: #F8DADA;
+  width: 200px;
+  height: 63px;
+}
+
+#parrafoLetalidad {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 5px;
+}
+
+#imgLetalidad {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 15px;
+  width: 25px;
+  height: 40px;
+}
+#divReino {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  margin-left: 900px;
+  margin-top: 5px;
+  background-color: #F8DADA;
+  width: 200px;
+  height: 63px;
+}
