@@ -1,5 +1,5 @@
+import { btnHome } from "../components/btnHome.js";
 import { header } from "../components/header.js";
-import dataset from "../data/dataset.js";
 
 export const description = (props) => {
     console.log('props', props);
@@ -32,16 +32,19 @@ export const description = (props) => {
     //CREACION DE DIV PARA DETALLE
     const div_descriptionDetalle = document.createElement('div');
     div_descriptionDetalle.setAttribute('id', 'divDetalle');
+
     //CREACION PARRAFO DESCRIPCION
     const parrafoDescription = document.createElement('p');
     parrafoDescription.setAttribute('id', 'description');
     parrafoDescription.textContent = props.shortDescription;
     div_descriptionDetalle.appendChild(parrafoDescription);
+
     //CREACION PARRAFO HABILIDADES
     const parrafoHabilidades = document.createElement('p');
     parrafoHabilidades.setAttribute('id', 'skills');
     parrafoHabilidades.textContent = "Habilidades: " + props.shortDescription;
     div_descriptionDetalle.appendChild(parrafoHabilidades);
+
     //CREACION PARRAFO ARMAS
     const parrafoArmas = document.createElement('p');
     parrafoArmas.setAttribute('id', 'armas');
@@ -65,6 +68,7 @@ export const description = (props) => {
     parrafoLetalidad.setAttribute('id', 'parrafoLetalidad');
     parrafoLetalidad.textContent = "Letalidad: " + props.facts.lethalityLevel;
     div_letalidad.appendChild(parrafoLetalidad);
+
     //CREACION DIV REINO
     const div_reino = document.createElement('div');
     div_reino.setAttribute('id', 'divReino');
@@ -76,8 +80,11 @@ export const description = (props) => {
     parrafoReino.setAttribute('id', 'parrafoReino');
     parrafoReino.textContent = "Reino: " + props.facts.kingdom;
     div_reino.appendChild(parrafoReino);
-
-
+    
+    //CREACIÓN DE BOTÓN PARA CHAT PERSONAJE
+    const btnChatPersonaje = document.createElement('button');
+    btnChatPersonaje.setAttribute('id', 'btnChatPersonaje');
+    btnChatPersonaje.textContent = 'Chatea con ' + props.name;
 
 
     div_description.appendChild(header());
@@ -87,6 +94,9 @@ export const description = (props) => {
     div_description.appendChild(div_descriptionDetalle);
     div_description.appendChild(div_letalidad);
     div_description.appendChild(div_reino);
+    div_description.appendChild(btnChatPersonaje);
+    div_description.appendChild(btnHome());
+
     //div_description.appendChild(renderImages(data_personajes));
 
     return (div_description);

@@ -52,6 +52,7 @@ label {
 }
 
 [data-testid="select-sort"] {
+  font-family: "Balthazar", serif;
   font-size: 17px;
   height: 30px;
   width: 170px;
@@ -91,13 +92,19 @@ ul {
   font-family: "Cinzel", serif;
   color: #FFFFFF;
   width: 240px;
-  height: 470px;
+  height: 430px;
   background-color: #6F6E6E;
   text-align: center;
   justify-content: center;
   background-image: url(https://github.com/DanielaPosadas/DEV012-dataverse/blob/main/tarjetas%20MK-1.jpg?raw=true);
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: pointer;
+}
+
+.lista:hover {
+  background: #000000;
+  opacity: 80%;
 }
 
 img {
@@ -138,6 +145,19 @@ dd {
   font-family: "Poppins", sans-serif;
   font-size: 10px;
   margin-top: 2px;
+}
+
+#btnChatGrupal {
+  position: fixed;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  width: 230px;
+  height: 50px;
+  background: #FFA400;
+  border-radius: 9px;
+  right: 69px;
+  bottom: 30px;
+  cursor: pointer;
 }
 
 footer {
@@ -189,7 +209,7 @@ footer {
   margin-top: 160px;
   color: #000000;
   font-size: 30px;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 #DescripError {
@@ -199,13 +219,12 @@ footer {
   margin-top: 230px;
   color: #000000;
   font-size: 15px;
-  font-weight: bold;
 }
 
 #BtnVolver {
   position: absolute;
   font-family: 'Inter', sans-serif;
-  font-weight: 900;
+  font-weight: 500;
   margin-left: 706px;
   margin-top: 310px;
   color: #000000;
@@ -216,6 +235,8 @@ footer {
 
 }
 
+/* VISTA DESCRIPTION */
+
 .ruta-description {
   background-color: #091416;
 }
@@ -224,18 +245,33 @@ footer {
   position: relative;
 }
 
+#btnChatPersonaje {
+  position: absolute;
+  display: flex;
+  border-radius: 9px;
+  font-size: 15px;
+  background-color: #FFA400;
+  color: #000000;
+  padding: 10px 40px 10px 40px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  margin-left: 600px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
 #imgDescriptionFondo {
   position: absolute;
   margin-left: 320px;
-  margin-top: 35px;
-  width: 800px;
-  height: 450px;
+  margin-top: 25px;
+  width: 775px;
+  height: 462px;
 }
 
 #imgDescriptionPersonaje {
   position: absolute;
   margin-left: 370px;
-  margin-top: 90px;
+  margin-top: 60px;
   width: 250px;
   height: 340px;
 }
@@ -246,8 +282,8 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 672px;
-  margin-top: 105px;
+  margin-left: 650px;
+  margin-top: 75px;
   background-color: #F8DADA;
   width: 390px;
   height: 50px;
@@ -266,7 +302,7 @@ footer {
   position: relative;
   display: flex;
   justify-content: start;
-  margin-left: 672px;
+  margin-left: 650px;
   margin-top: 5px;
   background-color: #F8DADA;
   width: 390px;
@@ -282,7 +318,7 @@ footer {
   margin-right: 20px;
   font-size: 15px;
   color: #000000;
-  font-weight: bold;
+  font-weight: 700;
   font-family: 'Inter', sans-serif;
 }
 
@@ -296,7 +332,6 @@ footer {
   color: #000000;
   font-family: 'Inter', sans-serif;
   margin-top: 70px;
-
 }
 
 #armas {
@@ -327,7 +362,7 @@ footer {
   position: relative;
   display: flex;
   justify-content: start;
-  margin-left: 672px;
+  margin-left: 650px;
   margin-top: 5px;
   background-color: #F8DADA;
   width: 200px;
@@ -361,11 +396,67 @@ footer {
 }
 #divReino {
   position: absolute;
+  position: relative;
   display: flex;
   justify-content: start;
-  margin-left: 900px;
-  margin-top: 5px;
+  margin-left: 855px;
+  margin-top: -63px;
   background-color: #F8DADA;
-  width: 200px;
+  width: 185px;
   height: 63px;
 }
+
+#imgReino {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 15px;
+  width: 25px;
+  height: 40px;
+}
+
+#parrafoReino {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 5px;
+}
+
+#divBtnHome {
+position: relative;
+}
+
+#btnHome {
+  position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background: #FFA400;
+  top: 10px;
+  right: 105px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+#imageHome {
+  position: absolute;
+  width: 45px;
+  height: 50px;
+  top: 3px;
+  right: 119px;
+  bottom: 50px;
+  cursor: pointer;
+}
+

@@ -157,7 +157,7 @@ export default [
         "id": "Sonya-Blade",
         "name": "Sonya Blade",
         "gender": "Mujer",
-        "shortDescription": "Luchadora conocida por ser una agente de las Fuerzas Especiales de Estados Unidos y una experta en artes marciales.",
+        "shortDescription": "Luchadora agente de las Fuerzas Especiales de Estados Unidos, experta en artes marciales.",
         "videogamesAppearances": "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-22.jpg",
         "facts": {
@@ -185,7 +185,7 @@ export default [
         "id": "Kabal",
         "name": "Kabal",
         "gender": "Hombre",
-        "shortDescription": "Luchador conocido por ser un ex miembro del Black Dragon y su apariencia distintiva al usar un respirador.",
+        "shortDescription": "Luchador ex miembro del Black Dragon con apariencia distintiva al usar un respirador.",
         "videogamesAppearances": "Mortal Kombat 3, Mortal Kombat Trilogy, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-3.jpg",
         "facts": {
@@ -255,7 +255,7 @@ export default [
         "id": "Cetrion",
         "name": "Cetrion",
         "gender": "Mujer",
-        "shortDescription": "Diosa elemental que controla los elementos naturales: la tierra, el fuego, el agua y el aire.",
+        "shortDescription": "Diosa que controla los elementos naturales: la tierra, el fuego, el agua y el aire.",
         "videogamesAppearances": "Mortal Kombat 11 y es parte de la expansión Aftermath del juego.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-25.jpg",
         "facts": {
@@ -269,7 +269,7 @@ export default [
         "id": "Cassie-Cage",
         "name": "Cassie Cage",
         "gender": "Mujer",
-        "shortDescription": "Conocida por ser la hija de Johnny Cage y Sonya Blade, y una agente de las Fuerzas Especiales de Estados Unidos.",
+        "shortDescription": "Hija de Johnny Cage y Sonya Blade. Agente de las Fuerzas Especiales de Estados Unidos.",
         "videogamesAppearances": "Mortal Kombat X, Mortal Kombat 11 y otros juegos de la serie.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-7.jpg",
         "facts": {

@@ -26,9 +26,11 @@ import { description } from './views/Description.js';
 const routes = {
     "/": inicio_home,
     "/NotFound" : NotFound,
-    "/description": description,
+    "/description" : description,
+    "/panel" : "algo",
 
-}
+};
+
 const viewContainer = document.getElementById('root');
 
 setRoutes(routes);

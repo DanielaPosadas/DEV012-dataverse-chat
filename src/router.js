@@ -2,9 +2,7 @@ import inicio_home from './views/InicioHome.js'
 import { NotFound } from './views/NotFound.js';
 import { description } from './views/Description.js';
 
-let ROUTES = {
-   
-};
+let ROUTES = {};
 let rootElement = '';
 
 

@@ -1,3 +1,4 @@
+import { navigateTo } from "../router.js";
 
 export const NotFound = () => {
     
@@ -31,7 +32,7 @@ export const NotFound = () => {
     btnVolver.addEventListener('click', VolverInicio);
 
     function VolverInicio () {
-        
+        navigateTo("/");
     }
 
     div_nuevo.appendChild(imagen_error);

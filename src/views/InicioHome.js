@@ -72,10 +72,8 @@ import { navigateTo } from '../router.js'
             dDescriptiva4.textContent = item.facts.kingdom;
             ilista.addEventListener("click", function(){
                 navigateTo("/description", item);
-                console.log(item.name);
+                //console.log(item.name);
             })
-            
-            
         });
         return ulista;
     }
@@ -100,10 +98,6 @@ import { navigateTo } from '../router.js'
         //ASIGNAR LOS <OPTION> A LOS filterBy/orderBy
         const dataFiltrada = filtros_acumulables(data_personajes, option_FiltrarLetalidad, option_FiltrarReino, option_OrdenarPor);
         contenedorTarjetasdiv.appendChild(renderItems(dataFiltrada)); 
-        /*div_home.appendChild(header());
-        div_home.appendChild(div_filtros());
-        div_home.appendChild(p_estadisticas());
-        div_home.appendChild(p_estadisticas_genero());*/
     }
 
     //DAR FUNCION DE LIMPIAR SELECCIONES CON BOTON
@@ -117,6 +111,12 @@ import { navigateTo } from '../router.js'
         contenedorTarjetasdiv.innerHTML = "";
         contenedorTarjetasdiv.appendChild(renderItems(data_personajes));
     }
+
+    //BOTÓN DE CHAT GRUPAL
+    const btnChatGrupal = document.createElement('button');
+    btnChatGrupal.setAttribute('id', 'btnChatGrupal');
+    btnChatGrupal.textContent = "Chatea con todos"
+    div_home.appendChild(btnChatGrupal);
 
     //METER FOOTER AL ROOT
     div_home.appendChild(footer());
