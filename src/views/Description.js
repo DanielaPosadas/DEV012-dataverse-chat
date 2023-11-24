@@ -1,5 +1,7 @@
+import { chat } from "../components/Chatcomponente.js";
 import { btnHome } from "../components/btnHome.js";
 import { header } from "../components/header.js";
+
 
 export const description = (props) => {
     console.log('props', props);
@@ -76,16 +78,23 @@ export const description = (props) => {
     img_reino.setAttribute('src', 'https://cdn-icons-png.flaticon.com/512/5778/5778499.png');
     img_reino.setAttribute('id', 'imgReino');
     div_reino.appendChild(img_reino);
-    const parrafoReino= document.createElement('p');
+    const parrafoReino = document.createElement('p');
     parrafoReino.setAttribute('id', 'parrafoReino');
     parrafoReino.textContent = "Reino: " + props.facts.kingdom;
     div_reino.appendChild(parrafoReino);
-    
-    //CREACIÓN DE BOTÓN PARA CHAT PERSONAJE
-    const btnChatPersonaje = document.createElement('button');
-    btnChatPersonaje.setAttribute('id', 'btnChatPersonaje');
-    btnChatPersonaje.textContent = 'Chatea con ' + props.name;
 
+    /* //CREACIÓN DE BOTÓN PARA CHAT PERSONAJE
+     const btnChatPersonaje = document.createElement('button');
+     btnChatPersonaje.setAttribute('id', 'btnChatPersonaje');
+     btnChatPersonaje.textContent = 'Chatea con ' + props.name;*/
+    //CREACION DIV TIULO CHAT
+    const divTitulo = document.createElement('div');
+    divTitulo.setAttribute('id', 'divTitulo');
+    //CREACION DE PARRAFO CHAT
+    const parrafo = document.createElement('p');
+    parrafo.setAttribute('id', 'parrafoTitulo');
+    parrafo.textContent = "Chatea con " + props.name;
+    divTitulo.appendChild(parrafo);
 
     div_description.appendChild(header());
     div_description.appendChild(img_descriptionFondo);
@@ -94,8 +103,10 @@ export const description = (props) => {
     div_description.appendChild(div_descriptionDetalle);
     div_description.appendChild(div_letalidad);
     div_description.appendChild(div_reino);
-    div_description.appendChild(btnChatPersonaje);
+    //div_description.appendChild(btnChatPersonaje);
     div_description.appendChild(btnHome());
+    div_description.appendChild(chat());
+    div_description.appendChild(divTitulo);
 
     //div_description.appendChild(renderImages(data_personajes));
 

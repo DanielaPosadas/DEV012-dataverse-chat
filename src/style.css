@@ -244,6 +244,19 @@ footer {
 #div_description {
   position: relative;
 }
+#divTitulo{
+  position:absolute;
+  width: 668px;
+  height: 50px;
+  background-color: #FFA400;
+  margin-top: 40px;
+  margin-left: 370px;
+}
+#parrafoTitulo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #btnChatPersonaje {
   position: absolute;
@@ -265,7 +278,7 @@ footer {
   margin-left: 320px;
   margin-top: 25px;
   width: 775px;
-  height: 462px;
+  height: 800px;
 }
 
 #imgDescriptionPersonaje {
@@ -432,31 +445,156 @@ footer {
   margin-top: 5px;
 }
 
-#divBtnHome {
-position: relative;
+/*VISTA CHAT*/
+#divChat{
+  position:relative;
 }
-
-#btnHome {
-  position: absolute;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
-  border-radius: 50%;
-  width: 75px;
-  height: 75px;
-  background: #FFA400;
-  top: 10px;
-  right: 105px;
-  bottom: 30px;
-  cursor: pointer;
+#imgchatFondo{
+  position:absolute;
+  margin-left: 320px;
+  margin-top: 25px;
+  width: 775px;
+  height: 462px;
+  margin-bottom: 300px;
 }
-
-#imageHome {
-  position: absolute;
-  width: 45px;
+#divContenedor{
+  position:absolute;
+  margin-left: 370px;
+  width: 668px;
+  height: 300px;
+  margin-top: 90px;
+  background-color: #D9D9D9;
+}
+#input{
+  position:absolute;
+  width: 540px;
+  height: 25px;
+  margin-top: 45px;
+  margin-left:20px;
+}
+#divMensaje{
+  position:absolute;
+  margin-top: 220px;
+}
+#btnChat{
+  position:absolute;
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-left: 568px;
+  margin-top: 45px;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#divTituloGrupal{
+  display: flex;
+  position:absolute;
+  position: relative;
+  width: 668px;
   height: 50px;
-  top: 3px;
-  right: 119px;
-  bottom: 50px;
-  cursor: pointer;
+  background-color: #FFA400;
+  margin-top: 40px;
+  margin-left: 370px;
+  align-items: center;
+  justify-content: center;
+}
+#parrafoTituloGrupal{
+ color: #000000;
+ font-weight: bold;
+ font-size: 20px;
+  
+}
+#divVacio{
+  height: 50px;
+}
+/* LISTA DE CONECTADOS*/
+#divUsuariosConectados{
+  display: flex;
+  display: grid;
+  overflow: auto;
+  border-color: #FFFFFF;
+  width: 250px;
+  height: 395px;
+  background-color: #D9D9D9;
+  margin-top: -50px;
+  margin-left: 70px;
+}
+#imagenConectados{
+  margin-left: 20px;
+  width: 50px;
+  height: 65px;
+  border-radius: 75px 50px 60px 60px;
+}
+#divEstadoOnline{
+  position: relative;
+  margin-top: -50px;
+  display: flex;
+  justify-content: left;
+  margin-left: 95px;
+
+}
+#parrafoNombrePersonaje{
+  position:absolute;
+  display: flex;
+  color: #000000;
+  font-family: "Cinzel", serif;
+  margin-top: 10px;
+  font-weight: bold;
+
+}
+#parrafoOnline{
+  position:absolute;
+  display: flex;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 30px;
+  font-size: 13px;
+  
+}
+#divPuntoVerde{
+ 
+  background-color: rgb(3, 192, 3);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin-top: -25px;
+  margin-left: 78px;
+}
+#divNumeroUsuarios{
+  display: flex;
+  width: 250px;
+  height: 50px;
+  background-color: #FFA400;
+  margin-top: -445px;
+  margin-left: 70px;
+  align-items: center;
+  justify-content: center;
+}
+#parrafoNumeroUsuarios{
+  color: #000000;
+  font-weight: bold;
 }
 
+  #imageHome {
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    top: 497px;
+    right: 119px;
+    cursor: pointer;
+  }
+  #btnHome {
+    position: fixed;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #FFA400;
+    top: 500px;
+    right: 105px;
+    bottom: 30px;
+    cursor: pointer;
+    
+  }

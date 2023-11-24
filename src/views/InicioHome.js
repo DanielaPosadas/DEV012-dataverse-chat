@@ -70,6 +70,11 @@ import { navigateTo } from '../router.js'
             dlDescriptiva.appendChild(dDescriptiva4);
             dDescriptiva4.setAttribute("itemprop", "kingdom");
             dDescriptiva4.textContent = item.facts.kingdom;
+           
+            /*const personajeId= item.id; 
+            const urlParams = new URLSearchParams({
+                id: personajeId,
+              });*/
             ilista.addEventListener("click", function(){
                 navigateTo("/description", item);
                 //console.log(item.name);
@@ -118,6 +123,13 @@ import { navigateTo } from '../router.js'
     btnChatGrupal.textContent = "Chatea con todos"
     div_home.appendChild(btnChatGrupal);
 
+    btnChatGrupal.addEventListener("click", chatGrupal);
+
+    function chatGrupal(){
+       navigateTo("/panel"); 
+    }
+
+    
     //METER FOOTER AL ROOT
     div_home.appendChild(footer());
 
