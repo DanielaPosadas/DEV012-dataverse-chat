@@ -12,7 +12,7 @@ imageHome.src = 'https://cdn-icons-png.flaticon.com/512/1946/1946436.png';
 divBtnHome.appendChild(btn);
 divBtnHome.appendChild(imageHome);
 
-imageHome.addEventListener('click', VolverInicio);
+divBtnHome.addEventListener('click', VolverInicio);
 
 function VolverInicio () {
         navigateTo("/");

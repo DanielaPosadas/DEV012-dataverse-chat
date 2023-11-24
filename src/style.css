@@ -246,6 +246,10 @@ footer {
 }
 #divTitulo{
   position:absolute;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 668px;
   height: 50px;
   background-color: #FFA400;
@@ -253,9 +257,9 @@ footer {
   margin-left: 370px;
 }
 #parrafoTitulo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 #btnChatPersonaje {
@@ -596,5 +600,101 @@ footer {
     right: 105px;
     bottom: 30px;
     cursor: pointer;
-    
   }
+
+  /* VISTA DE API KEY*/
+
+  #divApikey {
+    position: relative;
+  }
+
+  #imgFondoApikey {
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 315px;
+    width: 800px;
+    height: 400px;
+  }
+
+  #divInput {
+    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left: -580px;
+  }
+
+  #inputApikey {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 210px;
+    margin-left: 565px;
+    width: 350px;
+    height: 40px;
+  }
+
+  #divBotones {
+    position: absolute;
+    display: flex;
+    margin-top: 265px;
+    margin-left: 538px;
+    width: 300px;
+  }
+
+  #btnApikeyEnviar{
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    background-color: #FFA400;
+    border-radius: 9px;
+  }
+
+  #btnApikeyLimpiar {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    background-color: #FFA400;
+    border-radius: 9px;
+  }
+
+  #parrafoApikey {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    margin-left: 561px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #divBtnConfigApikey {
+  display: flex;
+  align-items: center;
+  }
+  
+  #imageConfigApikey {
+    position: fixed;
+    width: 45px;
+    height: 60px;
+    top: 585px;
+    bottom: 53px;
+    left: 85px;
+    cursor: pointer;
+  }
+
+  #btnConfigApikey {
+    position: fixed;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #FFA400;
+    bottom: 30px;
+    left: 40px;
+    cursor: pointer;
+  }
+
+  

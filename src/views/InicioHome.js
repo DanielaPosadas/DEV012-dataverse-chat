@@ -22,7 +22,6 @@ import { navigateTo } from '../router.js'
 
     const contenedorTarjetasdiv = document.createElement('div');
     div_home.appendChild(contenedorTarjetasdiv);
-   // div_home.setAttribute('id', 'viewHome');
     
     //RENDERIZAR LAS TARJETAS
     const renderItems = (data_personajes) => {
@@ -129,7 +128,25 @@ import { navigateTo } from '../router.js'
        navigateTo("/panel"); 
     }
 
+    //BOTÓN DE CONFIGURACION APIKEY
+    const divBtnConfigApikey = document.createElement('div');
+    divBtnConfigApikey.setAttribute('id', 'divBtnConfigApikey');
+    const btnConfigApikey = document.createElement('button');
+    btnConfigApikey.setAttribute('id', 'btnConfigApikey');
+    const imageConfigApikey = document.createElement('img');
+    imageConfigApikey.setAttribute('id', 'imageConfigApikey');
+    imageConfigApikey.src = 'https://cdn.icon-icons.com/icons2/1369/PNG/512/-settings_90618.png';
+    divBtnConfigApikey.appendChild(btnConfigApikey);
+    divBtnConfigApikey.appendChild(imageConfigApikey);
     
+    divBtnConfigApikey.addEventListener('click', configApikey);
+
+    function configApikey(){
+        navigateTo("/apikey"); 
+     }
+
+    //METER BOTON CONFIGURACION APIKEY AL ROOT
+    div_home.appendChild(divBtnConfigApikey);
     //METER FOOTER AL ROOT
     div_home.appendChild(footer());
 

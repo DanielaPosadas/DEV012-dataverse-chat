@@ -83,13 +83,10 @@ export const description = (props) => {
     parrafoReino.textContent = "Reino: " + props.facts.kingdom;
     div_reino.appendChild(parrafoReino);
 
-    /* //CREACIÓN DE BOTÓN PARA CHAT PERSONAJE
-     const btnChatPersonaje = document.createElement('button');
-     btnChatPersonaje.setAttribute('id', 'btnChatPersonaje');
-     btnChatPersonaje.textContent = 'Chatea con ' + props.name;*/
     //CREACION DIV TIULO CHAT
     const divTitulo = document.createElement('div');
     divTitulo.setAttribute('id', 'divTitulo');
+    
     //CREACION DE PARRAFO CHAT
     const parrafo = document.createElement('p');
     parrafo.setAttribute('id', 'parrafoTitulo');
@@ -103,12 +100,10 @@ export const description = (props) => {
     div_description.appendChild(div_descriptionDetalle);
     div_description.appendChild(div_letalidad);
     div_description.appendChild(div_reino);
-    //div_description.appendChild(btnChatPersonaje);
     div_description.appendChild(btnHome());
     div_description.appendChild(chat());
     div_description.appendChild(divTitulo);
 
-    //div_description.appendChild(renderImages(data_personajes));
 
     return (div_description);
 
