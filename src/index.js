@@ -19,15 +19,16 @@ TODO:
 */
 
 import inicio_home from './views/InicioHome.js'
-import { setRootElement, setRoutes, onURLChange } from './router.js';
+import { setRootElement, setRoutes, onURLChange} from './router.js';
 import { NotFound } from './views/NotFound.js';
 import { description } from './views/Description.js';
+import { chatView } from './views/Chat.js';
 
 const routes = {
     "/": inicio_home,
     "/NotFound" : NotFound,
     "/description" : description,
-    "/panel" : "algo",
+    "/panel" : chatView,
 
 };
 
@@ -39,4 +40,8 @@ setRootElement(viewContainer);
 document.addEventListener("DOMContentLoaded", (event) => {
     onURLChange(event.target.location.pathname);
   });
+
+window.addEventListener('popstate', () =>{
+    onURLChange(window.location.pathname);
+ });
 
