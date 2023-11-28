@@ -46,4 +46,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 window.addEventListener('popstate', () =>{
     onURLChange(window.location.pathname);
  });
-
+ /*window.addEventListener('', () =>{
+    onURLChange(window.location.search);
+ });*/
