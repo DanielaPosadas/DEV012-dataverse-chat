@@ -1,33 +1,24 @@
-import dataset from "./data/dataset";
+export const componentePeticion = () => {
 
-promptInput.addEventListener("keyup", (event) => {
-    if (event.key === "Enter") {
-      generate();
-    }
-  });
-  generateBtn.addEventListener("click", generate);
-const url = 'https://api.openai.com/chat/completions';
+const URL_API = 'https://api.openai.com/v1/chat/completions';
+const API_KEY = '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';
 
-// Datos de la solicitud (cambia esto según tus necesidades)
-console.log("holaaaaaa");
-export const datosSolicitud = {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'application/json',
-    'Authorization': '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', 
+function generate() {
+  fetch(URL_API, {
+  method: "POST",
+  headers: {'Content-Type': "application/json",
+  Authorization: `Bearer ${API_KEY}`,
   },
   body: JSON.stringify({
-    prompt: "¡Hola, soy" + dataset.name + "!",
-    max_tokens: 50,
     model: "gpt-3.5-turbo",
-    messages: [{ role: "system", content: promptInput.value }],
-  
+    prompt: "Hola, scorpion",
   }),
-};
-
-// Realizar la solicitud Fetch
-fetch(url, datosSolicitud){
-  .then(response => response.json())
-  .then(data => console.log(dataset.name))
-  .catch(error => console.log('error'));
+})
+.then(response => console.log(response.json()))
+.catch(error => console.log(error))
 }
+generate()
+
+}
+
+
