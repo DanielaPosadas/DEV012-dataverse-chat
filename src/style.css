@@ -461,6 +461,7 @@ footer {
   height: 462px;
   margin-bottom: 300px;
 }
+
 #divContenedor{
   position:absolute;
   margin-left: 370px;
@@ -468,36 +469,67 @@ footer {
   height: 300px;
   margin-top: 90px;
   background-color: #D9D9D9;
+  overflow: auto;
 }
 
-#resultText {
+#ulMensajes {
+  list-style: none;
+  overflow-y: auto;
+  padding: 15px;
+  width: 665px;
+}
+
+.liBoot {
+  display: flex;
+  justify-content: flex-start;
+  width: 600px;
+}
+
+.liUser {
+  display:flex;
+  justify-content: flex-end;
+  width: 600px;
+}
+
+.pMensajeBoot{
+  background-color: #0a1416;
+  color: #d9d9d9;
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 10px 10px 10px 0px;
+}
+
+.pMensajeUser {
+  background-color: #0a1416;
+  color: #d9d9d9;
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0px 10px;
+}
+
+#divChatComponente{
   position: absolute;
-  font-family: 'Inter', sans-serif;
-  color: #000000;
-  margin-left: 40px;
-}
-
-#input{
-  position:absolute;
-  width: 540px;
-  height: 25px;
-  margin-top: 45px;
-  margin-left:20px;
-}
-#divMensaje{
-  position:absolute;
   margin-top: 220px;
 }
-#btnChat{
-  position:absolute;
+
+#mensajeTextarea{
+  border: none;
+  resize: none;
+  width: 590px;
+  height: 30px;
+  margin-left:20px;
+}
+
+#SpanEnviar{
   display: flex;
   width: 25px;
   height: 25px;
-  margin-left: 568px;
-  margin-top: 45px;
-  font-size: 20px;
+  margin-left: 615px;
+  margin-top: -30px;
+  font-size: 35px;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 #divTituloGrupal{
   display: flex;

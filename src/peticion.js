@@ -1,24 +1,29 @@
+import { chat } from "./components/Chatcomponente.js";
+
 export const componentePeticion = () => {
 
-const URL_API = 'https://api.openai.com/v1/chat/completions';
-const API_KEY = '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';
+const prueba = chat();
+const textareavalue = document.querySelector('#mensajeTextarea')
 
-function generate() {
-  fetch(URL_API, {
+const URL_API = 'https://api.openai.com/v1/chat/completions';
+const API_KEY = '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';
+
+const peticion = {
   method: "POST",
   headers: {'Content-Type': "application/json",
   Authorization: `Bearer ${API_KEY}`,
   },
   body: JSON.stringify({
     model: "gpt-3.5-turbo",
-    prompt: "Hola, scorpion",
+    messages: [{ role: "system", content: textareavalue.value }]
   }),
-})
-.then(response => console.log(response.json()))
-.catch(error => console.log(error))
 }
-generate()
 
+fetch(URL_API, peticion).then(resp => resp.json()).then(data => {
+console.log(data);
+}).catch((error) => {
+console.log(error)
+})
 }
 
 

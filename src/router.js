@@ -17,25 +17,14 @@ let rootElement = '';
     ROUTES = newRoutesValue
  }
     }
-       // optional Throw errors if routes doesn't define an /error route
-    // assign ROUTES
   }
-/*export const queryStringToObject = (queryString)  =>{
-  const queryString= item.id; 
-  const urlParams = new URLSearchParams({
-      id: queryString,
-     });
- }*/
-  
-   
   const renderView = (pathname, props = {}) => {
     // clear the root element
     const root = rootElement;
     root.innerHTML = '';
     const urlParams = new URLSearchParams(window.location.search);
     const id= urlParams.get('id')|| "";
-    // find the correct view in ROUTES for the pathname
-    //console.log(ROUTES[pathname]);
+
     if(ROUTES[pathname]){
         const template = ROUTES[pathname]({...props, id});
         root.appendChild(template);
@@ -43,22 +32,15 @@ let rootElement = '';
     } else {
         root.appendChild(ROUTES['/NotFound'](props));
     }
-    //console.log(template);
-    // in case not found render the error view
-    // render the correct view passing the value of props
-    // add the view element to the DOM root element
   } 
   
   export const navigateTo = (pathname, props={}) => {
     // update window history with pushState
     let URLvisited= window.location.origin + pathname;
-    console.log(props);
     if(props.id){
       URLvisited += `?id=${props.id}`;
-      console.log(URLvisited);
     }
     history.pushState({}, "", URLvisited);
-    // render the view with the pathname and props
     renderView(pathname, {...props});
   }
   
