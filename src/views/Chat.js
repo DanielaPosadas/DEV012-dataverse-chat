@@ -1,6 +1,6 @@
+
 import { chat } from "../components/Chatcomponente.js";
 import { btnHome } from "../components/btnHome.js";
-import { footer } from "../components/footer.js";
 import { header } from "../components/header.js";
 import dataset from "../data/dataset.js";
 

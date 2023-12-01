@@ -1,5 +1,9 @@
+import { chat } from "../components/Chatcomponente.js";
 import { btnHome } from "../components/btnHome.js";
 import { header } from "../components/header.js";
+import { navigateTo } from "../router.js";
+
+
 
 export const apikey = () => {
     //DIV CONTENEDOR
@@ -19,13 +23,13 @@ export const apikey = () => {
     //DIV INPUT Y BOTONES
     const divInput = document.createElement('div');
     divInput.setAttribute('id', 'divInput');
-    
+
     //DIV BOTONES
     const divBotones = document.createElement('div');
     divBotones.setAttribute('id', 'divBotones');
-    
+
     //INPUT PARA INGRESAR API
-    const inputApikey = document.createElement('input');
+    const inputApikey = document.createElement('textarea');
     inputApikey.setAttribute('id', 'inputApikey');
     inputApikey.setAttribute('placeholder', 'Escribe aquí...');
 
@@ -38,16 +42,45 @@ export const apikey = () => {
     btnApikeyLimpiar.textContent = "Limpiar";
     divBotones.appendChild(btnApikeyEnviar);
     divBotones.appendChild(btnApikeyLimpiar);
-    
+
     divInput.appendChild(inputApikey);
     divInput.appendChild(divBotones);
     divInput.appendChild(parrafoApikey)
-    
+
 
     divApikey.appendChild(header());
     divApikey.appendChild(btnHome());
     divApikey.appendChild(imgFondoApikey);
     divApikey.appendChild(divInput);
-    
+
     return divApikey;
 };
+export const valorInput = () => {
+    const divContenedorInvisible = document.createElement('div');
+    divContenedorInvisible.setAttribute('id', 'divInvisible');
+    divContenedorInvisible.appendChild(apikey());
+    const input = divContenedorInvisible.querySelector('#inputApikey');
+    input.addEventListener('input', guardarValor);
+
+    function guardarValor() {
+        const claveInput = input.value.trim();
+        localStorage.setItem('apikey', claveInput);
+        console.log(localStorage);
+    }
+    const btnApiEnviar = divContenedorInvisible.querySelector('#btnApikeyEnviar');
+    btnApiEnviar.addEventListener('click', enviar);
+    function enviar() {
+        const claveInput = input.value.trim();
+        if (claveInput === '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') {
+            navigateTo('/');
+        } else {
+            alert('Clave inválida');
+        }
+    }
+    const btnLApiLimpiar = divContenedorInvisible.querySelector('#btnApikeyLimpiar');
+    btnLApiLimpiar.addEventListener('click', limpiar);
+    function limpiar() {
+        localStorage.clear('apikey');
+    }
+    return divContenedorInvisible;
+}

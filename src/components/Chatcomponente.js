@@ -1,10 +1,12 @@
-import { componentePeticion } from "../peticion.js";
+//import { componentePeticion } from "../peticion.js";
 import dataset from "../data/dataset.js";
+//import { apikey } from "../views/apikey.js";
 
 export const chat = () => {
     
 const divContenedor = document.createElement('div');
 divContenedor.setAttribute('id', 'divContenedor');
+
 
 //AGREGAR UL AL DIV GENERAL
 const ulMensajes = document.createElement('ul');
@@ -16,21 +18,10 @@ const liBoot = document.createElement('li');
 liBoot.classList.add('chat', 'liBoot');
 ulMensajes.appendChild(liBoot);
 
-
-//const liUser = document.createElement('li');
-//liUser.setAttribute('id', 'liUser');
-
-
-//liUser.appendChild(pMensajeUser);
-
-//ulMensajes.appendChild(liUser);
-
 //AGREGAR UN TEXTAREA A DIV PARA INGRESAR MENSAJES
 const div = document.createElement('div');
 div.setAttribute('id', 'divChatComponente');
 div.setAttribute('class', 'chatTexto');
-
-
 const mensajeTextarea = document.createElement('textarea');
 mensajeTextarea.setAttribute('id', 'mensajeTextarea');
 mensajeTextarea.setAttribute('placeholder', 'Escribe tu mensaje...');
@@ -45,16 +36,11 @@ div.appendChild(SpanEnviar);
 divContenedor.appendChild(div);
 
 //PETICION API OPEN AI
-
 const btnEnviarSpan = div.querySelector('#SpanEnviar');
 const textarea = div.querySelector('#mensajeTextarea');
 const ulMessage = divContenedor.querySelector('#ulMensajes');
 
-
-btnEnviarSpan.addEventListener('click', inputTextarea);
-
 let userMessage;
-
 const createChat = (message, className) => {
 const chatLi = document.createElement('li');
 chatLi.classList.add('chat', className);
@@ -73,15 +59,16 @@ if (className === 'liUser'){
     chatLi.appendChild(pMensajeUser);
 } else {chatLi.appendChild(pMensajeBoot)}
 
-
 return chatLi;
 }
 
+//CARGAR EL DIV QUE CONTIENE TODA LA VISTA
+const API_KEY_VISIBLE = localStorage.getItem('apiKey');
+
+//CONFIGURAR LA APIKEY A LA OPENAI
 const generateAPI = (mensajeChatboot) => {
-    //let mensaje = userMessage;
-    //componentePeticion(mensaje)
     const URL_API = 'https://api.openai.com/v1/chat/completions';
-    const API_KEY = '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';
+    let API_KEY = API_KEY_VISIBLE;
     const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
 
 const peticion = {
@@ -101,7 +88,8 @@ fetch(URL_API, peticion).then(resp => resp.json()).then(data => {
 })
 }
 
-
+//AGREGA EVENTO AL BOTON ENVIAR DE CADA CHAT
+btnEnviarSpan.addEventListener('click', inputTextarea);
 function inputTextarea(){
     userMessage = textarea.value.trim();
     if(!userMessage) return;
@@ -112,10 +100,14 @@ function inputTextarea(){
         const mensajeChatboot = createChat('Thinking...', 'liBoot')
         ulMessage.appendChild(mensajeChatboot);
         generateAPI(mensajeChatboot)
-    }, 600);
-
-    
+    }, 600); 
 }
-
+divContenedor.addEventListener("DOMContentLoaded", prueba );
+//CAMBIAR EL VALOR DE LA APIKEY SI ES NULL
+function prueba(){
+if(API_KEY_VISIBLE === null){
+localStorage.setItem('apiKey', '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');
+}};
+console.log(API_KEY_VISIBLE);
     return divContenedor;
 }
