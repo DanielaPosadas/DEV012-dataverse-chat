@@ -23,14 +23,14 @@ import { setRootElement, setRoutes, onURLChange} from './router.js';
 import { NotFound } from './views/NotFound.js';
 import { description } from './views/Description.js';
 import { chatView } from './views/Chat.js';
-import { apikey } from './views/apikey.js';
+import { valorInput} from './views/apikey.js';
 
 const routes = {
     "/": inicio_home,
     "/NotFound" : NotFound,
     "/description" : description,
     "/panel" : chatView,
-    "/apikey": apikey,
+    "/apikey": valorInput,
 
 };
 
