@@ -54,7 +54,6 @@ const pMensajeBoot = document.createElement('p');
 pMensajeBoot.setAttribute('class', 'pMensajeBoot');
 pMensajeBoot.textContent = message;
 
-
 if (className === 'liUser'){
     chatLi.appendChild(pMensajeUser);
 } else {chatLi.appendChild(pMensajeBoot)}
@@ -63,14 +62,15 @@ return chatLi;
 }
 
 //CARGAR EL DIV QUE CONTIENE TODA LA VISTA
-const API_KEY_VISIBLE = localStorage.getItem('apiKey');
+//const API_KEY_VISIBLE = localStorage.getItem('apiKey');
 
 //CONFIGURAR LA APIKEY A LA OPENAI
 const generateAPI = (mensajeChatboot) => {
     const URL_API = 'https://api.openai.com/v1/chat/completions';
-    let API_KEY = API_KEY_VISIBLE;
+    const API_KEY = localStorage.getItem('apikey');
     const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
 
+    console.log(API_KEY);
 const peticion = {
   method: "POST",
   headers: {'Content-Type': "application/json",
@@ -102,12 +102,14 @@ function inputTextarea(){
         generateAPI(mensajeChatboot)
     }, 600); 
 }
-divContenedor.addEventListener("DOMContentLoaded", prueba );
+
 //CAMBIAR EL VALOR DE LA APIKEY SI ES NULL
+/*divContenedor.addEventListener("DOMContentLoaded", prueba );
 function prueba(){
 if(API_KEY_VISIBLE === null){
 localStorage.setItem('apiKey', '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');
 }};
-console.log(API_KEY_VISIBLE);
+console.log(API_KEY_VISIBLE);*/
+
     return divContenedor;
 }

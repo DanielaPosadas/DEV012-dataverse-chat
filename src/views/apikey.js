@@ -71,7 +71,7 @@ export const valorInput = () => {
     btnApiEnviar.addEventListener('click', enviar);
     function enviar() {
         const claveInput = input.value.trim();
-        if (claveInput === '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') {
+        if (claveInput === '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') {
             navigateTo('/');
         } else {
             alert('Clave inválida');
