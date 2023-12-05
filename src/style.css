@@ -740,4 +740,118 @@ footer {
 #parrafo{
   color: #000000;
 }
+/* RESPONSIVE DESIGN CON MEDIA QUERY*/
+@media (min-width: 280px) and (max-width: 350px) {
+  #header2 {
+    height: 150px;
+    width: 135px;
+    margin-top: 0;
+  }
   
+  nav {
+    position: relative;
+    display: flex;
+    background-color: #303030;
+    padding-top: 25px;
+    height: 80px;
+    justify-content: center;
+
+  }
+ #inputHamburguesa{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0%;
+
+ }
+ .mostrar{
+  position: absolute;
+  margin-top: -7px;
+  margin-left: 0px;
+  font-size: 50px;
+  
+ }
+  #header {
+    display: none;
+    align-items: center;
+    margin-top: 20px;
+    width: 630px;
+    height: 130px;
+  }
+  #filtros {
+    display: grid;
+    background-color: #303030;
+    padding-top: 40px;
+    padding-left: 25px;
+    height: 350px;
+    width: 230px;
+  }
+  label {
+    display: flex;
+    font-family: "Balthazar", serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  button {
+    display: flex;
+    font-family: "Balthazar", serif;
+    font-size: 23px;
+    font-weight: bold;
+    padding: 6px 35px 6px 35px;
+    border-radius: 3px solid #D9D9D9;
+    margin-top: 25px;
+    margin-left: 23px;
+  }
+  .lista {
+    display: flex;
+    font-family: "Cinzel", serif;
+    color: #FFFFFF;
+    width: 280px;
+    height: 480px;
+    background-image: url(https://github.com/DanielaPosadas/DEV012-dataverse/blob/main/tarjetas%20MK-1.jpg?raw=true);
+  }
+  img {
+    margin-top: 10px;
+    padding-top: 20px;
+    height: 280px;
+    width: 200px;
+    justify-content: center;
+  }
+  footer {
+    margin-top: 30px;
+    text-align: center;
+  }
+  #filtros{
+    display: none;
+  }
+  #inputHamburguesa:checked ~ #filtros {
+    display: block;
+  }
+  #inputHamburguesa:checked ~ .mostrar {
+    display: none;
+  }
+  #conteo-personajes_genero{
+    display: none;
+  }
+  #divBtnGrupalResponsive{
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+  }
+  #btnChatGrupal{
+    display: flex;
+    justify-content: flex-end;
+   border-radius: 55%;
+    width: 65px;
+    height: 65px;
+    ma
+  }
+  #imagebtnGrupalResponsive{
+   
+    width: 20px;
+height: 20px;
+  }
+
+}

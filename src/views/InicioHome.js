@@ -6,6 +6,7 @@ import { filtros_acumulables } from '../lib/dataFunctions.js'
 import { p_estadisticas, p_estadisticas_genero } from '../components/estadisticas.js'
 import { navigateTo } from '../router.js'
 
+
  const inicio_home = () => {
 
     const data_personajes = dataset;
@@ -117,12 +118,18 @@ import { navigateTo } from '../router.js'
     }
 
     //BOTÓN DE CHAT GRUPAL
+    const divBtnGrupalResponsive = document.createElement('div');
+    divBtnGrupalResponsive.setAttribute('id', 'divBtnGrupalResponsive');
+    const imagebtnGrupalResponsive = document.createElement('img');
+    imagebtnGrupalResponsive.setAttribute('id', 'imagebtnGrupalResponsive');
+    imagebtnGrupalResponsive.src = 'https://cdn-icons-png.flaticon.com/512/59/59045.png';
     const btnChatGrupal = document.createElement('button');
     btnChatGrupal.setAttribute('id', 'btnChatGrupal');
-    btnChatGrupal.textContent = "Chatea con todos"
-    div_home.appendChild(btnChatGrupal);
+    divBtnGrupalResponsive.appendChild(btnChatGrupal);
+    divBtnGrupalResponsive.appendChild(imagebtnGrupalResponsive);
+    div_home.appendChild(divBtnGrupalResponsive);
 
-    btnChatGrupal.addEventListener("click", chatGrupal);
+    divBtnGrupalResponsive.addEventListener("click", chatGrupal);
 
     function chatGrupal(){
        navigateTo("/panel"); 

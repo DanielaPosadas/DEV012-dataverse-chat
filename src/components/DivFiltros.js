@@ -1,5 +1,15 @@
+
 export const div_filtros = () => {
-    
+
+  const navMenu = document.createElement('nav');
+  navMenu.setAttribute('id', "navMenu");
+  const inputHamburguesa = document.createElement('input');
+  inputHamburguesa.setAttribute('type', 'checkbox')
+  inputHamburguesa.setAttribute('id', 'inputHamburguesa'); 
+  const label = document.createElement('label');
+  label.setAttribute('for', 'check');
+  label.setAttribute('class', 'mostrar');
+  label.innerHTML= '&#8801';
   const div = document.createElement('div');
   div.setAttribute('id', "filtros");
 
@@ -29,6 +39,11 @@ export const div_filtros = () => {
   <option value="Hombre">Hombre-Mujer</option>
 </select>
 <button data-testid="button-clear">Limpiar</button>`;
-  
-  return div;
+
+
+navMenu.appendChild(label);
+navMenu.appendChild(inputHamburguesa);
+navMenu.appendChild(div);
+
+  return navMenu;
 };
