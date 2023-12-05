@@ -17,6 +17,7 @@
     imagen2.setAttribute('src', "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/logo-MK-icono.png")
 
     header.appendChild(imagen1);
+    header.appendChild(imagen2);
     
     return header;
     };
