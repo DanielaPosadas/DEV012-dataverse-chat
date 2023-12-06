@@ -70,13 +70,9 @@ export const valorInput = () => {
     const btnApiEnviar = divContenedorInvisible.querySelector('#btnApikeyEnviar');
     btnApiEnviar.addEventListener('click', enviar);
     function enviar() {
-        const claveInput = input.value.trim();
-        if (claveInput === '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') {
-            navigateTo('/');
-        } else {
-            alert('Clave inválida');
-        }
+        navigateTo('/');
     }
+
     const btnLApiLimpiar = divContenedorInvisible.querySelector('#btnApikeyLimpiar');
     btnLApiLimpiar.addEventListener('click', limpiar);
     function limpiar() {

@@ -46,7 +46,7 @@ export const description = (props) => {
     //CREACION PARRAFO HABILIDADES
     const parrafoHabilidades = document.createElement('p');
     parrafoHabilidades.setAttribute('id', 'skills');
-    parrafoHabilidades.textContent = "Habilidades: " + props.shortDescription;
+    parrafoHabilidades.textContent = "Habilidades: " + props.facts.skills;
     div_descriptionDetalle.appendChild(parrafoHabilidades);
 
     //CREACION PARRAFO ARMAS
@@ -88,7 +88,7 @@ export const description = (props) => {
     //CREACION DIV TIULO CHAT
     const divTitulo = document.createElement('div');
     divTitulo.setAttribute('id', 'divTitulo');
-    
+
     //CREACION DE PARRAFO CHAT
     const parrafo = document.createElement('p');
     parrafo.setAttribute('id', 'parrafoTitulo');
@@ -103,7 +103,7 @@ export const description = (props) => {
     div_description.appendChild(div_letalidad);
     div_description.appendChild(div_reino);
     div_description.appendChild(btnHome());
-    div_description.appendChild(chat());
+    div_description.appendChild(chat(props));
     div_description.appendChild(divTitulo);
 
 

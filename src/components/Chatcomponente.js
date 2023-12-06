@@ -2,7 +2,7 @@
 import dataset from "../data/dataset.js";
 //import { apikey } from "../views/apikey.js";
 
-export const chat = () => {
+export const chat = (props) => {
     
 const divContenedor = document.createElement('div');
 divContenedor.setAttribute('id', 'divContenedor');
@@ -61,29 +61,37 @@ if (className === 'liUser'){
 return chatLi;
 }
 
-//CARGAR EL DIV QUE CONTIENE TODA LA VISTA
-//const API_KEY_VISIBLE = localStorage.getItem('apiKey');
-
 //CONFIGURAR LA APIKEY A LA OPENAI
-const generateAPI = (mensajeChatboot) => {
+
+const generateAPI = (mensajeChatboot, props) => {
     const URL_API = 'https://api.openai.com/v1/chat/completions';
     const API_KEY = localStorage.getItem('apikey');
     const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
-
+    
     console.log(API_KEY);
 const peticion = {
   method: "POST",
   headers: {'Content-Type': "application/json",
   Authorization: `Bearer ${API_KEY}`,
   },
-  body: JSON.stringify({
+  body: JSON.stringify(
+    {
     model: "gpt-3.5-turbo",
-    messages: [{ role: "system", content: userMessage }]
-  }),
-}
+    messages: [{ role: "system", content: `Ahora eres ${props.name}`},
+    { role: "user", content: userMessage }
+],
+    temperature: 0.2
+  }
+  ),
+  usage: {
+    prompt_tokens: 10,
+    completion_tokens: 7,
+    total_tokens: 15,
+}}
 fetch(URL_API, peticion).then(resp => resp.json()).then(data => {
     mensajeElemento.textContent = data.choices[0].message.content
-}).catch((error) => {
+})
+.catch((error) => {
     mensajeElemento.textContent = 'Ups! Algo malo ocurrió. Por favor intenta de nuevo.'
 })
 }
@@ -97,19 +105,10 @@ function inputTextarea(){
     ulMessage.appendChild(createChat(userMessage, 'liUser'));
 
     setTimeout(() => {
-        const mensajeChatboot = createChat('Thinking...', 'liBoot')
+        const mensajeChatboot = createChat('Escribiendo...', 'liBoot')
         ulMessage.appendChild(mensajeChatboot);
-        generateAPI(mensajeChatboot)
+        generateAPI(mensajeChatboot, props)
     }, 600); 
 }
-
-//CAMBIAR EL VALOR DE LA APIKEY SI ES NULL
-/*divContenedor.addEventListener("DOMContentLoaded", prueba );
-function prueba(){
-if(API_KEY_VISIBLE === null){
-localStorage.setItem('apiKey', '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');
-}};
-console.log(API_KEY_VISIBLE);*/
-
     return divContenedor;
 }

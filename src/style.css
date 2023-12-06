@@ -147,15 +147,36 @@ dd {
   margin-top: 2px;
 }
 
-#btnChatGrupal {
+#divBtnGrupalResponsive {
+  position: relative;
   position: fixed;
-  font-family: 'Inter', sans-serif;
-  font-size: 17px;
+  display: flex;
+  justify-content: flex-end;
+  right: 69px;
+  bottom: 30px;
+  width: 230px;
+}
+
+#imagebtnGrupalResponsive{
+  display: none;
+}
+#parrafoGrupalResponsive {
+position: absolute;
+color: #000;
+font-family: 'Inter', sans-serif;
+font-size: 17px;
+right: 43px;
+bottom: 25px;
+font-weight: bold;
+}
+
+#btnChatGrupal {
+  position: absolute;
+  justify-content: flex-end;
   width: 230px;
   height: 50px;
   background: #FFA400;
   border-radius: 9px;
-  right: 69px;
   bottom: 30px;
   cursor: pointer;
 }
@@ -740,6 +761,7 @@ footer {
 #parrafo{
   color: #000000;
 }
+
 /* RESPONSIVE DESIGN CON MEDIA QUERY*/
 @media (min-width: 280px) and (max-width: 350px) {
   #header2 {
@@ -764,11 +786,10 @@ footer {
   opacity: 0%;
 
  }
- .mostrar{
+ #checkHamburger{
   position: absolute;
-  margin-top: -7px;
-  margin-left: 0px;
-  font-size: 50px;
+  color: #FFFFFF;
+  font-size: 30px;
   
  }
   #header {
@@ -829,29 +850,40 @@ footer {
   #inputHamburguesa:checked ~ #filtros {
     display: block;
   }
-  #inputHamburguesa:checked ~ .mostrar {
+  #inputHamburguesa:checked ~ #checkHamburger {
     display: none;
   }
   #conteo-personajes_genero{
     display: none;
   }
   #divBtnGrupalResponsive{
-    margin-left: 100px;
+    display: flex;
+    justify-content: flex-end;
     width: 100px;
     height: 100px;
   }
   #btnChatGrupal{
     display: flex;
     justify-content: flex-end;
-   border-radius: 55%;
+    border-radius: 50%;
+    right: 3px;
     width: 65px;
     height: 65px;
-    ma
   }
+
+  #parrafoGrupalResponsive {
+    display: none;
+  }
+
   #imagebtnGrupalResponsive{
-   
-    width: 20px;
-height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    margin-top: 50px;
+    margin-left: 20px;
+    bottom: 150px;
+    width: 100px;
+    height: 100px;
   }
 
 }

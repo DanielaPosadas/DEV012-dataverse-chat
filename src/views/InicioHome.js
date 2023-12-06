@@ -125,8 +125,12 @@ import { navigateTo } from '../router.js'
     imagebtnGrupalResponsive.src = 'https://cdn-icons-png.flaticon.com/512/59/59045.png';
     const btnChatGrupal = document.createElement('button');
     btnChatGrupal.setAttribute('id', 'btnChatGrupal');
-    divBtnGrupalResponsive.appendChild(btnChatGrupal);
+    const parrafoGrupalResponsive = document.createElement('p');
+    parrafoGrupalResponsive.setAttribute('id', 'parrafoGrupalResponsive');
+    parrafoGrupalResponsive.textContent = "Chatea con todos";
     divBtnGrupalResponsive.appendChild(imagebtnGrupalResponsive);
+    divBtnGrupalResponsive.appendChild(btnChatGrupal);
+    divBtnGrupalResponsive.appendChild(parrafoGrupalResponsive);
     div_home.appendChild(divBtnGrupalResponsive);
 
     divBtnGrupalResponsive.addEventListener("click", chatGrupal);

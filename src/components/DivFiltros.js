@@ -6,10 +6,9 @@ export const div_filtros = () => {
   const inputHamburguesa = document.createElement('input');
   inputHamburguesa.setAttribute('type', 'checkbox')
   inputHamburguesa.setAttribute('id', 'inputHamburguesa'); 
-  const label = document.createElement('label');
-  label.setAttribute('for', 'check');
-  label.setAttribute('class', 'mostrar');
-  label.innerHTML= '&#8801';
+  const label = document.createElement('i');
+  label.setAttribute('id', 'checkHamburger');
+  label.setAttribute('class', 'fi fi-br-menu-burger');
   const div = document.createElement('div');
   div.setAttribute('id', "filtros");
 

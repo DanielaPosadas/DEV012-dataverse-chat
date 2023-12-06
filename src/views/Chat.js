@@ -5,7 +5,7 @@ import { header } from "../components/header.js";
 import dataset from "../data/dataset.js";
 
 
-export const chatView = () => {
+export const chatView = (props) => {
     const div = document.createElement('div')
     div.setAttribute('id', 'divChat');
     const img_chatFondo = document.createElement('img');
@@ -66,7 +66,7 @@ export const chatView = () => {
     div.appendChild(btnHome());
     div.appendChild(img_chatFondo);
     div.appendChild(divVacio);
-    div.appendChild(chat());
+    div.appendChild(chat(props));
     div.appendChild(divTituloGrupal);
     div.appendChild(divUsuariosConectados);
     div.appendChild(divNumeroUsuarios);
