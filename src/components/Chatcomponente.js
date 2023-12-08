@@ -68,6 +68,7 @@ export const chat = (props) => {
         const API_KEY = localStorage.getItem('apikey');
         const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
         const nombres = props.name;
+        console.log(nombres);
         console.log(API_KEY);
         const chatIndividual = [
             { role: "system", content: `Finge que eres ${props.name}` },
