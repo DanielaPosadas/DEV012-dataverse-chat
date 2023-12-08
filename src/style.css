@@ -21,6 +21,10 @@ header {
   padding-bottom: 10px;
 }
 
+#divHome {
+  position: relative;
+}
+
 #header {
   margin-top: 5px;
   width: 780px;
@@ -151,23 +155,24 @@ dd {
   position: relative;
   position: fixed;
   display: flex;
-  justify-content: flex-end;
   right: 69px;
   bottom: 30px;
   width: 230px;
+  height: 100px;
 }
 
-#imagebtnGrupalResponsive{
+#imagebtnGrupalResponsive {
   display: none;
 }
+
 #parrafoGrupalResponsive {
-position: absolute;
-color: #000;
-font-family: 'Inter', sans-serif;
-font-size: 17px;
-right: 43px;
-bottom: 25px;
-font-weight: bold;
+  position: absolute;
+  color: #000;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  right: 43px;
+  bottom: 25px;
+  font-weight: bold;
 }
 
 #btnChatGrupal {
@@ -265,8 +270,9 @@ footer {
 #div_description {
   position: relative;
 }
-#divTitulo{
-  position:absolute;
+
+#divTitulo {
+  position: absolute;
   display: flex;
   display: flex;
   align-items: center;
@@ -277,7 +283,8 @@ footer {
   margin-top: 40px;
   margin-left: 370px;
 }
-#parrafoTitulo{
+
+#parrafoTitulo {
   color: #000000;
   font-weight: bold;
   font-size: 20px;
@@ -432,6 +439,7 @@ footer {
   width: 25px;
   height: 40px;
 }
+
 #divReino {
   position: absolute;
   position: relative;
@@ -471,11 +479,12 @@ footer {
 }
 
 /*VISTA CHAT*/
-#divChat{
-  position:relative;
+#divChat {
+  position: relative;
 }
-#imgchatFondo{
-  position:absolute;
+
+#imgchatFondo {
+  position: absolute;
   margin-left: 320px;
   margin-top: 25px;
   width: 775px;
@@ -483,8 +492,8 @@ footer {
   margin-bottom: 300px;
 }
 
-#divContenedor{
-  position:absolute;
+#divContenedor {
+  position: absolute;
   margin-left: 370px;
   width: 668px;
   height: 300px;
@@ -507,12 +516,12 @@ footer {
 }
 
 .liUser {
-  display:flex;
+  display: flex;
   justify-content: flex-end;
   width: 600px;
 }
 
-.pMensajeBoot{
+.pMensajeBoot {
   background-color: #0a1416;
   color: #d9d9d9;
   max-width: 75%;
@@ -528,20 +537,20 @@ footer {
   border-radius: 10px 10px 0px 10px;
 }
 
-#divChatComponente{
+#divChatComponente {
   position: absolute;
   margin-top: 220px;
 }
 
-#mensajeTextarea{
+#mensajeTextarea {
   border: none;
   resize: none;
   width: 590px;
   height: 30px;
-  margin-left:20px;
+  margin-left: 20px;
 }
 
-#SpanEnviar{
+#SpanEnviar {
   display: flex;
   width: 25px;
   height: 25px;
@@ -552,9 +561,10 @@ footer {
   align-items: center;
   cursor: pointer;
 }
-#divTituloGrupal{
+
+#divTituloGrupal {
   display: flex;
-  position:absolute;
+  position: absolute;
   position: relative;
   width: 668px;
   height: 50px;
@@ -564,18 +574,20 @@ footer {
   align-items: center;
   justify-content: center;
 }
-#parrafoTituloGrupal{
- color: #000000;
- font-weight: bold;
- font-size: 20px;
-  
+
+#parrafoTituloGrupal {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+
 }
-#divVacio{
+
+#divVacio {
   height: 50px;
 }
 
 /* LISTA DE CONECTADOS*/
-#divUsuariosConectados{
+#divUsuariosConectados {
   display: flex;
   display: grid;
   overflow: auto;
@@ -586,13 +598,15 @@ footer {
   margin-top: -50px;
   margin-left: 70px;
 }
-#imagenConectados{
+
+#imagenConectados {
   margin-left: 20px;
   width: 50px;
   height: 65px;
   border-radius: 75px 50px 60px 60px;
 }
-#divEstadoOnline{
+
+#divEstadoOnline {
   position: relative;
   margin-top: -50px;
   display: flex;
@@ -600,8 +614,9 @@ footer {
   margin-left: 95px;
 
 }
-#parrafoNombrePersonaje{
-  position:absolute;
+
+#parrafoNombrePersonaje {
+  position: absolute;
   display: flex;
   color: #000000;
   font-family: "Cinzel", serif;
@@ -609,17 +624,19 @@ footer {
   font-weight: bold;
 
 }
-#parrafoOnline{
-  position:absolute;
+
+#parrafoOnline {
+  position: absolute;
   display: flex;
   color: #000000;
   font-family: 'Inter', sans-serif;
   margin-top: 30px;
   font-size: 13px;
-  
+
 }
-#divPuntoVerde{
- 
+
+#divPuntoVerde {
+
   background-color: rgb(3, 192, 3);
   border-radius: 50%;
   width: 8px;
@@ -627,7 +644,8 @@ footer {
   margin-top: -25px;
   margin-left: 78px;
 }
-#divNumeroUsuarios{
+
+#divNumeroUsuarios {
   display: flex;
   width: 250px;
   height: 50px;
@@ -637,139 +655,143 @@ footer {
   align-items: center;
   justify-content: center;
 }
-#parrafoNumeroUsuarios{
+
+#parrafoNumeroUsuarios {
   color: #000000;
   font-weight: bold;
 }
 
-  #imageHome {
-    position: fixed;
-    width: 45px;
-    height: 50px;
-    top: 497px;
-    right: 119px;
-    cursor: pointer;
-  }
-  #btnHome {
-    position: fixed;
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background: #FFA400;
-    top: 500px;
-    right: 105px;
-    bottom: 30px;
-    cursor: pointer;
-  }
+#imageHome {
+  position: fixed;
+  width: 45px;
+  height: 50px;
+  top: 497px;
+  right: 119px;
+  cursor: pointer;
+}
 
-  /* VISTA DE API KEY*/
+#btnHome {
+  position: fixed;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background: #FFA400;
+  top: 500px;
+  right: 105px;
+  bottom: 30px;
+  cursor: pointer;
+}
 
-  #divApikey {
-    position: relative;
-  }
+/* VISTA DE API KEY*/
 
-  #imgFondoApikey {
-    position: absolute;
-    margin-top: 55px;
-    margin-left: 315px;
-    width: 800px;
-    height: 400px;
-  }
+#divApikey {
+  position: relative;
+}
 
-  #divInput {
-    position: absolute;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-left: -580px;
-  }
+#imgFondoApikey {
+  position: absolute;
+  margin-top: 55px;
+  margin-left: 315px;
+  width: 800px;
+  height: 400px;
+}
 
-  #inputApikey {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 210px;
-    margin-left: 565px;
-    width: 350px;
-    height: 40px;
-  }
+#divInput {
+  position: absolute;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: -580px;
+}
 
-  #divBotones {
-    position: absolute;
-    display: flex;
-    margin-top: 265px;
-    margin-left: 538px;
-    width: 300px;
-  }
+#inputApikey {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 210px;
+  margin-left: 565px;
+  width: 350px;
+  height: 40px;
+}
 
-  #btnApikeyEnviar{
-    display: flex;
-    justify-content: center;
-    width: 120px;
-    background-color: #FFA400;
-    border-radius: 9px;
-  }
+#divBotones {
+  position: absolute;
+  display: flex;
+  margin-top: 265px;
+  margin-left: 538px;
+  width: 300px;
+}
 
-  #btnApikeyLimpiar {
-    display: flex;
-    justify-content: center;
-    width: 120px;
-    background-color: #FFA400;
-    border-radius: 9px;
-  }
+#btnApikeyEnviar {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  background-color: #FFA400;
+  border-radius: 9px;
+}
 
-  #parrafoApikey {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    margin-top: 170px;
-    margin-left: 561px;
-    font-size: 25px;
-    font-weight: bold;
-  }
+#btnApikeyLimpiar {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  background-color: #FFA400;
+  border-radius: 9px;
+}
 
-  #divBtnConfigApikey {
+#parrafoApikey {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
+  margin-left: 561px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#divBtnConfigApikey {
   display: flex;
   align-items: center;
-  }
-  
-  #imageConfigApikey {
-    position: fixed;
-    width: 45px;
-    height: 60px;
-    top: 585px;
-    bottom: 53px;
-    left: 85px;
-    cursor: pointer;
-  }
+}
 
-  #btnConfigApikey {
-    position: fixed;
-    font-family: 'Inter', sans-serif;
-    font-size: 17px;
-    border-radius: 50%;
-    width: 75px;
-    height: 75px;
-    background: #FFA400;
-    bottom: 30px;
-    left: 40px;
-    cursor: pointer;
-  }
-#parrafo{
+#imageConfigApikey {
+  position: fixed;
+  display: flex;
+  width: 45px;
+  height: 60px;
+  bottom: 53px;
+  left: 85px;
+  cursor: pointer;
+}
+
+#btnConfigApikey {
+  position: fixed;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-size: 17px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #FFA400;
+  bottom: 30px;
+  left: 40px;
+  cursor: pointer;
+}
+
+#parrafo {
   color: #000000;
 }
 
 /* RESPONSIVE DESIGN CON MEDIA QUERY*/
-@media (min-width: 280px) and (max-width: 350px) {
+@media (min-width: 280px) and (max-width: 896px) {
   #header2 {
     height: 150px;
     width: 135px;
     margin-top: 0;
   }
-  
+
   nav {
     position: relative;
     display: flex;
@@ -779,19 +801,22 @@ footer {
     justify-content: center;
 
   }
- #inputHamburguesa{
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  opacity: 0%;
 
- }
- #checkHamburger{
-  position: absolute;
-  color: #FFFFFF;
-  font-size: 30px;
-  
- }
+  #inputHamburguesa {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0%;
+
+  }
+
+  #checkHamburger {
+    position: absolute;
+    color: #FFFFFF;
+    font-size: 30px;
+
+  }
+
   #header {
     display: none;
     align-items: center;
@@ -799,6 +824,7 @@ footer {
     width: 630px;
     height: 130px;
   }
+
   #filtros {
     display: grid;
     background-color: #303030;
@@ -807,6 +833,7 @@ footer {
     height: 350px;
     width: 230px;
   }
+
   label {
     display: flex;
     font-family: "Balthazar", serif;
@@ -815,6 +842,7 @@ footer {
     margin-left: 20px;
     margin-top: 20px;
   }
+
   button {
     display: flex;
     font-family: "Balthazar", serif;
@@ -825,6 +853,7 @@ footer {
     margin-top: 25px;
     margin-left: 23px;
   }
+
   .lista {
     display: flex;
     font-family: "Cinzel", serif;
@@ -833,6 +862,7 @@ footer {
     height: 480px;
     background-image: url(https://github.com/DanielaPosadas/DEV012-dataverse/blob/main/tarjetas%20MK-1.jpg?raw=true);
   }
+
   img {
     margin-top: 10px;
     padding-top: 20px;
@@ -840,50 +870,88 @@ footer {
     width: 200px;
     justify-content: center;
   }
+
   footer {
     margin-top: 30px;
     text-align: center;
   }
-  #filtros{
+
+  #filtros {
     display: none;
   }
-  #inputHamburguesa:checked ~ #filtros {
+
+  #inputHamburguesa:checked~#filtros {
     display: block;
   }
-  #inputHamburguesa:checked ~ #checkHamburger {
+
+  #inputHamburguesa:checked~#checkHamburger {
     display: none;
   }
-  #conteo-personajes_genero{
+
+  #conteo-personajes_genero {
     display: none;
   }
-  #divBtnGrupalResponsive{
+
+  #divBtnGrupalResponsive {
     display: flex;
-    justify-content: flex-end;
-    width: 100px;
+    margin-right: -41px;
+    width: 70px;
     height: 100px;
+    bottom: -10px;
   }
-  #btnChatGrupal{
+
+  #btnChatGrupal {
     display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    z-index: 0;
     border-radius: 50%;
-    right: 3px;
+    right: 4px;
     width: 65px;
     height: 65px;
+    padding: 0%;
   }
 
   #parrafoGrupalResponsive {
     display: none;
   }
 
-  #imagebtnGrupalResponsive{
+  #imagebtnGrupalResponsive {
     display: flex;
-    justify-content: flex-end;
+    position: absolute;
+    z-index: 1;
     color: #FFFFFF;
-    margin-top: 50px;
-    margin-left: 20px;
-    bottom: 150px;
+    margin-left: 9px;
+    bottom: 43px;
+    width: 50px;
+    height: 62px;
+  }
+  #divBtnConfigApikey{
+    display: flex;
+    margin-left: -41px;
     width: 100px;
     height: 100px;
+    bottom: -10px;
+    position: fixed;
+  }
+  #btnConfigApikey{
+    display: flex;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+    left: 50px;
+    width: 65px;
+    height: 65px;
+    padding: 0%;
+  }
+  #imageConfigApikey{
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    color: #FFFFFF;
+    margin-left: -4px;
+    bottom: 42px;
+    width: 50px;
+    height: 62px;
   }
 
 }
