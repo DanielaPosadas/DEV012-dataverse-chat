@@ -18,7 +18,7 @@ export const apikey = () => {
     //DIV INPUT
     const parrafoApikey = document.createElement('p');
     parrafoApikey.setAttribute('id', 'parrafoApikey');
-    parrafoApikey.textContent = "Ingresa la clave";
+    parrafoApikey.textContent = "Ingresa una clave";
 
     //DIV INPUT Y BOTONES
     const divInput = document.createElement('div');
@@ -29,8 +29,9 @@ export const apikey = () => {
     divBotones.setAttribute('id', 'divBotones');
 
     //INPUT PARA INGRESAR API
-    const inputApikey = document.createElement('textarea');
+    const inputApikey = document.createElement('input');
     inputApikey.setAttribute('id', 'inputApikey');
+    inputApikey.setAttribute('type', 'password');
     inputApikey.setAttribute('placeholder', 'Escribe aquí...');
 
     //BOTONES
@@ -65,12 +66,14 @@ export const valorInput = () => {
     function guardarValor() {
         const claveInput = input.value.trim();
         localStorage.setItem('apikey', claveInput);
-        console.log(localStorage);
     }
     const btnApiEnviar = divContenedorInvisible.querySelector('#btnApikeyEnviar');
     btnApiEnviar.addEventListener('click', enviar);
     function enviar() {
-        navigateTo('/');
+        if(input.value.length != Number('51') && (/[a-zA-Z0-9]/g)){
+            alert('Error. Ingresa una clave válida');
+        } else {navigateTo('/')}
+        console.log(input.value);
     }
 
     const btnLApiLimpiar = divContenedorInvisible.querySelector('#btnApikeyLimpiar');

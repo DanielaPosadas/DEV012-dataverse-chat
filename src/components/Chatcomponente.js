@@ -1,6 +1,4 @@
-//import { componentePeticion } from "../peticion.js";
-import dataset from "../data/dataset.js";
-//import { apikey } from "../views/apikey.js";
+import { componentePeticion } from "../peticion.js";
 
 export const chat = (props) => {
 
@@ -61,77 +59,6 @@ export const chat = (props) => {
         return chatLi;
     }
 
-    //CONFIGURAR LA APIKEY A LA OPENAI
-
-    const generateAPI = (mensajeChatboot, props) => {
-        const URL_API = 'https://api.openai.com/v1/chat/completions';
-        const API_KEY = localStorage.getItem('apikey');
-        const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
-        const nombres = props.name;
-        console.log(nombres);
-        console.log(API_KEY);
-        const chatIndividual = [
-            { role: "system", content: `Finge que eres ${props.name}` },
-            { role: "user", content: userMessage }
-        ];
-        const chatGrupal = [
-            { role: "system", content: 'Finge que eres cada uno de estos personajes: Kitana, Jade y nadie mas'},
-            { role: "user", content: userMessage },
-        ];
-       // if (nombres === nombres) {
-            const peticion1 = {
-                method: "POST",
-                headers: {
-                    'Content-Type': "application/json",
-                    Authorization: `Bearer ${API_KEY}`,
-                },
-
-                body: JSON.stringify(
-                    {
-                        model: "gpt-3.5-turbo",
-                        messages: chatIndividual,
-                        temperature: 0.2
-                    }
-                ),
-                usage: {
-                    prompt_tokens: 10,
-                    completion_tokens: 7,
-                    total_tokens: 15,
-                }
-            }
-            const peticion2 = {
-                method: "POST",
-                headers: {
-                    'Content-Type': "application/json",
-                    Authorization: `Bearer ${API_KEY}`,
-                },
-
-                body: JSON.stringify(
-                    {
-                        model: "gpt-3.5-turbo",
-                        messages: chatGrupal,
-                        temperature: 0.2
-                    }
-                ),
-                usage: {
-                    prompt_tokens: 10,
-                    completion_tokens: 7,
-                    total_tokens: 15,
-                }
-            }
-
-
-            fetch(URL_API,  peticion2)
-                .then(resp => resp.json())
-                .then(data => {
-                    mensajeElemento.textContent = data.choices[0].message.content
-                })
-                .catch((error) => {
-                    mensajeElemento.textContent = 'Ups! Algo malo ocurrió. Por favor intenta de nuevo.'
-                })
-       
-
-    }
     //AGREGA EVENTO AL BOTON ENVIAR DE CADA CHAT
     btnEnviarSpan.addEventListener('click', inputTextarea);
     function inputTextarea() {
@@ -143,7 +70,7 @@ export const chat = (props) => {
         setTimeout(() => {
             const mensajeChatboot = createChat('Escribiendo...', 'liBoot')
             ulMessage.appendChild(mensajeChatboot);
-            generateAPI(mensajeChatboot, props)
+            componentePeticion(props, userMessage, mensajeChatboot);
         }, 600);
     }
     return divContenedor;

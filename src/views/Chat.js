@@ -39,10 +39,10 @@ export const chatView = (props) => {
     //DIV USUARIOS CONECTADOS
     const divUsuariosConectados = document.createElement('div');
     divUsuariosConectados.setAttribute('id', 'divUsuariosConectados');
-    dataset.forEach(item => {
+    dataset.forEach(props => {
         const imagenConectados = document.createElement('img');
         imagenConectados.setAttribute('id', 'imagenConectados');
-        imagenConectados.src = item.imageUrl;
+        imagenConectados.src = props.imageUrl;
         divUsuariosConectados.appendChild(imagenConectados);
         const divEstadoOnline = document.createElement('div');
         divEstadoOnline.setAttribute('id', 'divEstadoOnline');
@@ -51,7 +51,7 @@ export const chatView = (props) => {
         parrafoOnline.textContent = "Online";
         const parrafoNombrePersonaje = document.createElement('p');
         parrafoNombrePersonaje.setAttribute('id', 'parrafoNombrePersonaje');
-        parrafoNombrePersonaje.textContent = item.name;
+        parrafoNombrePersonaje.textContent = props.name;
         divEstadoOnline.appendChild(parrafoNombrePersonaje);
         divEstadoOnline.appendChild(parrafoOnline);
         divUsuariosConectados.appendChild(divEstadoOnline);

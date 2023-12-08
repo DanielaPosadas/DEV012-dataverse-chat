@@ -1,35 +1,76 @@
-import { chat } from "./components/Chatcomponente.js";
 
-export const componentePeticion = () => {
-  const divChatInvisible = document.createElement('div');
-  divChatInvisible.appendChild(chat()); 
 
-const textareavalue = divChatInvisible.querySelector('#mensajeTextarea')
+export const componentePeticion = (props, userMessage, mensajeChatboot) => {
+    const URL_API = 'https://api.openai.com/v1/chat/completions';
+    const API_KEY = localStorage.getItem('apikey');
+    const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
+    const historialmensajes = [];
+    
 
-const generateAPI = (mensajeChatboot) => {
-  //let mensaje = userMessage;
-  //componentePeticion(mensaje)
-  const URL_API = 'https://api.openai.com/v1/chat/completions';
-  const API_KEY = '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';
-  const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
+    const chatIndividual = [
+        { role: "system", content: `Finge que eres ${props.name}` },
+        { role: "user", content: userMessage }
+    ];
+    const chatGrupal = [
+        { role: "system", content: `Finge que eres Kitana y Scorpion`},
+        //{ role: "user", content: `Hola! Dime quién eres`},
+        //{ role: "assistant", content: `Hola, somos Kitana y Scorpion`},
+        { role: "user", content: userMessage },
+        { role: "assistant", content: mensajeChatboot},
+    ];
 
-const peticion = {
-method: "POST",
-headers: {'Content-Type': "application/json",
-Authorization: `Bearer ${API_KEY}`,
-},
-body: JSON.stringify({
-  model: "gpt-3.5-turbo",
-  messages: [{ role: "system", content: textareavalue.value }]
-}),
-}
-fetch(URL_API, peticion).then(resp => resp.json()).then(data => {
-  mensajeElemento.textContent = data.choices[0].message.content
-}).catch((error) => {
-  mensajeElemento.textContent = 'Ups! Algo malo ocurrió. Por favor intenta de nuevo.'
+    historialmensajes.push(chatGrupal);
+    console.log(historialmensajes);
+  
+        const peticion1 = {
+            method: "POST",
+            headers: {
+                'Content-Type': "application/json",
+                Authorization: `Bearer ${API_KEY}`,
+            },
+
+            body: JSON.stringify(
+                {
+                    model: "gpt-3.5-turbo",
+                    messages: chatIndividual,
+                    temperature: 0.2
+                }
+            ),
+            usage: {
+                prompt_tokens: 10,
+                completion_tokens: 7,
+                total_tokens: 15,
+            }
+        }
+        const peticion2 = {
+            method: "POST",
+            headers: {
+                'Content-Type': "application/json",
+                Authorization: `Bearer ${API_KEY}`,
+            },
+
+            body: JSON.stringify(
+                {
+                    model: "gpt-3.5-turbo",
+                    messages: historialmensajes,
+                    temperature: 0.2
+                }
+            ),
+            usage: {
+                prompt_tokens: 10,
+                completion_tokens: 7,
+                total_tokens: 15,
+            }
+        }
+
+return fetch(URL_API,  peticion1, peticion2).then(resp => resp.json())
+.then(data => {
+    mensajeElemento.textContent = data.choices[0].message.content
 })
-}
-return generateAPI; 
+.catch((error) => {
+    mensajeElemento.textContent = 'Ups! Algo malo ocurrió. Por favor intenta de nuevo.'
+});
+
 }
 
 
