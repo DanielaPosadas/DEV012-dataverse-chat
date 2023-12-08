@@ -71,13 +71,9 @@ import { navigateTo } from '../router.js'
             dDescriptiva4.setAttribute("itemprop", "kingdom");
             dDescriptiva4.textContent = item.facts.kingdom;
            
-            /*const personajeId= item.id; 
-            const urlParams = new URLSearchParams({
-                id: personajeId,
-              });*/
             ilista.addEventListener("click", function(){
                 navigateTo("/description", item);
-                //console.log(item.name);
+
             })
         });
         return ulista;
@@ -128,12 +124,13 @@ import { navigateTo } from '../router.js'
     const parrafoGrupalResponsive = document.createElement('p');
     parrafoGrupalResponsive.setAttribute('id', 'parrafoGrupalResponsive');
     parrafoGrupalResponsive.textContent = "Chatea con todos";
+    
     divBtnGrupalResponsive.appendChild(imagebtnGrupalResponsive);
     divBtnGrupalResponsive.appendChild(btnChatGrupal);
     divBtnGrupalResponsive.appendChild(parrafoGrupalResponsive);
     div_home.appendChild(divBtnGrupalResponsive);
 
-    divBtnGrupalResponsive.addEventListener("click", chatGrupal);
+   divBtnGrupalResponsive.addEventListener("click", chatGrupal);
 
     function chatGrupal(){
        navigateTo("/panel"); 
