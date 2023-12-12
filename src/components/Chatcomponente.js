@@ -1,7 +1,9 @@
+import dataset from "../data/dataset.js";
 import { componentePeticion } from "../peticion.js";
 
 export const chat = (props) => {
 
+    console.log('props', props);
     const divContenedor = document.createElement('div');
     divContenedor.setAttribute('id', 'divContenedor');
 

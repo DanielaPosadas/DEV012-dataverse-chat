@@ -1,22 +1,22 @@
 
+import dataset from "./data/dataset.js";
 
 export const componentePeticion = (props, userMessage, mensajeChatboot) => {
     const URL_API = 'https://api.openai.com/v1/chat/completions';
     const API_KEY = localStorage.getItem('apikey');
     const mensajeElemento = mensajeChatboot.querySelector('.pMensajeBoot');
     const historialmensajes = [];
-    
 
+    const iterarNombrePersonajes = dataset.map(nombres => nombres.name);
+    
     const chatIndividual = [
         { role: "system", content: `Finge que eres ${props.name}` },
         { role: "user", content: userMessage }
     ];
+
     const chatGrupal = [
-        { role: "system", content: `Finge que eres Kitana y Scorpion`},
-        //{ role: "user", content: `Hola! Dime quién eres`},
-        //{ role: "assistant", content: `Hola, somos Kitana y Scorpion`},
-        { role: "user", content: userMessage },
-        { role: "assistant", content: mensajeChatboot},
+        { role: "system", content: `Finge que eres todos estos personajes ${iterarNombrePersonajes}`},
+        { role: "user", content: userMessage}
     ];
 
     historialmensajes.push(chatGrupal);
@@ -33,7 +33,7 @@ export const componentePeticion = (props, userMessage, mensajeChatboot) => {
                 {
                     model: "gpt-3.5-turbo",
                     messages: chatIndividual,
-                    temperature: 0.2
+                    temperature: 0.8
                 }
             ),
             usage: {
@@ -42,6 +42,7 @@ export const componentePeticion = (props, userMessage, mensajeChatboot) => {
                 total_tokens: 15,
             }
         }
+
         const peticion2 = {
             method: "POST",
             headers: {
@@ -53,7 +54,7 @@ export const componentePeticion = (props, userMessage, mensajeChatboot) => {
                 {
                     model: "gpt-3.5-turbo",
                     messages: historialmensajes,
-                    temperature: 0.2
+                    temperature: 0.8
                 }
             ),
             usage: {
@@ -63,7 +64,7 @@ export const componentePeticion = (props, userMessage, mensajeChatboot) => {
             }
         }
 
-return fetch(URL_API,  peticion1, peticion2).then(resp => resp.json())
+return fetch(URL_API, peticion1, peticion2).then(resp => resp.json())
 .then(data => {
     mensajeElemento.textContent = data.choices[0].message.content
 })

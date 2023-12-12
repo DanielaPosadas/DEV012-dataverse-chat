@@ -2,7 +2,7 @@
 import { chat } from "../components/Chatcomponente.js";
 import { btnHome } from "../components/btnHome.js";
 import { header } from "../components/header.js";
-
+import { div_filtros } from "../components/DivFiltros.js";
 
 
 export const description = (props) => {
@@ -23,7 +23,7 @@ export const description = (props) => {
     const img_descriptionPersonaje = document.createElement('img');
     img_descriptionPersonaje.setAttribute('id', 'imgDescriptionPersonaje');
     img_descriptionPersonaje.src = props.imageUrl;
-
+    
     //CREACION DE DIV PARA PARRAFO NOMBRE
     const div_descriptionNombre = document.createElement('div');
     div_descriptionNombre.setAttribute('id', 'divNombre');
@@ -96,6 +96,7 @@ export const description = (props) => {
     divTitulo.appendChild(parrafo);
 
     div_description.appendChild(header());
+    div_description.appendChild(div_filtros());
     div_description.appendChild(img_descriptionFondo);
     div_description.appendChild(img_descriptionPersonaje);
     div_description.appendChild(div_descriptionNombre);

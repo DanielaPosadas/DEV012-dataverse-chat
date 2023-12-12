@@ -1,0 +1,227 @@
+@media (min-width: 280px) and (max-width: 896px) {
+
+    #viewDescription {
+        position: relative;
+    }
+
+    #viewDescription header {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        background-color: #7b6043;
+        height: 170px;
+        width: 100%;
+        padding-bottom: 10px;
+      }
+
+#viewDescription nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        }
+    
+#viewDescription #inputHamburguesa {
+        display: none;
+        }
+        
+#viewDescription #checkHamburger {
+        display: none;
+        }
+
+ #viewDescription #imgDescriptionFondo{
+position: absolute;
+display: flex;
+justify-content: center;
+  margin-top: 25px;
+  margin-left: 70px;
+  width: 405px;
+  height: 900px;
+ }
+
+ #viewDescription #divTitulo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 668px;
+    height: 50px;
+    background-color: #FFA400;
+    margin-top: 300px;
+    margin-left: 20px;
+  }
+  
+  #viewDescription #parrafoTitulo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #viewDescription #imgDescriptionPersonaje {
+    position: absolute;
+    display: flex;
+    margin-left: 135px;
+    margin-top: 60px;
+    width: 270px;
+    height: 350px;
+  }
+  #viewDescription #divNombre {
+    position: absolute;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 97px;
+    margin-top: 28rem;
+    background-color: #F8DADA;
+    width: 350px;
+    height: 50px;
+    border-radius: 0 100px 0 0;
+  }
+  
+  #viewDescription #nombre {
+    position: absolute;
+    display: flex;
+    font-size: 30px;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  #viewDescription #divDetalle {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-left: 97px;
+    margin-top: 5px;
+    background-color: #F8DADA;
+    width: 350px;
+    height: 250px;
+  
+  }
+  
+  #viewDescription #description {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    top: 15px;
+  }
+  
+  #viewDescription #skills {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 100px;
+  }
+  
+  #viewDescription #armas {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 150px;
+  }
+  
+  #viewDescription #apariciones {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 178px;
+  }
+  
+  #viewDescription #divLetalidad {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-left: 96px;
+    margin-top: 5px;
+    background-color: #F8DADA;
+    width: 173px;
+    height: 63px;
+  }
+  
+  #viewDescription #parrafoLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+  
+  #viewDescription #imgLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+  
+  #viewDescription #divReino {
+    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    margin-left: 273px;
+    margin-top: -63px;
+    background-color: #F8DADA;
+    width: 174px;
+    height: 63px;
+  }
+  
+  #viewDescription #imgReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+  
+  #viewDescription #parrafoReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+  
+    }
+ 

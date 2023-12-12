@@ -4,7 +4,7 @@ import { footer } from '../components/footer.js'
 import { div_filtros } from '../components/DivFiltros.js'
 import { filtros_acumulables } from '../lib/dataFunctions.js'
 import { p_estadisticas, p_estadisticas_genero } from '../components/estadisticas.js'
-import { navigateTo } from '../router.js'
+import { navigateTo, onURLChange } from '../router.js'
 
 
  const inicio_home = () => {
@@ -133,7 +133,7 @@ import { navigateTo } from '../router.js'
    divBtnGrupalResponsive.addEventListener("click", chatGrupal);
 
     function chatGrupal(){
-       navigateTo("/panel"); 
+        navigateTo("/panel", dataset);
     }
 
     //BOTÓN DE CONFIGURACION APIKEY

@@ -6,6 +6,7 @@ import dataset from "../data/dataset.js";
 
 
 export const chatView = (props) => {
+    console.log('props', props);
     const div = document.createElement('div')
     div.setAttribute('id', 'divChat');
     const img_chatFondo = document.createElement('img');
@@ -23,7 +24,6 @@ export const chatView = (props) => {
     //DIV VENTANA DE CONECTADOS
     const divParticipantes = document.createElement('div')
     divParticipantes.setAttribute('id', 'divParticipantes');
-    //const parrafoconectados= 
 
     //DIV VACIO
     const divVacio = document.createElement('div');
@@ -33,7 +33,7 @@ export const chatView = (props) => {
     divNumeroUsuarios.setAttribute('id', 'divNumeroUsuarios');
     const parraNumeroUsuarios = document.createElement('p');
     parraNumeroUsuarios.setAttribute('id', 'parrafoNumeroUsuarios');
-    parraNumeroUsuarios.textContent = "25 Conectados";
+    parraNumeroUsuarios.textContent = "25 Conectados ";
     divNumeroUsuarios.appendChild(parraNumeroUsuarios);
 
     //DIV USUARIOS CONECTADOS
