@@ -8,10 +8,13 @@ export const chat = (props) => {
     divContenedor.setAttribute('id', 'divContenedor');
 
 
+
     //AGREGAR UL AL DIV GENERAL
+    const divMensajes = document.createElement('div');
+    divMensajes.setAttribute('id', 'divMensajes');
     const ulMensajes = document.createElement('ul');
     ulMensajes.setAttribute('id', 'ulMensajes');
-    divContenedor.appendChild(ulMensajes);
+    divMensajes.appendChild(ulMensajes);
 
     //CREAR LI's PARA MENSAJES
     const liBoot = document.createElement('li');
@@ -30,10 +33,13 @@ export const chat = (props) => {
     SpanEnviar.setAttribute('id', 'SpanEnviar');
     SpanEnviar.textContent = 'send';
 
+  
     div.appendChild(mensajeTextarea);
     div.appendChild(SpanEnviar);
+   
 
     divContenedor.appendChild(div);
+    divContenedor.appendChild(divMensajes);
 
     //PETICION API OPEN AI
     const btnEnviarSpan = div.querySelector('#SpanEnviar');
@@ -70,9 +76,23 @@ export const chat = (props) => {
         ulMessage.appendChild(createChat(userMessage, 'liUser'));
 
         setTimeout(() => {
-            const mensajeChatboot = createChat('Escribiendo...', 'liBoot')
+            let mensajeChatboot = createChat('Escribiendo...', 'liBoot')
             ulMessage.appendChild(mensajeChatboot);
             componentePeticion(props, userMessage, mensajeChatboot);
+
+            const VistaGrupal = localStorage.getItem('chat');
+            console.log(VistaGrupal);
+            if (VistaGrupal === 'Grupal') {
+                dataset.map(nombres => {
+                    mensajeChatboot = createChat('Escribiendo...', 'liBoot')
+                    ulMessage.appendChild(mensajeChatboot);
+                    componentePeticion(nombres, userMessage, mensajeChatboot)
+
+                });
+
+
+            }
+
         }, 600);
     }
     return divContenedor;

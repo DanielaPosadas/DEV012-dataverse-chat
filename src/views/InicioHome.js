@@ -7,7 +7,7 @@ import { p_estadisticas, p_estadisticas_genero } from '../components/estadistica
 import { navigateTo, onURLChange } from '../router.js'
 
 
- const inicio_home = () => {
+const inicio_home = () => {
 
     const data_personajes = dataset;
 
@@ -23,7 +23,7 @@ import { navigateTo, onURLChange } from '../router.js'
 
     const contenedorTarjetasdiv = document.createElement('div');
     div_home.appendChild(contenedorTarjetasdiv);
-    
+
     //RENDERIZAR LAS TARJETAS
     const renderItems = (data_personajes) => {
 
@@ -70,10 +70,11 @@ import { navigateTo, onURLChange } from '../router.js'
             dlDescriptiva.appendChild(dDescriptiva4);
             dDescriptiva4.setAttribute("itemprop", "kingdom");
             dDescriptiva4.textContent = item.facts.kingdom;
-           
-            ilista.addEventListener("click", function(){
-                navigateTo("/description", item);
 
+            ilista.addEventListener("click", function () {
+                navigateTo("/description", item);
+                localStorage.setItem('chat', ' Individual');
+        
             })
         });
         return ulista;
@@ -93,12 +94,10 @@ import { navigateTo, onURLChange } from '../router.js'
         const option_FiltrarLetalidad = filtrarLetalidad.value
         const option_FiltrarReino = filtrarReino.value
         const option_OrdenarPor = ordenarPersonajes.value
-    
-        contenedorTarjetasdiv.innerHTML="";
-
+        contenedorTarjetasdiv.innerHTML = "";
         //ASIGNAR LOS <OPTION> A LOS filterBy/orderBy
         const dataFiltrada = filtros_acumulables(data_personajes, option_FiltrarLetalidad, option_FiltrarReino, option_OrdenarPor);
-        contenedorTarjetasdiv.appendChild(renderItems(dataFiltrada)); 
+        contenedorTarjetasdiv.appendChild(renderItems(dataFiltrada));
     }
 
     //DAR FUNCION DE LIMPIAR SELECCIONES CON BOTON
@@ -124,17 +123,19 @@ import { navigateTo, onURLChange } from '../router.js'
     const parrafoGrupalResponsive = document.createElement('p');
     parrafoGrupalResponsive.setAttribute('id', 'parrafoGrupalResponsive');
     parrafoGrupalResponsive.textContent = "Chatea con todos";
-    
+
     divBtnGrupalResponsive.appendChild(imagebtnGrupalResponsive);
     divBtnGrupalResponsive.appendChild(btnChatGrupal);
     divBtnGrupalResponsive.appendChild(parrafoGrupalResponsive);
     div_home.appendChild(divBtnGrupalResponsive);
 
-   divBtnGrupalResponsive.addEventListener("click", chatGrupal);
+    divBtnGrupalResponsive.addEventListener("click", chatGrupal);
 
-    function chatGrupal(){
+    function chatGrupal() {
         navigateTo("/panel", dataset);
+        localStorage.setItem('chat', 'Grupal');
     }
+
 
     //BOTÓN DE CONFIGURACION APIKEY
     const divBtnConfigApikey = document.createElement('div');
@@ -146,19 +147,19 @@ import { navigateTo, onURLChange } from '../router.js'
     imageConfigApikey.src = 'https://cdn.icon-icons.com/icons2/1369/PNG/512/-settings_90618.png';
     divBtnConfigApikey.appendChild(btnConfigApikey);
     divBtnConfigApikey.appendChild(imageConfigApikey);
-    
+
     divBtnConfigApikey.addEventListener('click', configApikey);
 
-    function configApikey(){
-        navigateTo("/apikey"); 
-     }
+    function configApikey() {
+        navigateTo("/apikey");
+    }
 
     //METER BOTON CONFIGURACION APIKEY AL ROOT
     div_home.appendChild(divBtnConfigApikey);
     //METER FOOTER AL ROOT
     div_home.appendChild(footer());
 
-return div_home;
+    return div_home;
 };
 
 export default inicio_home;

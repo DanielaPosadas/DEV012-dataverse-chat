@@ -9,6 +9,8 @@ export const chatView = (props) => {
     console.log('props', props);
     const div = document.createElement('div')
     div.setAttribute('id', 'divChat');
+    const divSecundario = document.createElement('div')
+    divSecundario.setAttribute('id', 'divSecundario');
     const img_chatFondo = document.createElement('img');
     img_chatFondo.setAttribute('src', 'https://img.freepik.com/foto-gratis/fondo-rojo-grunge_1048-8960.jpg?w=1380&t=st=1700177002~exp=1700177602~hmac=7303db24464e6a2c956aeaac0c6433bae02689c745b2106eaa680164b0ba96c0');
     img_chatFondo.setAttribute('id', 'imgchatFondo');
@@ -63,12 +65,13 @@ export const chatView = (props) => {
 
     
     div.appendChild(header());
-    div.appendChild(btnHome());
-    div.appendChild(img_chatFondo);
-    div.appendChild(divVacio);
-    div.appendChild(chat(props));
-    div.appendChild(divTituloGrupal);
-    div.appendChild(divUsuariosConectados);
-    div.appendChild(divNumeroUsuarios);
+    divSecundario.appendChild(btnHome());
+    divSecundario.appendChild(img_chatFondo);
+    divSecundario.appendChild(divVacio);
+    divSecundario.appendChild(chat(props));
+    divSecundario.appendChild(divTituloGrupal);
+    divSecundario.appendChild(divUsuariosConectados);
+    divSecundario.appendChild(divNumeroUsuarios);
+    div.appendChild(divSecundario);
     return div;
 }
