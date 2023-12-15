@@ -11,6 +11,9 @@ export const apikey = () => {
     const divApikey = document.createElement('div');
     divApikey.setAttribute('id', 'divApikey');
 
+    const divApikeySecundario = document.createElement('div');
+    divApikeySecundario.setAttribute('id', 'divApikeySecundario');
+
     //IMAGEN DE FONDO
     const imgFondoApikey = document.createElement('img');
     imgFondoApikey.setAttribute('id', 'imgFondoApikey');
@@ -45,16 +48,18 @@ export const apikey = () => {
     divBotones.appendChild(btnApikeyEnviar);
     divBotones.appendChild(btnApikeyLimpiar);
 
+    divApikey.appendChild(btnHome());
+    divApikeySecundario.appendChild(imgFondoApikey);
+    divInput.appendChild(parrafoApikey)
     divInput.appendChild(inputApikey);
     divInput.appendChild(divBotones);
-    divInput.appendChild(parrafoApikey)
-
+    divApikeySecundario.appendChild(divInput);
 
     divApikey.appendChild(header());
     divApikey.appendChild(div_filtros());
-    divApikey.appendChild(btnHome());
-    divApikey.appendChild(imgFondoApikey);
-    divApikey.appendChild(divInput);
+    
+    
+    divApikey.appendChild(divApikeySecundario);
     
 
     return divApikey;

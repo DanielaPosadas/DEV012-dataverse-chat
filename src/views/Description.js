@@ -7,13 +7,13 @@ import { div_filtros } from "../components/DivFiltros.js";
 
 export const description = (props) => {
     console.log('props', props);
-    //AGREGARLE CLASS A BODY PARA CAMBIAR EL COLOR EL CSS
-    const body = document.body;
-    body.setAttribute('class', "ruta-description");
 
     //METER LOS ELEMENTOS DE LA VISTA ERROR
     const div_description = document.createElement('div');
     div_description.setAttribute('id', 'viewDescription');
+
+    const div_descriptionSecundario = document.createElement('div');
+    div_descriptionSecundario.setAttribute('id', 'viewDescriptionSecundario');
 
     const img_descriptionFondo = document.createElement('img');
     img_descriptionFondo.setAttribute('src', 'https://img.freepik.com/foto-gratis/fondo-rojo-grunge_1048-8960.jpg?w=1380&t=st=1700177002~exp=1700177602~hmac=7303db24464e6a2c956aeaac0c6433bae02689c745b2106eaa680164b0ba96c0');
@@ -98,14 +98,16 @@ export const description = (props) => {
     div_description.appendChild(header());
     div_description.appendChild(div_filtros());
     div_description.appendChild(btnHome());
-    div_description.appendChild(img_descriptionFondo);
-    div_description.appendChild(img_descriptionPersonaje);
-    div_description.appendChild(div_descriptionNombre);
-    div_description.appendChild(div_descriptionDetalle);
-    div_description.appendChild(div_letalidad);
-    div_description.appendChild(div_reino);
-    div_description.appendChild(divTitulo);
-    div_description.appendChild(chat(props));
+    div_descriptionSecundario.appendChild(img_descriptionFondo);
+    div_descriptionSecundario.appendChild(img_descriptionPersonaje);
+    div_descriptionSecundario.appendChild(div_descriptionNombre);
+    div_descriptionSecundario.appendChild(div_descriptionDetalle);
+    div_descriptionSecundario.appendChild(div_letalidad);
+    div_descriptionSecundario.appendChild(div_reino);
+    div_descriptionSecundario.appendChild(divTitulo);
+    div_descriptionSecundario.appendChild(chat(props));
+
+    div_description.appendChild(div_descriptionSecundario);
     
 
 
