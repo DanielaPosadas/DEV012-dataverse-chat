@@ -37,9 +37,9 @@ export const chat = (props) => {
     div.appendChild(mensajeTextarea);
     div.appendChild(SpanEnviar);
    
-
-    divContenedor.appendChild(div);
     divContenedor.appendChild(divMensajes);
+    divContenedor.appendChild(div);
+    
 
     //PETICION API OPEN AI
     const btnEnviarSpan = div.querySelector('#SpanEnviar');
@@ -71,6 +71,7 @@ export const chat = (props) => {
     btnEnviarSpan.addEventListener('click', inputTextarea);
     function inputTextarea() {
         userMessage = textarea.value.trim();
+        textarea.value = "";
         if (!userMessage) return;
 
         ulMessage.appendChild(createChat(userMessage, 'liUser'));

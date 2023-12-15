@@ -35,7 +35,6 @@ export const componentePeticion = (props, userMessage, mensajeChatboot) => {
     mensajeElemento.textContent = data.choices[0].message.content
 })
 .catch((error) => {
-    console.log(error);
     mensajeElemento.textContent = 'Ups! Algo anda mal con la Api Key. Por favor intenta de nuevo '
 });
   }

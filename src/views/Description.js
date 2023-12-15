@@ -23,7 +23,7 @@ export const description = (props) => {
     const img_descriptionPersonaje = document.createElement('img');
     img_descriptionPersonaje.setAttribute('id', 'imgDescriptionPersonaje');
     img_descriptionPersonaje.src = props.imageUrl;
-    
+
     //CREACION DE DIV PARA PARRAFO NOMBRE
     const div_descriptionNombre = document.createElement('div');
     div_descriptionNombre.setAttribute('id', 'divNombre');
@@ -97,15 +97,16 @@ export const description = (props) => {
 
     div_description.appendChild(header());
     div_description.appendChild(div_filtros());
+    div_description.appendChild(btnHome());
     div_description.appendChild(img_descriptionFondo);
     div_description.appendChild(img_descriptionPersonaje);
     div_description.appendChild(div_descriptionNombre);
     div_description.appendChild(div_descriptionDetalle);
     div_description.appendChild(div_letalidad);
     div_description.appendChild(div_reino);
-    div_description.appendChild(btnHome());
-    div_description.appendChild(chat(props));
     div_description.appendChild(divTitulo);
+    div_description.appendChild(chat(props));
+    
 
 
     return (div_description);

@@ -1,26 +1,62 @@
-@media (min-width: 280px) and (max-width: 896px) {
+@media (min-width: 280px) and (max-width: 889px) {
 
-    #viewDescription {
+/*VISTA DE DETALLE*/
+#div_description {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+#viewDescription header {
+    display: flex;
+    justify-content: center;
+    background-color: #7b6043;
+    height: 170px;
+    width: 100%;
+    padding-bottom: 10px;
+}
+#viewDescription nav {
         position: relative;
-    }
-
-    #viewDescription header {
         display: flex;
         justify-content: center;
-        text-align: center;
-        background-color: #7b6043;
-        height: 170px;
-        width: 100%;
-        padding-bottom: 10px;
-      }
-
-#viewDescription nav {
-        display: flex;
         background-color: #303030;
         padding-top: 25px;
+        width: 100%;
         height: 80px;
-        }
-    
+}
+#viewDescription #divBtnHome{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 150px;
+        width: 50px;
+        height: 50px;
+        left: 60px;
+}
+#viewDescription #imageHome {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 50px;
+    left: 100px;
+    top: 16px;
+    cursor: pointer;
+}
+#viewDescription #btnHome {
+    position: absolute;
+    display: flex;
+    font-family: 'Inter', sans-serif;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    border: 3px solid #000000;
+    background-color: #303030;
+    left: 70px;
+    top: 10px;
+    padding: 0%;
+    cursor: pointer;
+  }
 #viewDescription #inputHamburguesa {
         display: none;
         }
@@ -34,9 +70,11 @@ position: absolute;
 display: flex;
 justify-content: center;
   margin-top: 25px;
-  margin-left: 70px;
-  width: 405px;
-  height: 900px;
+  margin-left: 10%;
+  margin-right: 10%;
+  max-width: 80%;
+  min-width: 50%;
+  height: 1230px;
  }
 
  #viewDescription #divTitulo {
@@ -60,10 +98,13 @@ justify-content: center;
   #viewDescription #imgDescriptionPersonaje {
     position: absolute;
     display: flex;
-    margin-left: 135px;
+    justify-content: center;
     margin-top: 60px;
-    width: 270px;
-    height: 350px;
+    margin-left: 25%;
+    margin-right: 30%;
+    max-width: 75%;
+    min-width: 10%;
+    height: auto;
   }
   #viewDescription #divNombre {
     position: absolute;
@@ -71,7 +112,7 @@ justify-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 97px;
+    margin-left: 92px;
     margin-top: 28rem;
     background-color: #F8DADA;
     width: 350px;
@@ -91,7 +132,7 @@ justify-content: center;
     position: relative;
     display: flex;
     justify-content: start;
-    margin-left: 97px;
+    margin-left: 92px;
     margin-top: 5px;
     background-color: #F8DADA;
     width: 350px;
@@ -107,7 +148,7 @@ justify-content: center;
     margin-right: 20px;
     font-size: 15px;
     color: #000000;
-    font-weight: 700;
+    font-weight: 700px;
     font-family: 'Inter', sans-serif;
     top: 15px;
   }
@@ -152,7 +193,7 @@ justify-content: center;
     position: relative;
     display: flex;
     justify-content: start;
-    margin-left: 96px;
+    margin-left: 92px;
     margin-top: 5px;
     background-color: #F8DADA;
     width: 173px;
@@ -190,7 +231,7 @@ justify-content: center;
     position: relative;
     display: flex;
     justify-content: start;
-    margin-left: 273px;
+    margin-left: 268px;
     margin-top: -63px;
     background-color: #F8DADA;
     width: 174px;
@@ -222,6 +263,284 @@ justify-content: center;
     font-family: 'Inter', sans-serif;
     margin-top: 5px;
   }
+  #viewDescription #divTitulo {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    background-color: #FFA400;
+    margin-top: 40px;
+    margin-left: 13%;
+    margin-right: 12%;
+    max-width: 75%;
+    min-width: 25%;
+  }
+    #viewDescription #parrafoTituloGrupal {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+}
+  #viewDescription #divContenedor {
+    position: relative;
+    background-color: #D9D9D9;
+    margin-left: 13%;
+    margin-right: 12%;
+    max-width: 75%;
+    min-width: 25%;
+    margin-top: 90px;
+}
+    #viewDescription #divMensajes{
+    position: absolute;
+    background: #D9D9D9;
+    width: 353px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #ulMensajes {
+    padding: 2px;
+    width: 340px;
+    overflow: hidden;
+  }
+  .liBoot {
+    display: flex;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    justify-content: flex-start;
+    max-width: 85%;
+   
+  }
+  .liUser {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 85%;
+    margin-bottom: -15px;
+    margin-top: -15px;
+  }
   
-    }
- 
+  .pMensajeBoot {
+    background-color: #0a1416;
+    color: #d9d9d9;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .pMensajeUser {
+    background-color: #FFA400;
+    color: #000000;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0px 10px;
+    font-size: 13px;
+    font-family: 'Inter', sans-serif;
+  }
+  #viewDescription #divChatComponente {
+    position: absolute;
+    margin-top: 250px;
+    width: 353px;
+    height: 50px;
+    margin-left: 0px;
+    background-color: #D9D9D9;
+    padding-left: 15px;
+}
+    #viewDescription #mensajeTextarea {
+    position: absolute;
+    margin-top: 5px;
+    border: none;
+    resize: none;
+    width: 280px;
+    height: 30px;
+    margin-left: 0px;
+    
+}
+    #viewDescription #SpanEnviar {
+    position: absolute;
+    margin-top: 5px;
+    width: 25px;
+    height: 25px;
+    margin-left: 280px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/*VISTA DE APIKEY*/
+    #divApikey {
+    position: relative;
+  }
+
+  #divApikey #filtros {
+    display: none; 
+  }
+
+  #divApikey #inputHamburguesa {
+    display: none; 
+  }
+
+  #divApikey #checkHamburger {
+    display: none; 
+  }
+  
+  #divApikey nav {
+    position: relative;
+    display: flex;
+    background-color: #303030;
+    padding-top: 25px;
+    height: 80px;
+  }
+  
+  #divApikey #imgFondoApikey {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 65px;
+    width: 430px;
+    height: 400px;
+  }
+  
+  #divApikey #divInput {
+    position: absolute;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+  
+  #divApikey #inputApikey {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 210px;
+    margin-left: 582px;
+    width: 330px;
+    height: 40px;
+  }
+  #divApikey #divBotones {
+    position: absolute;
+    display: flex;
+    margin-top: 240px;
+    margin-left: 580px;
+    width: 300px;
+  }
+  #divApikey #btnApikeyEnviar {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    background-color: #FFA400;
+    border-radius: 9px;
+  }
+  #divApikey #btnApikeyLimpiar {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+    background-color: #FFA400;
+    border-radius: 9px;
+  }
+  #divApikey #parrafoApikey {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 170px;
+    margin-left: 580px;
+    font-size: 25px;
+    font-weight: bold;
+  }
+  #divApikey #divBtnHome{
+    position: absolute;
+    display: flex;
+    top: 150px;
+    width: 50px;
+    height: 50px;
+    left: 30px;
+}
+#divApikey #imageHome {
+position: absolute;
+display: flex;
+width: 40px;
+height: 50px;
+left: 216px;
+top: 16px;
+cursor: pointer;
+}
+#divApikey #btnHome {
+position: absolute;
+display: flex;
+font-family: 'Inter', sans-serif;
+border-radius: 50%;
+width: 55px;
+height: 55px;
+border: 3px solid #000000;
+background-color: #303030;
+left: 185px;
+top: 10px;
+padding: 0%;
+cursor: pointer;
+}
+
+/*VISTA NOT FOUND*/
+ #viewError {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 0%;
+    margin: 0%;
+    width: 350px;
+    height: 500px;
+
+  }
+  
+  #viewError #logoError {
+display: flex;
+align-self:flex-start;
+    width: 200px;
+    height: 200px;
+    margin-left: 260px;
+    margin-top: 120px;
+    padding: 0%;
+  }
+  
+  #viewError #UPS {
+    position: absolute;
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 260px;
+    margin-left: 250px;
+  }
+  
+  #viewError #ERROR {
+    font-family: 'Inter', sans-serif;
+    width: 200px;
+    margin-left: 252px;
+    margin-top: 400px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 500;
+  }
+  
+  #viewError #DescripError {
+    font-family: 'Inter', sans-serif;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 500px;
+    color: #ffffff;
+    font-size: 15px;
+  }
+  
+  #viewError #BtnVolver {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 250px;
+    margin-top: 600px;
+    color: #000000;
+    background-color: #FFA400;
+    border-radius: 9px;
+    padding: 8px 40px 8px 40px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+}

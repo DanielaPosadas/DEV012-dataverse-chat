@@ -2,6 +2,7 @@ import { chat } from "../components/Chatcomponente.js";
 import { btnHome } from "../components/btnHome.js";
 import { header } from "../components/header.js";
 import { navigateTo } from "../router.js";
+import { div_filtros } from "../components/DivFiltros.js";
 
 
 
@@ -50,9 +51,11 @@ export const apikey = () => {
 
 
     divApikey.appendChild(header());
+    divApikey.appendChild(div_filtros());
     divApikey.appendChild(btnHome());
     divApikey.appendChild(imgFondoApikey);
     divApikey.appendChild(divInput);
+    
 
     return divApikey;
 };
