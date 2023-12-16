@@ -1,0 +1,437 @@
+/*VISTA APIKEY*/
+
+#divApikeySecundario{
+  display: flex;
+  margin-top: 230px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#divApikey nav {
+  display: none;
+}
+
+#imgFondoApikey {
+  position: absolute;
+  display: flex;
+  margin-top: 60px;
+  width: 800px;
+  height: 400px;
+}
+
+#divInput {
+  position: absolute;
+  display: grid;
+  width: 350px;
+  margin-top: 50px;
+}
+
+#inputApikey {
+  display: flex;
+  width: 350px;
+  height: 40px;
+}
+
+#divBotones {
+  display: flex;
+  margin-top: 15px;
+  width: 100px;
+}
+
+#btnApikeyEnviar {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  background-color: #FFA400;
+  border-radius: 9px;
+}
+
+#btnApikeyLimpiar {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  background-color: #FFA400;
+  border-radius: 9px;
+}
+
+#parrafoApikey {
+
+  display: flex;
+  justify-content: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#divBtnHome {
+    position: fixed;
+    bottom: 30px;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    z-index: 1;
+    }
+    
+    #imageHome {
+      position: fixed;
+      width: 45px;
+      height: 50px;
+      right: 135px;
+      bottom: 90px;
+      cursor: pointer;
+    }
+    
+    #btnHome {
+      position: fixed;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      border-radius: 50%;
+      width: 75px;
+      height: 75px;
+      background: #FFA400;
+      right: 120px;
+      bottom: 70px;
+      cursor: pointer;
+    }
+
+@media (min-width: 430px) and (max-width: 889px) {
+  
+    #divApikey #divApikeySecundario{
+        display: flex;
+        margin-top: 205px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      
+      #divApikey nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        justify-content: center;
+      }
+
+      #divApikey #inputHamburguesa {
+       display: none;
+    
+      }
+    
+      #divApikey #checkHamburger {
+        display: none;
+      }
+      
+      #divApikey #imgFondoApikey {
+        
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+      }
+
+      #divApikey #divInput {
+        display: grid;
+        width: 350px;
+        margin-top: 50px;
+      }
+      
+      #divApikey #inputApikey {
+        display: flex;
+        width: 350px;
+        height: 40px;
+      }
+      
+      #divApikey #divBotones {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 23px;
+        width: 100px;
+      }
+      
+      #divApikey #btnApikeyEnviar {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #FFA400;
+        border-radius: 9px;
+      }
+      
+      #divApikey #btnApikeyLimpiar {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #FFA400;
+        border-radius: 9px;
+      }
+      
+      #divApikey #parrafoApikey {
+      
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      #divApikey #divBtnHome {
+        position: fixed;
+        bottom: 30px;
+        width: 75px;
+        height: 75px;
+        left: 30px;
+        z-index: 1;
+        }
+        
+        #divApikey #imageHome {
+          position: fixed;
+          width: 45px;
+          height: 50px;
+          right: 34px;
+          bottom: 65px;
+          top:165px;
+          cursor: pointer;
+          z-index: 1;
+        }
+        
+        #divApikey #btnHome {
+          position: fixed;
+          font-family: 'Inter', sans-serif;
+          font-size: 17px;
+          border-radius: 50%;
+          width: 75px;
+          height: 75px;
+          background: #FFA400;
+          right: 20px;
+          bottom: 45px;
+          top:148px;
+          cursor: pointer;
+          z-index: 1;
+        }
+
+}
+@media (min-width: 331px) and (max-width: 429px) {
+    #divApikey #divApikeySecundario{
+        display: flex;
+        margin-top: 205px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      
+      #divApikey nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        justify-content: center;
+      }
+
+      #divApikey #inputHamburguesa {
+       display: none;
+    
+      }
+    
+      #divApikey #checkHamburger {
+        display: none;
+      }
+      
+      #divApikey #imgFondoApikey {
+        
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+      }
+
+      #divApikey #divInput {
+        display: grid;
+        width: 350px;
+        margin-top: 50px;
+      }
+      
+      #divApikey #inputApikey {
+        display: flex;
+        width: 350px;
+        height: 40px;
+      }
+      
+      #divApikey #divBotones {
+        display: flex;
+        margin-top: 0px;
+        margin-left: 23px;
+        width: 100px;
+      }
+      
+      #divApikey #btnApikeyEnviar {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #FFA400;
+        border-radius: 9px;
+      }
+      
+      #divApikey #btnApikeyLimpiar {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #FFA400;
+        border-radius: 9px;
+      }
+      
+      #divApikey #parrafoApikey {
+      
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      #divApikey #divBtnHome {
+        position: fixed;
+        bottom: 30px;
+        width: 75px;
+        height: 75px;
+        left: 30px;
+        z-index: 1;
+        }
+        
+        #divApikey #imageHome {
+          position: fixed;
+          width: 45px;
+          height: 50px;
+          right: 34px;
+          bottom: 65px;
+          top:165px;
+          cursor: pointer;
+          z-index: 1;
+        }
+        
+        #divApikey #btnHome {
+          position: fixed;
+          font-family: 'Inter', sans-serif;
+          font-size: 17px;
+          border-radius: 50%;
+          width: 75px;
+          height: 75px;
+          background: #FFA400;
+          right: 20px;
+          bottom: 45px;
+          top:147px;
+          cursor: pointer;
+          z-index: 1;
+        }  
+}
+@media (min-width: 280px) and (max-width: 330px) {
+    #divApikey #divApikeySecundario{
+        display: flex;
+        margin-top: 170px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      
+      #divApikey nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        justify-content: center;
+      }
+
+      #divApikey #inputHamburguesa {
+       display: none;
+    
+      }
+    
+      #divApikey #checkHamburger {
+        display: none;
+      }
+      
+      #divApikey #imgFondoApikey {
+        
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        height: 350px;
+      }
+
+      #divApikey #divInput {
+        display: grid;
+        width: 300px;
+        margin-top: 50px;
+      }
+      
+      #divApikey #inputApikey {
+        display: flex;
+        width: 300px;
+        height: 40px;
+      }
+      
+      #divApikey #divBotones {
+        display: flex;
+        margin: 0px;
+        width: 100px;
+      }
+      
+      #divApikey #btnApikeyEnviar {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #FFA400;
+        border-radius: 9px;
+      }
+      
+      #divApikey #btnApikeyLimpiar {
+        display: flex;
+        justify-content: center;
+        width: 120px;
+        background-color: #FFA400;
+        border-radius: 9px;
+      }
+      
+      #divApikey #parrafoApikey {
+      
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      #divApikey #divBtnHome {
+        position: fixed;
+        bottom: 30px;
+        width: 75px;
+        height: 75px;
+        left: 30px;
+        z-index: 1;
+        }
+        
+        #divApikey #imageHome {
+          position: fixed;
+          width: 45px;
+          height: 50px;
+          right: 34px;
+          bottom: 65px;
+          top:163px;
+          cursor: pointer;
+          z-index: 1;
+        }
+        
+        #divApikey #btnHome {
+          position: fixed;
+          font-family: 'Inter', sans-serif;
+          font-size: 17px;
+          border-radius: 50%;
+          width: 75px;
+          height: 75px;
+          background: #FFA400;
+          right: 20px;
+          bottom: 45px;
+          top:147px;
+          cursor: pointer;
+          z-index: 1;
+        }  
+}

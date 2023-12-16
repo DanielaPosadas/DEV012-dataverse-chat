@@ -1,5 +1,6 @@
 
 import { chat } from "../components/Chatcomponente.js";
+import { div_filtros } from "../components/DivFiltros.js";
 import { btnHome } from "../components/btnHome.js";
 import { header } from "../components/header.js";
 import dataset from "../data/dataset.js";
@@ -62,16 +63,42 @@ export const chatView = (props) => {
         divUsuariosConectados.appendChild(divPuntoVerde);
     });
 
+    //BOTÓN CONECTADOS
+    const divBtnOnline = document.createElement('div');
+    divBtnOnline.setAttribute('id', 'divBtnOnline');
+const btn = document.createElement('button');
+btn.setAttribute('id', 'btnOnline');
+const imageOnline = document.createElement('img');
+imageOnline.setAttribute('id', 'imageHome');
+imageOnline.src = 'https://cdn-icons-png.flaticon.com/512/1946/1946436.png';
+divBtnOnline.appendChild(btn);
+divBtnOnline.appendChild(imageOnline);
+
+
+divBtnOnline.addEventListener('click', listaConectados)
+
+function listaConectados(){
+    if (divUsuariosConectados.style.display === 'none') {
+        divUsuariosConectados.style.display = 'block';
+        divNumeroUsuarios.style.display = 'block';
+    } else {
+        divUsuariosConectados.style.display = 'none';
+        divNumeroUsuarios.style.display = 'none';
+    }
+}
 
     
     div.appendChild(header());
-    divSecundario.appendChild(btnHome());
+    div.appendChild(div_filtros());
+    divSecundario.appendChild(divBtnOnline);
     divSecundario.appendChild(img_chatFondo);
+    divSecundario.appendChild(btnHome());
     divSecundario.appendChild(divVacio);
     divSecundario.appendChild(chat(props));
     divSecundario.appendChild(divTituloGrupal);
     divSecundario.appendChild(divUsuariosConectados);
     divSecundario.appendChild(divNumeroUsuarios);
+    
     div.appendChild(divSecundario);
     return div;
 }

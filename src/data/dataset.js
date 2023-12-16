@@ -7,7 +7,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-11.jpg",
         "facts": {
-          "skills": "Posee habilidades criománticas: manipular el hielo. Lanza proyectiles de hielo, crea armas y congela a sus oponentes.",
+          "skills": "Posee habilidades criománticas. Crea armas y congela a sus oponentes.",
           "weapons": "Kori Blade (Cuchilla de Hielo).",
           "lethalityLevel": "Alto",
           "kingdom": "Earthrealm"
@@ -35,7 +35,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/tarjetas%20MK-5.jpg",
         "facts": {
-          "skills": "Experto en artes marciales, especialista en estilo de lucha que combina técnicas de karate y acrobacias.",
+          "skills": "Experto en artes marciales, combina técnicas de karate y acrobacias.",
           "weapons": "Habilidades marciales.",
           "lethalityLevel": "Moderado-bajo",
           "kingdom": "Earthrealm"
@@ -77,7 +77,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat II, Mortal Kombat 3, Mortal Kombat 9 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-23.jpg",
         "facts": {
-          "skills": "Experta en artes marciales, agilidad, velocidad en combate y lanzar proyectiles verdes.",
+          "skills": "Experta en artes marciales, agilidad y lanzar proyectiles verdes.",
           "weapons": "Bastón luminoso y triblade: cuchilla.",
           "lethalityLevel": "Moderado-bajo",
           "kingdom": "Outworld"
@@ -91,7 +91,7 @@ export default [
         "videogamesAppearances": "Kombat II, Mortal Kombat 3, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-20.jpg",
         "facts": {
-          "skills": "Capacidad de crear portales para realizar ataques sorpresa y creación de un doble sombrío.",
+          "skills": "Capacidad de crear portales y un doble sombrío.",
           "weapons": "Manipulación de energía oscura.",
           "lethalityLevel": "Moderado",
           "kingdom": "Netherrealm"
@@ -101,7 +101,7 @@ export default [
         "id": "Baraka",
         "name": "Baraka",
         "gender": "Hombre",
-        "shortDescription": "Luchador tarkatano (raza de guerreros con dientes afilados y cuchillas en sus brazos).",
+        "shortDescription": "Luchador tarkatano (guerreros con dientes afilados y cuchillas en sus brazos).",
         "videogamesAppearances": "Mortal Kombat II, Mortal Kombat Trilogy, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-8.jpg",
         "facts": {
@@ -245,7 +245,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-13.jpg",
         "facts": {
-          "skills": "Movimientos especiales que involucran la manipulación de la energía solar y la sangre.",
+          "skills": "Manipulación de la energía solar y la sangre.",
           "weapons": "Macuahuitl (espada de obsidiana).",
           "lethalityLevel": "Moderado",
           "kingdom": "Outworld"
@@ -301,7 +301,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-18.jpg",
         "facts": {
-          "skills": "Movimientos especiales que involucran su lengua extensible, ataques ácidos y la capacidad de camuflarse en su entorno.",
+          "skills": "Lengua extensible, ataques ácidos y capacidad de camuflarse en su entorno.",
           "weapons": "Ataques con su lengua y ácidos.",
           "lethalityLevel": "Moderado-bajo",
           "kingdom": "Outworld"
@@ -329,7 +329,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat 4, Mortal Kombat X y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-26.jpg",
         "facts": {
-          "skills": "Hechicero poderoso que posee habilidades mágicas. Puede lanzar proyectiles y manejar energía oscura.",
+          "skills": "Hechicero poderoso. Puede lanzar proyectiles y manejar energía oscura.",
           "weapons": "La vara de Shinnok y poderes mágicos.",
           "lethalityLevel": "Moderado",
           "kingdom": "Netherrealm"
@@ -343,7 +343,7 @@ export default [
         "videogamesAppearances": "Mortal Kombat Mythologies: Sub-Zero, Mortal Kombat 4, Mortal Kombat X, Mortal Kombat 11 y otros.",
         "imageUrl": "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-17.jpg",
         "facts": {
-          "skills": "Hechicero con habilidades mágicas: Invocación de demonios, proyecciones de energía, teletransportación y manipulación de almas.",
+          "skills": "Hechicero poderoso: Invocación de demonios, teletransportación y manipulación de almas.",
           "weapons": "Poderes de magia oscura.",
           "lethalityLevel": "Moderado",
           "kingdom": "Netherrealm"

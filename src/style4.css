@@ -1,0 +1,1109 @@
+/*LISTA DE CONECTADOS*/
+
+#divSecundario{
+    display: flex;
+  margin-top: 0px;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+#divChat nav {
+    display: none;
+}
+
+#divBtnOnline {
+    display: none;
+}
+
+#imgchatFondo{
+    position: absolute;
+    display: flex;
+    margin-top: 10px;
+    width: 1000px;
+    height: 530px;
+    z-index: 0;
+}
+
+#divChat #divUsuariosConectados {
+    display: grid;
+    overflow: auto;
+    border-color: #FFFFFF;
+    width: 250px;
+    height: 395px;
+    background-color: #D9D9D9;
+    margin-top: 110px;
+    margin-left: -620px;
+    z-index: 1;
+  }
+
+  #divChat #imagenConectados {
+    margin-left: 20px;
+    margin-top: 5px;
+    padding-bottom: 5px;
+    width: 50px;
+    height:75px;
+    border-radius: 50%;
+  }
+  
+  #divChat #divEstadoOnline {
+    position: relative;
+    margin-top: 0px;
+    display: flex;
+    justify-content: left;
+    margin-left: 95px;
+  }
+  
+  #divChat #parrafoNombrePersonaje {
+    position: absolute;
+    display: flex;
+    color: #000000;
+    font-family: "Cinzel", serif;
+    margin-top: -50px;
+    font-weight: bold;
+  
+  }
+  
+  #divChat #parrafoOnline {
+    position: absolute;
+    display: flex;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: -25px;
+    font-size: 13px;
+  
+  }
+  
+  #divChat #divPuntoVerde {
+    background-color: rgb(3, 192, 3);
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin-top: -33px;
+    margin-left: 78px;
+  }
+
+  #divChat #divNumeroUsuarios {
+position: absolute;
+    display: flex;
+    width: 250px;
+    height: 50px;
+    background-color: #FFA400;
+    margin-top: 60px;
+    margin-left: -620px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+
+  #divChat #parrafoNumeroUsuarios{
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+  #divChat #divTituloGrupal{
+    position: absolute;
+    display: flex;
+  width: 590px;
+  height: 50px;
+  background-color: #FFA400;
+  margin-top: 60px;
+  margin-left: 290px;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#divChat #parrafoTituloGrupal{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#divChat #divContenedor {
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 70px;
+    width: 590px;
+    height: 435px;
+    background-color: #D9D9D9;
+  }
+
+  #divChat  #divMensajes{
+    background: #D9D9D9;
+    top: 0px;
+    width: 550px;
+    height: 395px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  #divChat  #ulMensajes {
+    margin-top: 0px;
+    list-style: none;
+    overflow-y: auto;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 550px;
+  }
+  
+  #divChat  .liBoot {
+    list-style: none;
+    display: flex;
+    margin-top: 2px;
+    justify-content: flex-start;
+    width: 600px;
+  }
+  
+  #divChat  .liUser {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    margin-bottom: 2px;
+  }
+  
+  #divChat .pMensajeBoot {
+    text-align: left;
+    background-color: #0a1416;
+    color: #d9d9d9;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 13px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  #divChat .pMensajeUser {
+    text-align: left;
+    background-color: #FFA400;
+    color: #000000;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0px 10px;
+    font-size: 13px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  #divChat  #divChatComponente {
+    display: flex;
+   align-items: center;
+    margin-top: -20px;
+    margin-left: 17px;
+    width: 550px;
+    background-color: #D9D9D9;
+    height: 60px;
+    z-index: 1;
+  }
+
+  #divChat  #mensajeTextarea {
+    display: flex;
+    margin-top: 0px;
+    width: 525px;
+    height: 30px;
+    margin-left: 0px;
+    resize: none;
+    overflow: hidden;
+  }
+  
+  #divChat  #SpanEnviar {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 0px;
+    margin-bottom: 8px;
+    font-size: 35px;
+    cursor: pointer;
+  }
+
+  #divChat #divBtnHome {
+    position: fixed;
+    bottom: 30px;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    z-index: 1;
+    }
+    
+    #divChat #imageHome {
+      position: fixed;
+      width: 45px;
+      height: 50px;
+      right: 135px;
+      bottom: 65px;
+      cursor: pointer;
+    }
+    
+    #divChat #btnHome {
+      position: fixed;
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      border-radius: 50%;
+      width: 75px;
+      height: 75px;
+      background: #FFA400;
+      right: 120px;
+      bottom: 45px;
+      cursor: pointer;
+    }
+
+
+@media (min-width: 430px) and (max-width: 889px){
+
+    #divChat #divSecundario{
+        position: relative;
+        display: flex;
+          margin-top: 0px;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+
+    #divChat nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        justify-content: center;
+      }
+
+      #divChat #inputHamburguesa {
+       display: none;
+    
+      }
+    
+      #divChat #checkHamburger {
+        display: none;
+      }
+
+      #divChat  #divBtnOnline {
+        position: absolute;
+        display: flex;
+            width: 75px;
+            height: 75px;
+            margin-top: 13px;
+            margin-left: 0px;
+            z-index: 1;
+        }
+        
+        #divChat  #btnOnline {
+            display: flex;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            background-color: #FFA400;
+            margin-top: 0px;
+            margin-left: 0px;
+            z-index: 1;
+        }
+
+        #divChat #imgchatFondo{
+            position: absolute;
+            display: flex;
+            margin-top: 80px;
+            width: 100%;
+            height: 590px;
+            z-index: 0;
+        }
+
+        #divChat #divUsuariosConectados {
+            display: grid;
+            overflow: auto;
+            border-color: #FFFFFF;
+            width: 250px;
+            height: 395px;
+            background-color: #D9D9D9;
+            margin-top: 150px;
+            margin-left: 0px;
+            z-index: 1;
+          }
+
+          #divChat #imagenConectados {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            width: 50px;
+            height:75px;
+            border-radius: 50%;
+          }
+          
+          #divChat #divEstadoOnline {
+            position: relative;
+            margin-top: 0px;
+            display: flex;
+            justify-content: left;
+            margin-left: 95px;
+          }
+          
+          #divChat #parrafoNombrePersonaje {
+            position: absolute;
+            display: flex;
+            color: #000000;
+            font-family: "Cinzel", serif;
+            margin-top: -50px;
+            font-weight: bold;
+          
+          }
+          
+          #divChat #parrafoOnline {
+            position: absolute;
+            display: flex;
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            margin-top: -25px;
+            font-size: 13px;
+          
+          }
+          
+          #divChat #divPuntoVerde {
+          
+            background-color: rgb(3, 192, 3);
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            margin-top: -33px;
+            margin-left: 78px;
+          }
+
+          #divChat #divNumeroUsuarios {
+            display: flex;
+            width: 250px;
+            height: 50px;
+            background-color: #FFA400;
+            margin-top: 100px;
+            margin-left: 0px;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+          }
+
+          #divChat #parrafoNumeroUsuarios{
+            color: #000000;
+            font-size: 17px;
+            font-weight: bold;
+          }
+
+          #divChat #divTituloGrupal{
+            position: absolute;
+            display: flex;
+          width: 390px;
+          height: 50px;
+          background-color: #FFA400;
+          margin-top: 150px;
+          margin-left: 0px;
+          align-items: center;
+          justify-content: center;
+          z-index: 1;
+        }
+
+          #divChat #divContenedor {
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 200px;
+            width: 390px;
+            height: 420px;
+            background-color: #D9D9D9;
+          }
+        
+
+          #divChat  #divMensajes{
+            background: #D9D9D9;
+            top: 0px;
+            width: 390px;
+            height: 360px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+          }
+          
+          #divChat  #ulMensajes {
+            margin-top: 0px;
+            list-style: none;
+            overflow-y: auto;
+            padding: 0px, 10px, 10px, 10px;
+            margin-left: 17px;
+            margin-top: 0px;
+            width: 360px;
+          }
+          
+          #divChat  .liBoot {
+            list-style: none;
+            display: flex;
+            margin-top: 2px;
+            justify-content: flex-start;
+            width: 600px;
+          }
+          
+          #divChat  .liUser {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            width: 600px;
+            margin-bottom: 2px;
+          }
+          
+          #divChat .pMensajeBoot {
+            text-align: left;
+            background-color: #0a1416;
+            color: #d9d9d9;
+            max-width: 75%;
+            padding: 12px 16px;
+            border-radius: 10px 10px 10px 0px;
+            font-size: 13px;
+            margin: 0px;
+            font-family: 'Inter', sans-serif;
+          }
+          
+          #divChat .pMensajeUser {
+            text-align: left;
+            background-color: #FFA400;
+            color: #000000;
+            max-width: 75%;
+            padding: 12px 16px;
+            border-radius: 10px 10px 0px 10px;
+            font-size: 13px;
+            margin: 0px;
+            font-family: 'Inter', sans-serif;
+          }
+          
+          #divChat  #divChatComponente {
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            margin-top: 0px;
+            margin-left: 17px;
+            width: 350px;
+            background-color: #D9D9D9;
+            padding: 0px;
+            height: 60px;
+            z-index: 1;
+          }
+        
+          #divChat  #mensajeTextarea {
+            display: flex;
+            margin-top: 5px;
+            width: 525px;
+            height: 30px;
+            margin-left: 0px;
+            resize: none;
+            overflow: hidden;
+          }
+          
+          #divChat  #SpanEnviar {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            margin-left: 0px;
+            margin-bottom: 8px;
+            font-size: 35px;
+            cursor: pointer;
+          }
+
+          #divChat #divBtnHome {
+            position: fixed;
+            bottom: 30px;
+            width: 75px;
+            height: 75px;
+            left: 30px;
+            z-index: 1;
+            }
+            
+            #divChat #imageHome {
+              position: fixed;
+              width: 45px;
+              height: 50px;
+              right: 34px;
+              bottom: 65px;
+              top:165px;
+              cursor: pointer;
+              z-index: 1;
+            }
+            
+            #divChat #btnHome {
+              position: fixed;
+              font-family: 'Inter', sans-serif;
+              font-size: 17px;
+              border-radius: 50%;
+              width: 75px;
+              height: 75px;
+              background: #FFA400;
+              right: 20px;
+              bottom: 45px;
+              top:148px;
+              cursor: pointer;
+              z-index: 1;
+            }
+          
+}
+@media (min-width: 331px) and (max-width: 429px){
+    #divChat #divSecundario{
+        position: relative;
+        display: flex;
+          margin-top: 0px;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+
+    #divChat nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        justify-content: center;
+      }
+
+      #divChat #inputHamburguesa {
+       display: none;
+    
+      }
+    
+      #divChat #checkHamburger {
+        display: none;
+      }
+
+      #divChat  #divBtnOnline {
+        position: absolute;
+        display: flex;
+            width: 75px;
+            height: 75px;
+            margin-top: 13px;
+            margin-left: 0px;
+            z-index: 1;
+        }
+        
+        #divChat  #btnOnline {
+            display: flex;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            background-color: #FFA400;
+            margin-top: 0px;
+            margin-left: 0px;
+            z-index: 1;
+        }
+
+        #divChat #imgchatFondo{
+            position: absolute;
+            display: flex;
+            margin-top: 80px;
+            width: 100%;
+            height: 590px;
+            z-index: 0;
+        }
+
+        #divChat #divUsuariosConectados {
+            display: grid;
+            overflow: auto;
+            border-color: #FFFFFF;
+            width: 250px;
+            height: 395px;
+            background-color: #D9D9D9;
+            margin-top: 150px;
+            margin-left: 0px;
+            z-index: 1;
+          }
+
+          #divChat #imagenConectados {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            width: 50px;
+            height:75px;
+            border-radius: 50%;
+          }
+          
+          #divChat #divEstadoOnline {
+            position: relative;
+            margin-top: 0px;
+            display: flex;
+            justify-content: left;
+            margin-left: 95px;
+          }
+          
+          #divChat #parrafoNombrePersonaje {
+            position: absolute;
+            display: flex;
+            color: #000000;
+            font-family: "Cinzel", serif;
+            margin-top: -50px;
+            font-weight: bold;
+          
+          }
+          
+          #divChat #parrafoOnline {
+            position: absolute;
+            display: flex;
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            margin-top: -25px;
+            font-size: 13px;
+          
+          }
+          
+          #divChat #divPuntoVerde {
+          
+            background-color: rgb(3, 192, 3);
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            margin-top: -33px;
+            margin-left: 78px;
+          }
+
+          #divChat #divNumeroUsuarios {
+            display: flex;
+            width: 250px;
+            height: 50px;
+            background-color: #FFA400;
+            margin-top: 100px;
+            margin-left: 0px;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+          }
+
+          #divChat #parrafoNumeroUsuarios{
+            color: #000000;
+            font-size: 17px;
+            font-weight: bold;
+          }
+
+          #divChat #divTituloGrupal{
+            position: absolute;
+            display: flex;
+          width: 300px;
+          height: 50px;
+          background-color: #FFA400;
+          margin-top: 150px;
+          margin-left: 0px;
+          align-items: center;
+          justify-content: center;
+          z-index: 0;
+        }
+
+          #divChat #divContenedor {
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 200px;
+            width: 300px;
+            height: 420px;
+            background-color: #D9D9D9;
+          }
+        
+
+          #divChat  #divMensajes{
+            background: #D9D9D9;
+            top: 0px;
+            width: 300px;
+            height: 360px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+          }
+          
+          #divChat  #ulMensajes {
+            margin-top: 0px;
+            list-style: none;
+            overflow-y: auto;
+            padding: 0px, 10px, 10px, 10px;
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 300px;
+          }
+          
+          #divChat  .liBoot {
+            list-style: none;
+            display: flex;
+            margin-top: 2px;
+            justify-content: flex-start;
+            width: 600px;
+          }
+          
+          #divChat  .liUser {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            width: 600px;
+            margin-bottom: 2px;
+          }
+          
+          #divChat .pMensajeBoot {
+            text-align: left;
+            background-color: #0a1416;
+            color: #d9d9d9;
+            max-width: 75%;
+            padding: 12px 16px;
+            border-radius: 10px 10px 10px 0px;
+            font-size: 13px;
+            margin: 0px;
+            font-family: 'Inter', sans-serif;
+          }
+          
+          #divChat .pMensajeUser {
+            text-align: left;
+            background-color: #FFA400;
+            color: #000000;
+            max-width: 75%;
+            padding: 12px 16px;
+            border-radius: 10px 10px 0px 10px;
+            font-size: 13px;
+            margin: 0px;
+            font-family: 'Inter', sans-serif;
+          }
+          
+          #divChat  #divChatComponente {
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            margin-top: 0px;
+            margin-left: 17px;
+            width: 260px;
+            background-color: #D9D9D9;
+            padding: 0px;
+            height: 60px;
+            z-index: 1;
+          }
+        
+          #divChat  #mensajeTextarea {
+            display: flex;
+            margin-top: 5px;
+            width: 525px;
+            height: 30px;
+            margin-left: 0px;
+            resize: none;
+            overflow: hidden;
+          }
+          
+          #divChat  #SpanEnviar {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            margin-left: 0px;
+            margin-bottom: 8px;
+            font-size: 35px;
+            cursor: pointer;
+          }
+
+          #divChat  #divBtnHome {
+            position: fixed;
+            bottom: 30px;
+            width: 75px;
+            height: 75px;
+            left: 30px;
+            z-index: 1;
+            }
+            
+            #divChat  #imageHome {
+              position: fixed;
+              width: 45px;
+              height: 50px;
+              right: 34px;
+              bottom: 65px;
+              top:165px;
+              cursor: pointer;
+              z-index: 1;
+            }
+            
+            #divChat  #btnHome {
+              position: fixed;
+              font-family: 'Inter', sans-serif;
+              font-size: 17px;
+              border-radius: 50%;
+              width: 75px;
+              height: 75px;
+              background: #FFA400;
+              right: 20px;
+              bottom: 45px;
+              top:148px;
+              cursor: pointer;
+              z-index: 1;
+            }  
+}
+@media (min-width: 280px) and (max-width: 330px){
+    #divChat #divSecundario{
+        position: relative;
+        display: flex;
+          margin-top: 0px;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+        }
+
+    #divChat nav {
+        display: flex;
+        background-color: #303030;
+        padding-top: 25px;
+        height: 80px;
+        justify-content: center;
+      }
+
+      #divChat #inputHamburguesa {
+       display: none;
+    
+      }
+    
+      #divChat #checkHamburger {
+        display: none;
+      }
+
+      #divChat  #divBtnOnline {
+        position: absolute;
+        display: flex;
+            width: 75px;
+            height: 75px;
+            margin-top: 13px;
+            margin-left: 0px;
+            z-index: 1;
+        }
+        
+        #divChat  #btnOnline {
+            display: flex;
+            border-radius: 50%;
+            width: 75px;
+            height: 75px;
+            background-color: #FFA400;
+            margin-top: 0px;
+            margin-left: 0px;
+            z-index: 1;
+        }
+
+        #divChat #imgchatFondo{
+            position: absolute;
+            display: flex;
+            margin-top: 80px;
+            width: 100%;
+            height: 590px;
+            z-index: 0;
+        }
+
+        #divChat #divUsuariosConectados {
+            display: grid;
+            overflow: auto;
+            border-color: #FFFFFF;
+            width: 250px;
+            height: 395px;
+            background-color: #D9D9D9;
+            margin-top: 150px;
+            margin-left: 0px;
+            z-index: 1;
+          }
+
+          #divChat #imagenConectados {
+            margin-left: 20px;
+            margin-top: 5px;
+            padding-bottom: 5px;
+            width: 50px;
+            height:75px;
+            border-radius: 50%;
+          }
+          
+          #divChat #divEstadoOnline {
+            position: relative;
+            margin-top: 0px;
+            display: flex;
+            justify-content: left;
+            margin-left: 95px;
+          }
+          
+          #divChat #parrafoNombrePersonaje {
+            position: absolute;
+            display: flex;
+            color: #000000;
+            font-family: "Cinzel", serif;
+            margin-top: -50px;
+            font-weight: bold;
+          
+          }
+          
+          #divChat #parrafoOnline {
+            position: absolute;
+            display: flex;
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            margin-top: -25px;
+            font-size: 13px;
+          
+          }
+          
+          #divChat #divPuntoVerde {
+          
+            background-color: rgb(3, 192, 3);
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            margin-top: -33px;
+            margin-left: 78px;
+          }
+
+          #divChat #divNumeroUsuarios {
+            display: flex;
+            width: 250px;
+            height: 50px;
+            background-color: #FFA400;
+            margin-top: 100px;
+            margin-left: 0px;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+          }
+
+          #divChat #parrafoNumeroUsuarios{
+            color: #000000;
+            font-size: 17px;
+            font-weight: bold;
+          }
+
+          #divChat #divTituloGrupal{
+            position: absolute;
+            display: flex;
+          width: 300px;
+          height: 50px;
+          background-color: #FFA400;
+          margin-top: 150px;
+          margin-left: 0px;
+          align-items: center;
+          justify-content: center;
+          z-index: 0;
+        }
+
+          #divChat #divContenedor {
+            position: absolute;
+            margin-left: 0px;
+            margin-top: 200px;
+            width: 300px;
+            height: 420px;
+            background-color: #D9D9D9;
+          }
+        
+
+          #divChat  #divMensajes{
+            background: #D9D9D9;
+            top: 0px;
+            width: 300px;
+            height: 360px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+          }
+          
+          #divChat  #ulMensajes {
+            margin-top: 0px;
+            list-style: none;
+            overflow-y: auto;
+            padding: 0px, 10px, 10px, 10px;
+            margin-left: 0px;
+            margin-top: 0px;
+            width: 300px;
+          }
+          
+          #divChat  .liBoot {
+            list-style: none;
+            display: flex;
+            margin-top: 2px;
+            justify-content: flex-start;
+            width: 600px;
+          }
+          
+          #divChat  .liUser {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            width: 600px;
+            margin-bottom: 2px;
+          }
+          
+          #divChat .pMensajeBoot {
+            text-align: left;
+            background-color: #0a1416;
+            color: #d9d9d9;
+            max-width: 75%;
+            padding: 12px 16px;
+            border-radius: 10px 10px 10px 0px;
+            font-size: 13px;
+            margin: 0px;
+            font-family: 'Inter', sans-serif;
+          }
+          
+          #divChat .pMensajeUser {
+            text-align: left;
+            background-color: #FFA400;
+            color: #000000;
+            max-width: 75%;
+            padding: 12px 16px;
+            border-radius: 10px 10px 0px 10px;
+            font-size: 13px;
+            margin: 0px;
+            font-family: 'Inter', sans-serif;
+          }
+          
+          #divChat  #divChatComponente {
+            display: flex;
+            justify-content: center;
+           align-items: center;
+            margin-top: 0px;
+            margin-left: 17px;
+            width: 260px;
+            background-color: #D9D9D9;
+            padding: 0px;
+            height: 60px;
+            z-index: 1;
+          }
+        
+          #divChat  #mensajeTextarea {
+            display: flex;
+            margin-top: 5px;
+            width: 525px;
+            height: 30px;
+            margin-left: 0px;
+            resize: none;
+            overflow: hidden;
+          }
+          
+          #divChat  #SpanEnviar {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            margin-left: 0px;
+            margin-bottom: 8px;
+            font-size: 35px;
+            cursor: pointer;
+          }
+
+          #divChat  #divBtnHome {
+            position: fixed;
+            bottom: 30px;
+            width: 75px;
+            height: 75px;
+            left: 30px;
+            z-index: 1;
+            }
+            
+            #divChat  #imageHome {
+              position: fixed;
+              width: 45px;
+              height: 50px;
+              right: 34px;
+              bottom: 65px;
+              top:165px;
+              cursor: pointer;
+              z-index: 1;
+            }
+            
+            #divChat   #btnHome {
+              position: fixed;
+              font-family: 'Inter', sans-serif;
+              font-size: 17px;
+              border-radius: 50%;
+              width: 75px;
+              height: 75px;
+              background: #FFA400;
+              right: 20px;
+              bottom: 45px;
+              top:148px;
+              cursor: pointer;
+              z-index: 1;
+            }
+}
+

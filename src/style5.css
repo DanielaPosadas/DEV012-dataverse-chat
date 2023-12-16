@@ -1,0 +1,259 @@
+/*VISTA NOT FOUND*/
+.ruta-error {
+  background-color: #0a1416;
+}
+
+#viewError {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+    margin: 0%;
+}
+
+#logoError {
+    position: absolute;
+display: flex;
+  width: 270px;
+  height: 270px;
+  top: 60px
+  
+}
+
+#UPS {
+    position: absolute;
+  display: flex;
+  color: #ffffff;
+  font-size: 110px;
+  font-weight: bold;
+  top: 290px;
+
+}
+
+#ERROR {
+    position: absolute;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 500;
+  top: 420px;
+}
+
+#DescripError {
+    position: absolute;
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  margin-top: 0px;
+  color: #ffffff;
+  font-size: 15px;
+  top: 488px;
+}
+
+#BtnVolver {
+    position: absolute;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #000000;
+  background-color: #FFA400;
+  border-radius: 9px;
+  padding: 8px 55px 8px 55px;
+  font-size: 15px;
+  top: 545px;
+  margin: 0%;
+}
+
+
+@media (min-width: 430px) and (max-width: 889px){
+    #viewError {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        margin: 0%;
+    }
+    
+    #logoError {
+        position: absolute;
+    display: flex;
+      width: 270px;
+      height: 270px;
+      top: 60px
+      
+    }
+    
+    #UPS {
+        position: absolute;
+      display: flex;
+      color: #ffffff;
+      font-size: 110px;
+      font-weight: bold;
+      top: 290px;
+    
+    }
+    
+    #ERROR {
+        position: absolute;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 500;
+      top: 420px;
+    }
+    
+    #DescripError {
+        position: absolute;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      margin-top: 0px;
+      color: #ffffff;
+      font-size: 15px;
+      top: 488px;
+    }
+    
+    #BtnVolver {
+        position: absolute;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      color: #000000;
+      background-color: #FFA400;
+      border-radius: 9px;
+      padding: 8px 55px 8px 55px;
+      font-size: 15px;
+      top: 545px;
+      margin: 0%;
+    }
+}
+@media (min-width: 331px) and (max-width: 429px){
+    #viewError {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        margin: 0%;
+    }
+    
+    #logoError {
+        position: absolute;
+    display: flex;
+      width: 270px;
+      height: 270px;
+      top: 60px
+      
+    }
+    
+    #UPS {
+        position: absolute;
+      display: flex;
+      color: #ffffff;
+      font-size: 110px;
+      font-weight: bold;
+      top: 290px;
+    
+    }
+    
+    #ERROR {
+        position: absolute;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 500;
+      top: 420px;
+    }
+    
+    #DescripError {
+        position: absolute;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      margin-top: 0px;
+      color: #ffffff;
+      font-size: 15px;
+      width: 200px;
+      top: 488px;
+    }
+    
+    #BtnVolver {
+        position: absolute;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      color: #000000;
+      background-color: #FFA400;
+      border-radius: 9px;
+      padding: 8px 55px 8px 55px;
+      font-size: 15px;
+      top: 545px;
+      margin: 0%;
+    }
+}
+@media (min-width: 280px) and (max-width: 330px){
+    #viewError {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        margin: 0%;
+    }
+    
+    #logoError {
+        position: absolute;
+    display: flex;
+      width: 270px;
+      height: 270px;
+      top: 60px
+      
+    }
+    
+    #UPS {
+        position: absolute;
+      display: flex;
+      color: #ffffff;
+      font-size: 110px;
+      font-weight: bold;
+      top: 290px;
+    
+    }
+    
+    #ERROR {
+        position: absolute;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      color: #ffffff;
+      font-size: 30px;
+      font-weight: 500;
+      top: 420px;
+    }
+    
+    #DescripError {
+        position: absolute;
+      display: flex;
+      font-family: 'Inter', sans-serif;
+      margin-top: 0px;
+      color: #ffffff;
+      width: 200px;
+      font-size: 15px;
+      top: 488px;
+    }
+    
+    #BtnVolver {
+        position: absolute;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      color: #000000;
+      background-color: #FFA400;
+      border-radius: 9px;
+      padding: 8px 55px 8px 55px;
+      font-size: 15px;
+      top: 545px;
+      margin: 0%;
+    }
+}
