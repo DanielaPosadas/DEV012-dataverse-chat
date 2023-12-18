@@ -1,16 +1,14 @@
-
 export const div_filtros = () => {
-
-  const navMenu = document.createElement('nav');
-  navMenu.setAttribute('id', "navMenu");
-  const inputHamburguesa = document.createElement('input');
-  inputHamburguesa.setAttribute('type', 'checkbox')
-  inputHamburguesa.setAttribute('id', 'inputHamburguesa'); 
-  const label = document.createElement('i');
-  label.setAttribute('id', 'checkHamburger');
-  label.setAttribute('class', 'fi fi-br-menu-burger');
-  const div = document.createElement('div');
-  div.setAttribute('id', "filtros");
+  const navMenu = document.createElement("nav");
+  navMenu.setAttribute("id", "navMenu");
+  const inputHamburguesa = document.createElement("input");
+  inputHamburguesa.setAttribute("type", "checkbox");
+  inputHamburguesa.setAttribute("id", "inputHamburguesa");
+  const label = document.createElement("i");
+  label.setAttribute("id", "checkHamburger");
+  label.setAttribute("class", "fi fi-br-menu-burger");
+  const div = document.createElement("div");
+  div.setAttribute("id", "filtros");
 
   //CREACIÓN DE FILTROS
   div.innerHTML = `
@@ -39,10 +37,9 @@ export const div_filtros = () => {
 </select>
 <button data-testid="button-clear">Limpiar</button>`;
 
-
-navMenu.appendChild(label);
-navMenu.appendChild(inputHamburguesa);
-navMenu.appendChild(div);
+  navMenu.appendChild(label);
+  navMenu.appendChild(inputHamburguesa);
+  navMenu.appendChild(div);
 
   return navMenu;
 };

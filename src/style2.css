@@ -1,218 +1,219 @@
 /* VISTA DESCRIPTION */
 #viewDescription header {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    background-color: #7b6043;
-    height: 170px;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
-#viewDescriptionSecundario{
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  background-color: #7b6043;
+  height: 170px;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
-#viewDescription nav{
-    display: none;
+#viewDescriptionSecundario {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#viewDescription nav {
+  display: none;
 }
 
 #imgDescriptionFondo {
-    display: flex;
-    margin: 70px, 250px, 0px, 250px;
-    width: 100%;
-    height: 840px;
-  }
+  display: flex;
+  margin: 70px, 250px, 0px, 250px;
+  width: 100%;
+  height: 840px;
+}
 
 #imgDescriptionPersonaje {
-    display: flex;
-    position: absolute;
-    margin-top: 58px;
-    margin-left: -450px;
-    width: 250px;
-    height: 341px;
-    z-index: 1;
-  }
-  
-#divNombre {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 75px;
-    margin-left: 300px;
-    background-color: #F8DADA;
-    width: 390px;
-    height: 50px;
-    border-radius: 0 100px 0 0;
-  }
-  
-  #nombre {
-    display: flex;
-    font-size: 30px;
-    color: #000;
-    font-weight: bold;
-  }
-  
-  #divDetalle {
-    position: absolute;
-    display: flex;
-    justify-content: start;
-    margin-top: 130px;
-    margin-left: 300px;
-    background-color: #F8DADA;
-    width: 390px;
-    height: 200px;
-  }
-  
-  #description {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 20px;
-    font-size: 15px;
-    color: #000000;
-    font-weight: 700;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  #skills {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 70px;
-  }
-  
-  #armas {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 110px;
-  }
-  
-  #apariciones {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 135px;
-  }
-  
-  #divLetalidad {
-    position: absolute;
-    display: flex;
-    justify-content: start;
-    margin-left: 110px;
-    margin-top: 335px;
-    background-color: #F8DADA;
-    width: 200px;
-    height: 63px;
-  }
-  
-  #parrafoLetalidad {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 5px;
-  }
-  
-  #imgLetalidad {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 30px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 15px;
-    width: 25px;
-    height: 40px;
-  }
-  
-  #divReino {
-    position: absolute;
-    display: flex;
-    justify-content: start;
-    margin-left: 505px;
-    margin-top: 335px;
-    background-color: #F8DADA;
-    width: 185px;
-    height: 63px;
-  }
-  
-  #imgReino {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 30px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 15px;
-    width: 25px;
-    height: 40px;
-  }
-  
-  #parrafoReino {
-    position: absolute;
-    display: flex;
-    text-align: left;
-    margin-left: 25px;
-    margin-right: 20px;
-    font-size: 12px;
-    color: #000000;
-    font-family: 'Inter', sans-serif;
-    margin-top: 5px;
-  }
-  #divTitulo {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    width: 695px;
-    height: 50px;
-    background-color: #FFA400;
-    margin-top: 450px;
-    margin-left: 0px;
-  }
-  
-  #parrafoTitulo {
-    color: #000000;
-    font-weight: bold;
-    font-size: 20px;
-  }
+  display: flex;
+  position: absolute;
+  margin-top: 58px;
+  margin-left: -450px;
+  width: 250px;
+  height: 341px;
+  z-index: 1;
+}
 
-  #divBtnHome {
-position: fixed;
-bottom: 30px;
-width: 75px;
-height: 75px;
-left: 30px;
-z-index: 1;
+#divNombre {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 75px;
+  margin-left: 300px;
+  background-color: #F8DADA;
+  width: 390px;
+  height: 50px;
+  border-radius: 0 100px 0 0;
+}
+
+#nombre {
+  display: flex;
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+#divDetalle {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  margin-top: 130px;
+  margin-left: 300px;
+  background-color: #F8DADA;
+  width: 390px;
+  height: 200px;
+}
+
+#description {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 15px;
+  color: #000000;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+#skills {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 70px;
+}
+
+#armas {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 110px;
+}
+
+#apariciones {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 135px;
+}
+
+#divLetalidad {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  margin-left: 110px;
+  margin-top: 335px;
+  background-color: #F8DADA;
+  width: 200px;
+  height: 63px;
+}
+
+#parrafoLetalidad {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 5px;
+}
+
+#imgLetalidad {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 15px;
+  width: 25px;
+  height: 40px;
+}
+
+#divReino {
+  position: absolute;
+  display: flex;
+  justify-content: start;
+  margin-left: 505px;
+  margin-top: 335px;
+  background-color: #F8DADA;
+  width: 185px;
+  height: 63px;
+}
+
+#imgReino {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 15px;
+  width: 25px;
+  height: 40px;
+}
+
+#parrafoReino {
+  position: absolute;
+  display: flex;
+  text-align: left;
+  margin-left: 25px;
+  margin-right: 20px;
+  font-size: 12px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  margin-top: 5px;
+}
+
+#divTitulo {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  width: 695px;
+  height: 50px;
+  background-color: #FFA400;
+  margin-top: 450px;
+  margin-left: 0px;
+}
+
+#parrafoTitulo {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#divBtnHome {
+  position: fixed;
+  bottom: 30px;
+  width: 75px;
+  height: 75px;
+  left: 30px;
+  z-index: 1;
 }
 
 #imageHome {
@@ -236,50 +237,377 @@ z-index: 1;
   bottom: 45px;
   cursor: pointer;
 }
+
 /*VISTA CHAT*/
-  
- #divContenedor {
+
+#divContenedor {
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 500px;
+  width: 695px;
+  height: 300px;
+  background-color: #D9D9D9;
+}
+
+#divMensajes {
+  background: #D9D9D9;
+  width: 695px;
+  height: 250px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#ulMensajes {
+  list-style: none;
+  overflow-y: auto;
+  list-style: none;
+  padding: 2px;
+  width: 695px;
+}
+
+.liBoot {
+  list-style: none;
+  display: flex;
+  margin-top: 2px;
+  justify-content: flex-start;
+  width: 600px;
+}
+
+.liUser {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 600px;
+  margin-bottom: 2px;
+}
+
+.pMensajeBoot {
+  background-color: #0a1416;
+  color: #d9d9d9;
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 10px 10px 10px 0px;
+  font-size: 13px;
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+.pMensajeUser {
+  background-color: #FFA400;
+  color: #000000;
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 10px 10px 0px 10px;
+  font-size: 13px;
+  margin: 0px;
+  font-family: 'Inter', sans-serif;
+}
+
+#divChatComponente {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 20px;
+}
+
+#mensajeTextarea {
+  display: flex;
+  margin-top: 0px;
+  width: 620px;
+  height: 30px;
+  margin-left: 0px;
+  resize: none;
+  overflow: hidden;
+}
+
+#SpanEnviar {
+  display: flex;
+  width: 25px;
+  height: 25px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+@media (min-width: 430px) and (max-width: 889px) {
+
+  #viewDescription #header2 {
+    height: 150px;
+    width: 135px;
+    margin-top: 0;
+  }
+
+  #viewDescription nav {
+    position: relative;
+    display: flex;
+    background-color: #303030;
+    padding-top: 25px;
+    height: 80px;
+    justify-content: center;
+  }
+
+  #viewDescription #inputHamburguesa {
+    display: none;
+
+  }
+
+  #viewDescription #checkHamburger {
+    display: none;
+  }
+
+  #viewDescription #viewDescriptionSecundario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  #viewDescription #divBtnHome {
+    position: fixed;
+    bottom: 30px;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    z-index: 1;
+  }
+
+  #viewDescription #imageHome {
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    left: 439px;
+    bottom: 65px;
+    top: 165px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #viewDescription #btnHome {
+    position: fixed;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #FFA400;
+    left: 400px;
+    bottom: 45px;
+    top: 148px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #viewDescription #imgDescriptionFondo {
+    display: flex;
+    margin: 70px, 0px, 0px, 0px;
+    width: 100%;
+    height: 1180px;
+  }
+
+  #viewDescription #imgDescriptionPersonaje {
+    display: flex;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 0px;
+    width: 250px;
+    height: 341px;
+    z-index: 0;
+  }
+
+  #viewDescription #divNombre {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 420px;
+    margin-left: 0px;
+    background-color: #F8DADA;
+    width: 390px;
+    height: 50px;
+    border-radius: 0 100px 0 0;
+  }
+
+  #viewDescription #divDetalle {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-top: 480px;
+    margin-left: 0px;
+    background-color: #F8DADA;
+    width: 390px;
+    height: 220px;
+  }
+
+  #viewDescription #skills {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 70px;
+  }
+
+  #viewDescription #armas {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 125px;
+  }
+
+  #viewDescription #apariciones {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 150px;
+  }
+
+  #viewDescription #divLetalidad {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-left: -194px;
+    margin-top: 705px;
+    background-color: #F8DADA;
+    width: 195px;
+    height: 63px;
+  }
+
+  #viewDescription #parrafoLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+
+  #viewDescription #imgLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+
+  #viewDescription #divReino {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-left: 200px;
+    margin-top: 705px;
+    background-color: #F8DADA;
+    width: 190px;
+    height: 63px;
+  }
+
+  #viewDescription #imgReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+
+  #viewDescription #parrafoReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+
+  #viewDescription #divTitulo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 390px;
+    height: 50px;
+    background-color: #FFA400;
+    margin-top: 790px;
+    margin-left: 0px;
+  }
+
+  #viewDescription #parrafoTitulo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #viewDescription #divContenedor {
     position: absolute;
     margin-left: 0px;
-    margin-top: 500px;
-    width: 695px;
+    margin-top: 840px;
+    width: 390px;
     height: 300px;
     background-color: #D9D9D9;
   }
 
-  #divMensajes{
+  #viewDescription #divMensajes {
     background: #D9D9D9;
-    width: 695px;
+    width: 390px;
     height: 250px;
     overflow-y: scroll;
     overflow-x: hidden;
   }
-  
-  #ulMensajes {
+
+  #viewDescription #ulMensajes {
     list-style: none;
     overflow-y: auto;
     list-style: none;
-    padding: 2px;
-    width: 695px;
+    padding: 15px;
+    width: 390px;
   }
-  
-  .liBoot {
+
+  #viewDescription .liBoot {
     list-style: none;
     display: flex;
     margin-top: 2px;
     justify-content: flex-start;
     width: 600px;
   }
-  
-  .liUser {
+
+  #viewDescription .liUser {
     list-style: none;
     display: flex;
     justify-content: flex-end;
     width: 600px;
     margin-bottom: 2px;
   }
-  
-  .pMensajeBoot {
+
+  #viewDescription .pMensajeBoot {
     background-color: #0a1416;
     color: #d9d9d9;
     max-width: 75%;
@@ -289,8 +617,8 @@ z-index: 1;
     margin: 0px;
     font-family: 'Inter', sans-serif;
   }
-  
-  .pMensajeUser {
+
+  #viewDescription .pMensajeUser {
     background-color: #FFA400;
     color: #000000;
     max-width: 75%;
@@ -300,24 +628,25 @@ z-index: 1;
     margin: 0px;
     font-family: 'Inter', sans-serif;
   }
-  
-  #divChatComponente {
+
+  #viewDescription #divChatComponente {
     display: flex;
     margin-top: 0px;
-    margin-left: 20px;
+    margin-left: 17px;
+    width: 450px;
   }
 
-  #mensajeTextarea {
+  #viewDescription #mensajeTextarea {
     display: flex;
     margin-top: 0px;
-    width: 620px;
+    width: 325px;
     height: 30px;
     margin-left: 0px;
     resize: none;
     overflow: hidden;
   }
-  
-  #SpanEnviar {
+
+  #viewDescription #SpanEnviar {
     display: flex;
     width: 25px;
     height: 25px;
@@ -326,975 +655,650 @@ z-index: 1;
     font-size: 35px;
     cursor: pointer;
   }
-  @media (min-width: 430px) and (max-width: 889px) {
-  
-    #viewDescription #header2 {
-        height: 150px;
-        width: 135px;
-        margin-top: 0;
-      }
-    
-      #viewDescription nav {
-        position: relative;
-        display: flex;
-        background-color: #303030;
-        padding-top: 25px;
-        height: 80px;
-        justify-content: center;
-      }
 
-      #viewDescription #inputHamburguesa {
-       display: none;
-    
-      }
-    
-      #viewDescription #checkHamburger {
-        display: none;
-      }
+}
 
-      #viewDescription #viewDescriptionSecundario{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+@media (min-width: 331px) and (max-width: 429px) {
 
-   
-    #viewDescription #divBtnHome {
-        position: fixed;
-        bottom: 30px;
-        width: 75px;
-        height: 75px;
-        left: 30px;
-        z-index: 1;
-        }
-        
-        #viewDescription #imageHome {
-          position: fixed;
-          width: 45px;
-          height: 50px;
-          left: 439px;
-          bottom: 65px;
-          top:165px;
-          cursor: pointer;
-          z-index: 1;
-        }
-        
-        #viewDescription  #btnHome {
-          position: fixed;
-          font-family: 'Inter', sans-serif;
-          font-size: 17px;
-          border-radius: 50%;
-          width: 75px;
-          height: 75px;
-          background: #FFA400;
-          left: 400px;
-          bottom: 45px;
-          top:148px;
-          cursor: pointer;
-          z-index: 1;
-        }
-    
-    #viewDescription #imgDescriptionFondo {
-        display: flex;
-        margin: 70px, 0px, 0px, 0px;
-        width: 100%;
-        height: 1180px;
-      }
-    
-      #viewDescription #imgDescriptionPersonaje {
-        display: flex;
-        position: absolute;
-        margin-top: 58px;
-        margin-left: 0px;
-        width: 250px;
-        height: 341px;
-        z-index: 0;
-      }
+  #viewDescription #header2 {
+    height: 150px;
+    width: 135px;
+    margin-top: 0;
+  }
 
-      #viewDescription #divNombre {
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 420px;
-        margin-left: 0px;
-        background-color: #F8DADA;
-        width: 390px;
-        height: 50px;
-        border-radius: 0 100px 0 0;
-      }
+  #viewDescription nav {
+    position: relative;
+    display: flex;
+    background-color: #303030;
+    padding-top: 25px;
+    height: 80px;
+    justify-content: center;
+  }
 
-      #viewDescription #divDetalle {
-        position: absolute;
-        display: flex;
-        justify-content: start;
-        margin-top: 480px;
-        margin-left: 0px;
-        background-color: #F8DADA;
-        width: 390px;
-        height: 220px;
-      }
+  #viewDescription #inputHamburguesa {
+    display: none;
 
-      #viewDescription #skills {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 25px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 70px;
-      }
-      
-      #viewDescription #armas {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 25px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 125px;
-      }
-      
-      #viewDescription #apariciones {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 25px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 150px;
-      }
-      
-      #viewDescription #divLetalidad {
-        position: absolute;
-        display: flex;
-        justify-content: start;
-        margin-left: -194px;
-        margin-top: 705px;
-        background-color: #F8DADA;
-        width: 195px;
-        height: 63px;
-      }
-      
-      #viewDescription #parrafoLetalidad {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 25px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 5px;
-      }
-      
-      #viewDescription #imgLetalidad {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 30px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 15px;
-        width: 25px;
-        height: 40px;
-      }
-      
-      #viewDescription #divReino {
-        position: absolute;
-        display: flex;
-        justify-content: start;
-        margin-left: 200px;
-        margin-top: 705px;
-        background-color: #F8DADA;
-        width: 190px;
-        height: 63px;
-      }
-      
-      #viewDescription #imgReino {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 30px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 15px;
-        width: 25px;
-        height: 40px;
-      }
-      
-      #viewDescription #parrafoReino {
-        position: absolute;
-        display: flex;
-        text-align: left;
-        margin-left: 25px;
-        margin-right: 20px;
-        font-size: 12px;
-        color: #000000;
-        font-family: 'Inter', sans-serif;
-        margin-top: 5px;
-      }
+  }
 
-      #viewDescription #divTitulo {
-        display: flex;
-        position: absolute;
-        align-items: center;
-        justify-content: center;
-        width: 390px;
-        height: 50px;
-        background-color: #FFA400;
-        margin-top:790px;
-        margin-left: 0px;
-      }
-      
-      #viewDescription #parrafoTitulo {
-        color: #000000;
-        font-weight: bold;
-        font-size: 20px;
-      }
+  #viewDescription #checkHamburger {
+    display: none;
+  }
 
-      #viewDescription #divContenedor {
-        position: absolute;
-        margin-left: 0px;
-        margin-top: 840px;
-        width: 390px;
-        height: 300px;
-        background-color: #D9D9D9;
-      }
+  #viewDescription #viewDescriptionSecundario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-      #viewDescription  #divMensajes{
-        background: #D9D9D9;
-        width: 390px;
-        height: 250px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-      }
-      
-      #viewDescription  #ulMensajes {
-        list-style: none;
-        overflow-y: auto;
-        list-style: none;
-        padding: 15px;
-        width: 390px;
-      }
-      
-      #viewDescription  .liBoot {
-        list-style: none;
-        display: flex;
-        margin-top: 2px;
-        justify-content: flex-start;
-        width: 600px;
-      }
-      
-      #viewDescription  .liUser {
-        list-style: none;
-        display: flex;
-        justify-content: flex-end;
-        width: 600px;
-        margin-bottom: 2px;
-      }
-      
-      #viewDescription  .pMensajeBoot {
-        background-color: #0a1416;
-        color: #d9d9d9;
-        max-width: 75%;
-        padding: 12px 16px;
-        border-radius: 10px 10px 10px 0px;
-        font-size: 13px;
-        margin: 0px;
-        font-family: 'Inter', sans-serif;
-      }
-      
-      #viewDescription  .pMensajeUser {
-        background-color: #FFA400;
-        color: #000000;
-        max-width: 75%;
-        padding: 12px 16px;
-        border-radius: 10px 10px 0px 10px;
-        font-size: 13px;
-        margin: 0px;
-        font-family: 'Inter', sans-serif;
-      }
-      
-      #viewDescription  #divChatComponente {
-        display: flex;
-        margin-top: 0px;
-        margin-left: 17px;
-        width: 450px;
-      }
-    
-      #viewDescription  #mensajeTextarea {
-        display: flex;
-        margin-top: 0px;
-        width: 325px;
-        height: 30px;
-        margin-left: 0px;
-        resize: none;
-        overflow: hidden;
-      }
-      
-      #viewDescription  #SpanEnviar {
-        display: flex;
-        width: 25px;
-        height: 25px;
-        margin-left: 0px;
-        margin-bottom: 20px;
-        font-size: 35px;
-        cursor: pointer;
-      }
+  #viewDescription #divBtnHome {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    left: 30px;
+    top: 20%;
+    z-index: 1;
+  }
 
-    }
-      @media (min-width: 331px) and (max-width: 429px) {
-      
-        #viewDescription #header2 {
-            height: 150px;
-            width: 135px;
-            margin-top: 0;
-          }
-        
-          #viewDescription nav {
-            position: relative;
-            display: flex;
-            background-color: #303030;
-            padding-top: 25px;
-            height: 80px;
-            justify-content: center;
-          }
-    
-          #viewDescription #inputHamburguesa {
-           display: none;
-        
-          }
-        
-          #viewDescription #checkHamburger {
-            display: none;
-          }
-    
-          #viewDescription #viewDescriptionSecundario{
-            display: flex;
-            justify-content: center;
-            width: 100%;
-        }
-    
-        #viewDescription #divBtnHome {
-            display: flex;
-            width: 75px;
-            height: 75px;
-            left: 30px;
-            top: 20%;
-            z-index: 1;
-            }
-            
-            #viewDescription #imageHome {
-              position: fixed;
-              width: 45px;
-              height: 50px;
-              right: 28%;
-              top:165px;
-              cursor: pointer;
-              z-index: 1;
-            }
-            
-            #viewDescription  #btnHome {
-              position: fixed;
-              font-family: 'Inter', sans-serif;
-              font-size: 17px;
-              border-radius: 50%;
-              width: 75px;
-              height: 75px;
-              background: #FFA400;
-              right: 25%;
-              top:148px;
-              cursor: pointer;
-              z-index: 1;
-            }
-        
-        #viewDescription #imgDescriptionFondo {
-            display: flex;
-            margin: 70px, 0px, 0px, 0px;
-            width: 100%;
-            height: 1180px;
-          }
-        
-          #viewDescription #imgDescriptionPersonaje {
-            display: flex;
-            position: absolute;
-            margin-top: 58px;
-            margin-left: 0px;
-            width: 250px;
-            height: 341px;
-            z-index: 0;
-          }
-    
-          #viewDescription #divNombre {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 420px;
-            margin-left: 0px;
-            background-color: #F8DADA;
-            width: 320px;
-            height: 50px;
-            border-radius: 0 100px 0 0;
-          }
-    
-          #viewDescription #divDetalle {
-            position: absolute;
-            display: flex;
-            justify-content: start;
-            margin-top: 480px;
-            margin-left: 0px;
-            background-color: #F8DADA;
-            width: 320px;
-            height: 220px;
-          }
-          #viewDescription #skills {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 85px;
-          }
-          
-          #viewDescription #armas {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 125px;
-          }
-          
-          #viewDescription #apariciones {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 150px;
-          }
-          
-          #viewDescription #divLetalidad {
-            position: absolute;
-            display: flex;
-            justify-content: start;
-            margin-left: -163px;
-            margin-top: 705px;
-            background-color: #F8DADA;
-            width: 157px;
-            height: 63px;
-          }
-          
-          #viewDescription #parrafoLetalidad {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 5px;
-          }
-          
-          #viewDescription #imgLetalidad {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 30px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 15px;
-            width: 25px;
-            height: 40px;
-          }
-          
-          #viewDescription #divReino {
-            position: absolute;
-            display: flex;
-            justify-content: start;
-            margin-left: 163px;
-            margin-top: 705px;
-            background-color: #F8DADA;
-            width: 157px;
-            height: 63px;
-          }
-          
-          #viewDescription #imgReino {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 30px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 15px;
-            width: 25px;
-            height: 40px;
-          }
-          
-          #viewDescription #parrafoReino {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 5px;
-          }
-    
-          #viewDescription #divTitulo {
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            width: 320px;
-            height: 50px;
-            background-color: #FFA400;
-            margin-top:790px;
-            margin-left: 0px;
-          }
-          
-          #viewDescription #parrafoTitulo {
-            color: #000000;
-            font-weight: bold;
-            font-size: 20px;
-          }
-    
-          #viewDescription #divContenedor {
-            position: absolute;
-            margin-left: 0px;
-            margin-top: 840px;
-            width: 320px;
-            height: 300px;
-            background-color: #D9D9D9;
-          }
-    
-          #viewDescription  #divMensajes{
-            background: #D9D9D9;
-            width: 320px;
-            height: 250px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-          }
-          
-          #viewDescription  #ulMensajes {
-            list-style: none;
-            overflow-y: auto;
-            list-style: none;
-            padding: 15px;
-            width: 320px;
-          }
-          
-          #viewDescription  .liBoot {
-            list-style: none;
-            display: flex;
-            margin-top: 2px;
-            justify-content: flex-start;
-            width: 600px;
-          }
-          
-          #viewDescription  .liUser {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            width: 600px;
-            margin-bottom: 2px;
-          }
-          
-          #viewDescription  .pMensajeBoot {
-            background-color: #0a1416;
-            color: #d9d9d9;
-            max-width: 75%;
-            padding: 12px 16px;
-            border-radius: 10px 10px 10px 0px;
-            font-size: 13px;
-            margin: 0px;
-            font-family: 'Inter', sans-serif;
-          }
-          
-          #viewDescription  .pMensajeUser {
-            background-color: #FFA400;
-            color: #000000;
-            max-width: 75%;
-            padding: 12px 16px;
-            border-radius: 10px 10px 0px 10px;
-            font-size: 13px;
-            margin: 0px;
-            font-family: 'Inter', sans-serif;
-          }
-          
-          #viewDescription  #divChatComponente {
-            display: flex;
-            margin-top: 0px;
-            margin-left: 17px;
-            width: 450px;
-          }
-        
-          #viewDescription  #mensajeTextarea {
-            display: flex;
-            margin-top: 0px;
-            width: 260px;
-            height: 30px;
-            margin-left: 0px;
-            resize: none;
-            overflow: hidden;
-          }
-          
-          #viewDescription  #SpanEnviar {
-            display: flex;
-            width: 25px;
-            height: 25px;
-            margin-left: 0px;
-            margin-bottom: 20px;
-            font-size: 35px;
-            cursor: pointer;
-          }
+  #viewDescription #imageHome {
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    right: 28%;
+    top: 165px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #viewDescription #btnHome {
+    position: fixed;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #FFA400;
+    right: 25%;
+    top: 148px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #viewDescription #imgDescriptionFondo {
+    display: flex;
+    margin: 70px, 0px, 0px, 0px;
+    width: 100%;
+    height: 1180px;
+  }
+
+  #viewDescription #imgDescriptionPersonaje {
+    display: flex;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 0px;
+    width: 250px;
+    height: 341px;
+    z-index: 0;
+  }
+
+  #viewDescription #divNombre {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 420px;
+    margin-left: 0px;
+    background-color: #F8DADA;
+    width: 320px;
+    height: 50px;
+    border-radius: 0 100px 0 0;
+  }
+
+  #viewDescription #divDetalle {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-top: 480px;
+    margin-left: 0px;
+    background-color: #F8DADA;
+    width: 320px;
+    height: 220px;
+  }
+
+  #viewDescription #skills {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 85px;
+  }
+
+  #viewDescription #armas {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 125px;
+  }
+
+  #viewDescription #apariciones {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 150px;
+  }
+
+  #viewDescription #divLetalidad {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-left: -163px;
+    margin-top: 705px;
+    background-color: #F8DADA;
+    width: 157px;
+    height: 63px;
+  }
+
+  #viewDescription #parrafoLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+
+  #viewDescription #imgLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+
+  #viewDescription #divReino {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-left: 163px;
+    margin-top: 705px;
+    background-color: #F8DADA;
+    width: 157px;
+    height: 63px;
+  }
+
+  #viewDescription #imgReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+
+  #viewDescription #parrafoReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+
+  #viewDescription #divTitulo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    height: 50px;
+    background-color: #FFA400;
+    margin-top: 790px;
+    margin-left: 0px;
+  }
+
+  #viewDescription #parrafoTitulo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #viewDescription #divContenedor {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 840px;
+    width: 320px;
+    height: 300px;
+    background-color: #D9D9D9;
+  }
+
+  #viewDescription #divMensajes {
+    background: #D9D9D9;
+    width: 320px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  #viewDescription #ulMensajes {
+    list-style: none;
+    overflow-y: auto;
+    list-style: none;
+    padding: 15px;
+    width: 320px;
+  }
+
+  #viewDescription .liBoot {
+    list-style: none;
+    display: flex;
+    margin-top: 2px;
+    justify-content: flex-start;
+    width: 600px;
+  }
+
+  #viewDescription .liUser {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    margin-bottom: 2px;
+  }
+
+  #viewDescription .pMensajeBoot {
+    background-color: #0a1416;
+    color: #d9d9d9;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 13px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #viewDescription .pMensajeUser {
+    background-color: #FFA400;
+    color: #000000;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0px 10px;
+    font-size: 13px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #viewDescription #divChatComponente {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 17px;
+    width: 450px;
+  }
+
+  #viewDescription #mensajeTextarea {
+    display: flex;
+    margin-top: 0px;
+    width: 260px;
+    height: 30px;
+    margin-left: 0px;
+    resize: none;
+    overflow: hidden;
+  }
+
+  #viewDescription #SpanEnviar {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    cursor: pointer;
+  }
 }
 
 
 @media (min-width: 280px) and (max-width: 330px) {
 
-    #viewDescription nav {
-        position: relative;
-        display: flex;
-        background-color: #303030;
-        padding-top: 25px;
-        height: 80px;
-        justify-content: center;
-      }
+  #viewDescription nav {
+    position: relative;
+    display: flex;
+    background-color: #303030;
+    padding-top: 25px;
+    height: 80px;
+    justify-content: center;
+  }
 
-      #viewDescription #inputHamburguesa {
-       display: none;
-    
-      }
-    
-      #viewDescription #checkHamburger {
-        display: none;
-      }
+  #viewDescription #inputHamburguesa {
+    display: none;
 
-      #viewDescription #viewDescriptionSecundario{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  }
 
-    #viewDescription #imgDescriptionFondo {
-        display: flex;
-        margin: 70px, 0px, 0px, 0px;
-        width: 100%;
-        height: 1200px;
-      }
-      #viewDescription #imgDescriptionPersonaje {
-        display: flex;
-        position: absolute;
-        margin-top: 58px;
-        margin-left: 0px;
-        width: 250px;
-        height: 341px;
-        z-index: 0;
-      }
-    #viewDescription #divBtnHome {
-        display: flex;
-        width: 75px;
-        height: 75px;
-        left: 0px;
-        top: 20%;
-        z-index: 1;
-        }
-        
-        #viewDescription #imageHome {
-          position: fixed;
-          width: 45px;
-          height: 50px;
-          left: 227px;
-          top:165px;
-          cursor: pointer;
-          z-index: 1;
-        }
-        
-        #viewDescription  #btnHome {
-          position: fixed;
-          font-family: 'Inter', sans-serif;
-          font-size: 17px;
-          border-radius: 50%;
-          width: 75px;
-          height: 75px;
-          background: #FFA400;
-          left: 190px;
-          top:148px;
-          cursor: pointer;
-          z-index: 1;
-        }
+  #viewDescription #checkHamburger {
+    display: none;
+  }
 
-          #viewDescription #divNombre {
-            position: absolute;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-top: 420px;
-            margin-left: 0px;
-            background-color: #F8DADA;
-            width: 280px;
-            height: 50px;
-            border-radius: 0 100px 0 0;
-          }
-    
-          #viewDescription #divDetalle {
-            position: absolute;
-            display: flex;
-            justify-content: start;
-            margin-top: 480px;
-            margin-left: 0px;
-            background-color: #F8DADA;
-            width: 280px;
-            height: 250px;
-          }
-          #viewDescription #skills {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 85px;
-          }
-          
-          #viewDescription #armas {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 138px;
-          }
-          
-          #viewDescription #apariciones {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 175px;
-          }
-          
-          #viewDescription #divLetalidad {
-            position: absolute;
-            display: flex;
-            justify-content: start;
-            margin-left: -140px;
-            margin-top: 735px;
-            background-color: #F8DADA;
-            width: 140px;
-            height: 63px;
-          }
-          
-          #viewDescription #parrafoLetalidad {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 5px;
-          }
-          
-          #viewDescription #imgLetalidad {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 30px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 15px;
-            width: 25px;
-            height: 40px;
-          }
-          
-          #viewDescription #divReino {
-            position: absolute;
-            display: flex;
-            justify-content: start;
-            margin-left: 145px;
-            margin-top: 735px;
-            background-color: #F8DADA;
-            width: 135px;
-            height: 63px;
-          }
-          
-          #viewDescription #imgReino {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 30px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 15px;
-            width: 25px;
-            height: 40px;
-          }
-          
-          #viewDescription #parrafoReino {
-            position: absolute;
-            display: flex;
-            text-align: left;
-            margin-left: 25px;
-            margin-right: 20px;
-            font-size: 12px;
-            color: #000000;
-            font-family: 'Inter', sans-serif;
-            margin-top: 5px;
-          }
-    
-          #viewDescription #divTitulo {
-            display: flex;
-            position: absolute;
-            align-items: center;
-            justify-content: center;
-            width: 280px;
-            height: 50px;
-            background-color: #FFA400;
-            margin-top:820px;
-            margin-left: 0px;
-          }
-          
-          #viewDescription #parrafoTitulo {
-            color: #000000;
-            font-weight: bold;
-            font-size: 20px;
-          }
-    
-          #viewDescription #divContenedor {
-            position: absolute;
-            margin-left: 0px;
-            margin-top: 870px;
-            width: 280px;
-            height: 300px;
-            background-color: #D9D9D9;
-          }
-    
-          #viewDescription  #divMensajes{
-            background: #D9D9D9;
-            width: 280px;
-            height: 250px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-          }
-          
-          #viewDescription  #ulMensajes {
-            list-style: none;
-            overflow-y: auto;
-            list-style: none;
-            padding: 15px;
-            width: 280px;
-          }
-          
-          #viewDescription  .liBoot {
-            list-style: none;
-            display: flex;
-            margin-top: 2px;
-            justify-content: flex-start;
-            width: 600px;
-          }
-          
-          #viewDescription  .liUser {
-            list-style: none;
-            display: flex;
-            justify-content: flex-end;
-            width: 600px;
-            margin-bottom: 2px;
-          }
-          
-          #viewDescription  .pMensajeBoot {
-            background-color: #0a1416;
-            color: #d9d9d9;
-            max-width: 75%;
-            padding: 12px 16px;
-            border-radius: 10px 10px 10px 0px;
-            font-size: 13px;
-            margin: 0px;
-            font-family: 'Inter', sans-serif;
-          }
-          
-          #viewDescription  .pMensajeUser {
-            background-color: #FFA400;
-            color: #000000;
-            max-width: 75%;
-            padding: 12px 16px;
-            border-radius: 10px 10px 0px 10px;
-            font-size: 13px;
-            margin: 0px;
-            font-family: 'Inter', sans-serif;
-          }
+  #viewDescription #viewDescriptionSecundario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-          #viewDescription  #divChatComponente {
-            display: flex;
-            margin-top: 0px;
-            margin-left: 10px;
-            width: 450px;
-          }
-        
-          #viewDescription  #mensajeTextarea {
-            display: flex;
-            margin-top: 0px;
-            width: 225px;
-            height: 30px;
-            margin-left: 0px;
-            resize: none;
-            overflow: hidden;
-          }
-          
-          #viewDescription  #SpanEnviar {
-            display: flex;
-            width: 25px;
-            height: 25px;
-            margin-left: 0px;
-            margin-bottom: 20px;
-            font-size: 35px;
-            cursor: pointer;
-          }
+  #viewDescription #imgDescriptionFondo {
+    display: flex;
+    margin: 70px, 0px, 0px, 0px;
+    width: 100%;
+    height: 1200px;
+  }
+
+  #viewDescription #imgDescriptionPersonaje {
+    display: flex;
+    position: absolute;
+    margin-top: 58px;
+    margin-left: 0px;
+    width: 250px;
+    height: 341px;
+    z-index: 0;
+  }
+
+  #viewDescription #divBtnHome {
+    display: flex;
+    width: 75px;
+    height: 75px;
+    left: 0px;
+    top: 20%;
+    z-index: 1;
+  }
+
+  #viewDescription #imageHome {
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    left: 227px;
+    top: 165px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #viewDescription #btnHome {
+    position: fixed;
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    background: #FFA400;
+    left: 190px;
+    top: 148px;
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  #viewDescription #divNombre {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 420px;
+    margin-left: 0px;
+    background-color: #F8DADA;
+    width: 280px;
+    height: 50px;
+    border-radius: 0 100px 0 0;
+  }
+
+  #viewDescription #divDetalle {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-top: 480px;
+    margin-left: 0px;
+    background-color: #F8DADA;
+    width: 280px;
+    height: 250px;
+  }
+
+  #viewDescription #skills {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 85px;
+  }
+
+  #viewDescription #armas {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 138px;
+  }
+
+  #viewDescription #apariciones {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 175px;
+  }
+
+  #viewDescription #divLetalidad {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-left: -140px;
+    margin-top: 735px;
+    background-color: #F8DADA;
+    width: 140px;
+    height: 63px;
+  }
+
+  #viewDescription #parrafoLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+
+  #viewDescription #imgLetalidad {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+
+  #viewDescription #divReino {
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    margin-left: 145px;
+    margin-top: 735px;
+    background-color: #F8DADA;
+    width: 135px;
+    height: 63px;
+  }
+
+  #viewDescription #imgReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 15px;
+    width: 25px;
+    height: 40px;
+  }
+
+  #viewDescription #parrafoReino {
+    position: absolute;
+    display: flex;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    margin-top: 5px;
+  }
+
+  #viewDescription #divTitulo {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 50px;
+    background-color: #FFA400;
+    margin-top: 820px;
+    margin-left: 0px;
+  }
+
+  #viewDescription #parrafoTitulo {
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  #viewDescription #divContenedor {
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 870px;
+    width: 280px;
+    height: 300px;
+    background-color: #D9D9D9;
+  }
+
+  #viewDescription #divMensajes {
+    background: #D9D9D9;
+    width: 280px;
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  #viewDescription #ulMensajes {
+    list-style: none;
+    overflow-y: auto;
+    list-style: none;
+    padding: 15px;
+    width: 280px;
+  }
+
+  #viewDescription .liBoot {
+    list-style: none;
+    display: flex;
+    margin-top: 2px;
+    justify-content: flex-start;
+    width: 600px;
+  }
+
+  #viewDescription .liUser {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 600px;
+    margin-bottom: 2px;
+  }
+
+  #viewDescription .pMensajeBoot {
+    background-color: #0a1416;
+    color: #d9d9d9;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 10px 0px;
+    font-size: 13px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #viewDescription .pMensajeUser {
+    background-color: #FFA400;
+    color: #000000;
+    max-width: 75%;
+    padding: 12px 16px;
+    border-radius: 10px 10px 0px 10px;
+    font-size: 13px;
+    margin: 0px;
+    font-family: 'Inter', sans-serif;
+  }
+
+  #viewDescription #divChatComponente {
+    display: flex;
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 450px;
+  }
+
+  #viewDescription #mensajeTextarea {
+    display: flex;
+    margin-top: 0px;
+    width: 225px;
+    height: 30px;
+    margin-left: 0px;
+    resize: none;
+    overflow: hidden;
+  }
+
+  #viewDescription #SpanEnviar {
+    display: flex;
+    width: 25px;
+    height: 25px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    cursor: pointer;
+  }
 }
-
-
-  
-  
