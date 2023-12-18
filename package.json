@@ -23,6 +23,7 @@
     "jest": "^27.0.1",
     "jsdom": "^22.1.0",
     "opener": "^1.5.1",
+    "prettier": "^3.1.1",
     "serve": "^14.2.1"
   },
   "engines": {
@@ -35,5 +36,8 @@
     "createdAt": "2023-10-12T21:16:48.330Z",
     "version": "7.2.0",
     "commit": "916e031e02c3283ec75092f3e122fa58755d56c3"
+  },
+  "dependencies": {
+    "eslint-plugin-import": "^2.29.1"
   }
 }
