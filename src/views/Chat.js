@@ -5,7 +5,6 @@ import { header } from "../components/header.js";
 import dataset from "../data/dataset.js";
 
 export const chatView = (props) => {
-  console.log("props", props);
   const div = document.createElement("div");
   div.setAttribute("id", "divChat");
   const divSecundario = document.createElement("div");

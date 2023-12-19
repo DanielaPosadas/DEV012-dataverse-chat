@@ -80,7 +80,6 @@ export const valorInput = () => {
     } else {
       navigateTo("/");
     }
-    console.log(input.value);
   }
 
   const btnLApiLimpiar =

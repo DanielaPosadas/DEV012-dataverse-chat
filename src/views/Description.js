@@ -4,7 +4,6 @@ import { header } from "../components/header.js";
 import { div_filtros } from "../components/DivFiltros.js";
 
 export const description = (props) => {
-  console.log("props", props);
 
   //METER LOS ELEMENTOS DE LA VISTA ERROR
   const div_description = document.createElement("div");

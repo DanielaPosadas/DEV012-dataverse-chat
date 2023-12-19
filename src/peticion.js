@@ -1,9 +1,8 @@
-export const componentePeticion = (props, userMessage, mensajeChatboot) => {
+export const componentePeticion = (props, userMessage) => {
   const URL_API = "https://api.openai.com/v1/chat/completions";
   const API_KEY = localStorage.getItem("apikey");
-  const mensajeElemento = mensajeChatboot.querySelector(".pMensajeBoot");
 
-  const peticion2 = {
+  return fetch(URL_API, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -23,15 +22,5 @@ export const componentePeticion = (props, userMessage, mensajeChatboot) => {
       completion_tokens: 5,
       total_tokens: 12,
     },
-  };
-  return fetch(URL_API, peticion2)
-    .then((resp) => resp.json())
-    .then((data) => {
-      mensajeElemento.textContent = data.choices[0].message.content;
-    })
-    .catch((error) => {
-      mensajeElemento.textContent =
-        "Ups! Algo anda mal con la Api Key. Por favor intenta de nuevo ";
-      console.log(error);
-    });
+  });
 };
