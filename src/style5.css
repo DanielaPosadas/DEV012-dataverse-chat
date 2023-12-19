@@ -62,6 +62,7 @@
   font-size: 15px;
   top: 545px;
   margin: 0%;
+  cursor: pointer;
 }
 
 
@@ -91,7 +92,6 @@
     font-size: 110px;
     font-weight: bold;
     top: 290px;
-
   }
 
   #ERROR {
@@ -125,6 +125,7 @@
     font-size: 15px;
     top: 545px;
     margin: 0%;
+    cursor: pointer;
   }
 }
 
@@ -189,6 +190,7 @@
     font-size: 15px;
     top: 545px;
     margin: 0%;
+    cursor: pointer;
   }
 }
 
@@ -253,5 +255,6 @@
     font-size: 15px;
     top: 545px;
     margin: 0%;
+    cursor: pointer;
   }
 }

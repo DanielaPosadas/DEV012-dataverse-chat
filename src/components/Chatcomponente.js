@@ -67,6 +67,12 @@ export const chat = (props) => {
 
   //AGREGA EVENTO AL BOTON ENVIAR DE CADA CHAT
   btnEnviarSpan.addEventListener('click', inputTextarea);
+  textarea.addEventListener('keydown', function(enviar){
+    if (enviar.key === 'Enter') {
+      inputTextarea();
+    };
+  })
+  
   function inputTextarea() {
     userMessage = textarea.value.trim();
     textarea.value = "";

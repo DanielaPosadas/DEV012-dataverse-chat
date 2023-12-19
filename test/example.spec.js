@@ -8,7 +8,10 @@ describe("Endpoint de openIA", () => {
 
     const messages = [{ role: "user", content: "foo" }];
 
-    componentePeticion("12456", messages);
+
+    componentePeticion("12456", messages, mensajeChatBoot)
+
+    
 
     expect(global.fetch).toBeCalledWith(
       "https://api.openai.com/v1/chat/completions",
