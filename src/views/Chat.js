@@ -69,8 +69,8 @@ export const chatView = (props) => {
   const btn = document.createElement("button");
   btn.setAttribute("id", "btnOnline");
   const imageOnline = document.createElement("img");
-  imageOnline.setAttribute("id", "imageHome");
-  imageOnline.src = "https://cdn-icons-png.flaticon.com/512/1946/1946436.png";
+  imageOnline.setAttribute("id", "imageOnline");
+  imageOnline.src = "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/perfil.png";
   divBtnOnline.appendChild(btn);
   divBtnOnline.appendChild(imageOnline);
 

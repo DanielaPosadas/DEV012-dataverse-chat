@@ -296,8 +296,19 @@
     width: 75px;
     height: 75px;
     background-color: #FFA400;
-    margin-top: 0px;
+    margin-top: 20px;
     margin-left: 0px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  #divChat #imageOnline{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #FFA400;
+    margin-top: 0px;
+    margin-left: 5px;
     z-index: 1;
     cursor: pointer;
   }
@@ -589,6 +600,17 @@
     cursor: pointer;
   }
 
+  #divChat #imageOnline{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #FFA400;
+    margin-top: 0px;
+    margin-left: 5px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
   #divChat #imgchatFondo {
     position: absolute;
     display: flex;
@@ -871,6 +893,17 @@
     background-color: #FFA400;
     margin-top: 0px;
     margin-left: 0px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  #divChat #imageOnline{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: #FFA400;
+    margin-top: 0px;
+    margin-left: 5px;
     z-index: 1;
     cursor: pointer;
   }

@@ -43,7 +43,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/tarjetas%20MK-5.jpg",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-28.jpg",
     facts: {
       skills:
         "Experto en artes marciales, combina técnicas de karate y acrobacias.",
@@ -61,7 +61,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-4.jpg",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-27.jpg",
     facts: {
       skills:
         "Control del trueno, la electricidad y capacidad de teletransportación.",
@@ -238,7 +238,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat 3, Mortal Kombat Trilogy, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-3.jpg",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-26.jpg",
     facts: {
       skills:
         "Velocidad extrema y estilo de lucha basado en movimientos rápidos.",

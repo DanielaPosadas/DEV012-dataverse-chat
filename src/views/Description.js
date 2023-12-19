@@ -66,9 +66,26 @@ export const description = (props) => {
   const div_letalidad = document.createElement("div");
   div_letalidad.setAttribute("id", "divLetalidad");
   const img_letalidad = document.createElement("img");
+
+  if(props.facts.lethalityLevel === 'Alto'){
+    img_letalidad.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-alto.png",
+    )
+  } else if(props.facts.lethalityLevel === 'Moderado'){
+    img_letalidad.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-moderado.png",
+    )
+  } else if(props.facts.lethalityLevel === 'Moderado-bajo'){
+    img_letalidad.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-moderadoBajo.png",
+    )
+  } else if(props.facts.lethalityLevel === 'Bajo')
   img_letalidad.setAttribute(
     "src",
-    "https://cdn-icons-png.flaticon.com/512/4325/4325956.png",
+    "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-bajo.png",
   );
   img_letalidad.setAttribute("id", "imgLetalidad");
   div_letalidad.appendChild(img_letalidad);
@@ -81,10 +98,26 @@ export const description = (props) => {
   const div_reino = document.createElement("div");
   div_reino.setAttribute("id", "divReino");
   const img_reino = document.createElement("img");
+  if(props.facts.kingdom === 'Earthrealm'){
+    img_reino.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/earthrealm.png",
+    );
+  } else if (props.facts.kingdom === 'Outworld'){
   img_reino.setAttribute(
     "src",
-    "https://cdn-icons-png.flaticon.com/512/5778/5778499.png",
-  );
+    "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/outworld.png",
+  )} else if(props.facts.kingdom === 'Cielo'){
+    img_reino.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/cielo.png",
+    )
+  } else {
+    img_reino.setAttribute(
+      "src",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/netherrealm.png",
+    )
+  }
   img_reino.setAttribute("id", "imgReino");
   div_reino.appendChild(img_reino);
   const parrafoReino = document.createElement("p");
