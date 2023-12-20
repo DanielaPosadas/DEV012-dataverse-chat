@@ -94,7 +94,7 @@ Esta aplicación implementa media queries en cada una de sus vistas por medio de
 
 ## 6. Consideraciones técnicas
 
-La lógica del proyecto debe estar implementada completamente en JavaScript (ES6), HTML y CSS.
+La lógica del proyecto está implementada completamente en JavaScript (ES6), HTML y CSS.
 
 ```
 * Componentes
@@ -127,7 +127,7 @@ La lógica del proyecto debe estar implementada completamente en JavaScript (ES6
 
 ## 7. Pruebas unitarias y asíncronas
 
-A lo largo del proyecto implementamos 11 pruebas unitarias a los filtros de letalidad, reino y a los ordenamientos A-Z y género, además de 2 pruebas asíncronas que permiten testear código asíncrono.Dentro de estas pruebas unitarias hicimos uso de diversos jest test typecSript:
+A lo largo del proyecto implementamos 11 pruebas unitarias a los filtros de letalidad, reino y a los ordenamientos A-Z y género, además de 2 pruebas que permiten testear código asíncrono. Dentro de estas pruebas unitarias hicimos uso de diversos jest test typecSript:
 
 ```
 .ToBe
