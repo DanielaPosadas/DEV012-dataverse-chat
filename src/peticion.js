@@ -1,7 +1,7 @@
 export const componentePeticion = (props, userMessage) => {
   const URL_API = "https://api.openai.com/v1/chat/completions";
   const API_KEY = localStorage.getItem("apikey");
-
+console.log(API_KEY);
   return fetch(URL_API, {
     method: "POST",
     headers: {
