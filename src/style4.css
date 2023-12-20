@@ -304,11 +304,10 @@
 
   #divChat #imageOnline{
     display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: #FFA400;
-    margin-top: 0px;
-    margin-left: 5px;
+    width: 75px;
+    height: 85px;
+    margin-top: 5px;
+    margin-left: -75px;
     z-index: 1;
     cursor: pointer;
   }
@@ -602,11 +601,10 @@
 
   #divChat #imageOnline{
     display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: #FFA400;
-    margin-top: 0px;
-    margin-left: 5px;
+    width: 75px;
+    height: 85px;
+    margin-top: 5px;
+    margin-left: -75px;
     z-index: 1;
     cursor: pointer;
   }
@@ -899,11 +897,10 @@
 
   #divChat #imageOnline{
     display: flex;
-    width: 20px;
-    height: 20px;
-    background-color: #FFA400;
-    margin-top: 0px;
-    margin-left: 5px;
+    width: 75px;
+    height: 85px;
+    margin-top: 5px;
+    margin-left: -75px;
     z-index: 1;
     cursor: pointer;
   }
