@@ -140,7 +140,7 @@ A lo largo del proyecto implementamos 11 pruebas unitarias a los filtros de leta
 ```
 Las pruebas dan al proyecto una cobertura del 70% de statements.
 
-## 7. Desarrolladoras Web
+## 8. Desarrolladoras Web
 
 | [<img src="https://avatars.githubusercontent.com/u/144648301?v=4" width=115><br><sub>Daniela Posadas</sub>](https://github.com/DanielaPosadas) |  [<img src="https://avatars.githubusercontent.com/u/144945339?v=4" width=115><br><sub>Martha Melitón</sub>](https://github.com/MarthaMIMS) |
 | :---: | :---: |
