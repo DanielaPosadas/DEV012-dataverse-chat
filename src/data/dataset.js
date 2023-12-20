@@ -8,7 +8,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-11.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-34.jpg",
     facts: {
       skills:
         "Posee habilidades criománticas. Crea armas y congela a sus oponentes.",
@@ -26,7 +26,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/tarjetas%20MK-2.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK25.jpg",
     facts: {
       skills: "Control de fuego, uso de cadenas y espada. Ataca a distancia.",
       weapons: "Kunai cadena y espada Hanzo Hasashi.",
@@ -79,7 +79,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/tarjetas%20MK-6.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-29.jpg",
     facts: {
       skills:
         "Movimientos especiales con sus abanicos afilados y teletransportación.",
@@ -97,7 +97,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat II, Mortal Kombat 3, Mortal Kombat 9 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-23.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-46.jpg",
     facts: {
       skills:
         "Experta en artes marciales, agilidad y lanzar proyectiles verdes.",
@@ -115,7 +115,7 @@ export default [
     videogamesAppearances:
       "Kombat II, Mortal Kombat 3, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-20.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-43.jpg",
     facts: {
       skills: "Capacidad de crear portales y un doble sombrío.",
       weapons: "Manipulación de energía oscura.",
@@ -132,7 +132,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat II, Mortal Kombat Trilogy, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-8.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-31.jpg",
     facts: {
       skills:
         "Manejo de cuchillas afiladas realizando ataques rápidos y letales.",
@@ -150,7 +150,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-15.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-38.jpg",
     facts: {
       skills: "Experto en artes marciales, manejo de nunchaku y fuego.",
       weapons: "Habilidades de lucha con fuego.",
@@ -167,7 +167,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-14.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-37.jpg",
     facts: {
       skills: "Experto en artes marciales y capacidad de teletransportación.",
       weapons: "Sombrero con hoja de metal afilada.",
@@ -184,7 +184,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-21.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-44.jpg",
     facts: {
       skills:
         "Experto en artes marciales, conocido por su fuerza y habilidades en combate.",
@@ -202,7 +202,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-22.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-45.jpg",
     facts: {
       skills:
         "Experta en artes marciales, conocida por su estilo de lucha rápido y preciso.",
@@ -220,7 +220,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-12.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-35.jpg",
     facts: {
       skills:
         "Experto en combate cuerpo a cuerpo, conocido por su estilo de lucha brutal.",
@@ -238,7 +238,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat 3, Mortal Kombat Trilogy, Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-26.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-26.jpg",
     facts: {
       skills:
         "Velocidad extrema y estilo de lucha basado en movimientos rápidos.",
@@ -256,7 +256,7 @@ export default [
     videogamesAppearances:
       "Erron Black ha aparecido en varios juegos de la serie Mortal Kombat, incluyendo Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-24.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-47.jpg",
     facts: {
       skills: "Experto en el uso de armas de fuego y armas blancas.",
       weapons: "Revólveres, rifles y cuchillos.",
@@ -273,7 +273,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat 9, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-19.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-42.jpg",
     facts: {
       skills:
         "Maestra en el arte de manipular la sangre y ataques cuerpo a cuerpo.",
@@ -291,7 +291,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat: Deadly Alliance, Mortal Kombat: Armageddon, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-10.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-33.jpg",
     facts: {
       skills:
         "Capacidad de controlar el hielo, el frío y ataques cuerpo a cuerpo congelantes.",
@@ -308,7 +308,7 @@ export default [
       "Luchador conocido por ser un guerrero azteca y el emperador de Outworld.",
     videogamesAppearances: "Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-13.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-36.jpg",
     facts: {
       skills: "Manipulación de la energía solar y la sangre.",
       weapons: "Macuahuitl (espada de obsidiana).",
@@ -325,7 +325,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat 11 y es parte de la expansión Aftermath del juego.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-25.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-48.jpg",
     facts: {
       skills: "Controla y manipula los elementos naturales.",
       weapons: "Controlar los elementos naturales.",
@@ -342,7 +342,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat X, Mortal Kombat 11 y otros juegos de la serie.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-7.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-30.jpg",
     facts: {
       skills: "Entrenada en artes marciales y combate táctico.",
       weapons: "Armas de fuego.",
@@ -359,7 +359,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-16.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-39.jpg",
     facts: {
       skills:
         "Luchadora ágil y letal. Movimientos rápidos, ataques acrobáticos y ataques letales con su boca llena de dientes afilados.",
@@ -377,7 +377,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat 3, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-18.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-41.jpg",
     facts: {
       skills:
         "Lengua extensible, ataques ácidos y capacidad de camuflarse en su entorno.",
@@ -395,7 +395,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat, Mortal Kombat II, Mortal Kombat Trilogy y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-9.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-32.jpg",
     facts: {
       skills:
         "Ataques devastadores cuerpo a cuerpo, patadas y puñetazos poderosos.",
@@ -412,7 +412,7 @@ export default [
       "Dios antiguo caído y señor del Infierno conocido por su malicia y su sed de poder.",
     videogamesAppearances: "Mortal Kombat 4, Mortal Kombat X y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-26.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-49.jpg",
     facts: {
       skills:
         "Hechicero poderoso. Puede lanzar proyectiles y manejar energía oscura.",
@@ -430,7 +430,7 @@ export default [
     videogamesAppearances:
       "Mortal Kombat Mythologies: Sub-Zero, Mortal Kombat 4, Mortal Kombat X, Mortal Kombat 11 y otros.",
     imageUrl:
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/Personajes%20MK/tarjetas%20MK-17.jpg",
+      "https://raw.githubusercontent.com/MarthaMIMS/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/tarjetas%20MK-40.jpg",
     facts: {
       skills:
         "Hechicero poderoso: Invocación de demonios, teletransportación y manipulación de almas.",

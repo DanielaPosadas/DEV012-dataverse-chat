@@ -16,7 +16,7 @@ export const apikey = () => {
   const imgFondoApikey = document.createElement("img");
   imgFondoApikey.setAttribute("id", "imgFondoApikey");
   imgFondoApikey.src =
-    "https://img.freepik.com/foto-gratis/fondo-rojo-grunge_1048-8960.jpg?w=1380&t=st=1700177002~exp=1700177602~hmac=7303db24464e6a2c956aeaac0c6433bae02689c745b2106eaa680164b0ba96c0";
+    "https://github.com/MarthaMIMS/DEV012-dataverse-chat/blob/main/Dataverse-Chat-Recursos/fondo-rojo.jpg";
 
   //DIV INPUT
   const parrafoApikey = document.createElement("p");
