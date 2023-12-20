@@ -15,7 +15,7 @@ export const description = (props) => {
   const img_descriptionFondo = document.createElement("img");
   img_descriptionFondo.setAttribute(
     "src",
-    "https://img.freepik.com/foto-gratis/fondo-rojo-grunge_1048-8960.jpg?w=1380&t=st=1700177002~exp=1700177602~hmac=7303db24464e6a2c956aeaac0c6433bae02689c745b2106eaa680164b0ba96c0",
+    "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/tarjetas%20MK-1.jpg",
   );
   img_descriptionFondo.setAttribute("id", "imgDescriptionFondo");
 
@@ -70,22 +70,22 @@ export const description = (props) => {
   if(props.facts.lethalityLevel === 'Alto'){
     img_letalidad.setAttribute(
       "src",
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-alto.png",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/alto.png",
     )
   } else if(props.facts.lethalityLevel === 'Moderado'){
     img_letalidad.setAttribute(
       "src",
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-moderado.png",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/moderado.png",
     )
   } else if(props.facts.lethalityLevel === 'Moderado-bajo'){
     img_letalidad.setAttribute(
       "src",
-      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-moderadoBajo.png",
+      "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/moderado-bajo.png",
     )
   } else if(props.facts.lethalityLevel === 'Bajo')
   img_letalidad.setAttribute(
     "src",
-    "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/letalidad-bajo.png",
+    "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse-chat/main/Dataverse-Chat-Recursos/bajo.png",
   );
   img_letalidad.setAttribute("id", "imgLetalidad");
   div_letalidad.appendChild(img_letalidad);

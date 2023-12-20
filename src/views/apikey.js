@@ -16,7 +16,7 @@ export const apikey = () => {
   const imgFondoApikey = document.createElement("img");
   imgFondoApikey.setAttribute("id", "imgFondoApikey");
   imgFondoApikey.src =
-    "https://github.com/MarthaMIMS/DEV012-dataverse-chat/blob/main/Dataverse-Chat-Recursos/fondo-rojo.jpg";
+    "https://raw.githubusercontent.com/DanielaPosadas/DEV012-dataverse/main/tarjetas%20MK-1.jpg";
 
   //DIV INPUT
   const parrafoApikey = document.createElement("p");
